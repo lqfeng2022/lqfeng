@@ -1,11 +1,18 @@
-import { Text } from "@chakra-ui/react";
-import "./App.css";
+import { Grid, GridItem } from "@chakra-ui/react";
 
 function App() {
   return (
-    <Text textAlign="left" fontSize="xl">
-      Hello World!
-    </Text>
+    <Grid templateAreas={`"nav" "main" "footer"`}>
+      <GridItem area="nav" bg="orange.300">
+        NavBar
+      </GridItem>
+      <GridItem area="main" bg="green.300">
+        Main
+      </GridItem>
+      <GridItem area="footer" bg="blue.300">
+        Footer
+      </GridItem>
+    </Grid>
   );
 }
 
