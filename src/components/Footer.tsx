@@ -4,7 +4,7 @@ import { IoHeart } from "react-icons/io5";
 const Footer = () => {
   return (
     <>
-      <Center paddingTop={10}>
+      <Center paddingY={10}>
         <Container w="180px" h="50px" bg="gray.700" color="white">
           <Center>
             <Text
@@ -19,7 +19,7 @@ const Footer = () => {
           </Center>
         </Container>
       </Center>
-      <Center paddingY={10}>
+      <Center paddingBottom={5}>
         <Text paddingRight={1} as="i" fontSize="sm">
           Design and Code by <b>SIMON Lee</b> with Love &
         </Text>
