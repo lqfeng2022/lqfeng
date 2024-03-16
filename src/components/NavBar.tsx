@@ -1,6 +1,5 @@
-import { Box, Center, HStack, Icon, Text } from "@chakra-ui/react";
-import { FaYoutube } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa";
+import { Box, HStack, Icon, Text } from "@chakra-ui/react";
+import { FaTiktok, FaYoutube } from "react-icons/fa";
 
 const NavBar = () => {
   return (
