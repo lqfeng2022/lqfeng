@@ -2,7 +2,7 @@ import { HStack, Text } from "@chakra-ui/react";
 
 const NavBar = () => {
   return (
-    <HStack justifyContent="space-between" padding={5}>
+    <HStack justifyContent="space-between" paddingX={10} paddingY={5}>
       <Text fontSize="2xl" marginY="8px">LI QIUFENG</Text>
       <HStack>
         <Text marginY="8px">WORK</Text>
