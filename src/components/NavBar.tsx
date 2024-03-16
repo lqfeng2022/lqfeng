@@ -1,10 +1,10 @@
-import { Box, HStack, Icon, Text } from "@chakra-ui/react";
+import { Box, Center, HStack, Icon, Text } from "@chakra-ui/react";
 import { FaYoutube } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 
 const NavBar = () => {
   return (
-    <HStack justifyContent="space-between" paddingX={8} paddingY={5}>
+    <HStack justifyContent="space-between" paddingX="30px" paddingY={3}>
       <Text fontSize="2xl" marginY="8px">
         SIMON LEE
       </Text>
@@ -19,9 +19,9 @@ const NavBar = () => {
           ABOUT
         </Text>
         <Box paddingRight="10px">
-          <Icon as={FaYoutube} boxSize="20px" color="red.500" />
+          <Icon as={FaTiktok} boxSize="15px" />
         </Box>
-        <Icon as={FaTiktok} boxSize="15px" />
+        <Icon as={FaYoutube} boxSize="20px" color="red.500" />
       </HStack>
     </HStack>
   );

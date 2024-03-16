@@ -13,17 +13,26 @@ import courses from "../data/courses";
 export const Body = () => {
   return (
     <>
-      <Box paddingX={8} paddingY={5} maxW="500px">
-        <Heading fontSize="sm" paddingBottom={5}>
-          HI, WELCOM TO MY HOMEPAGE.
-        </Heading>
-        <Text fontSize="xl" as="i">
-          I'm Simon, a web developer. And I'm passionate about languages,
-          whatever human nature languages or programming languages. One day I
-          suppose we can really understand animal languages and even communicate
-          with them using AI soon.
-        </Text>
-      </Box>
+      <Center>
+        <SimpleGrid
+          columns={{ sm: 1, md: 2 }}
+          paddingX="20px"
+          spacing={2}
+          maxW="1200px"
+        >
+          <Box maxW="580px">
+            <Heading fontSize="sm" paddingBottom={5}>
+              HI, WELCOM TO MY HOMEPAGE.
+            </Heading>
+            <Text fontSize="xl" as="i">
+              I'm Simon, a web developer. And I'm passionate about languages,
+              whatever human nature languages or programming languages. One day
+              I suppose we can really understand animal languages and even
+              communicate with them using AI soon.
+            </Text>
+          </Box>
+        </SimpleGrid>
+      </Center>
       <Center>
         <Box paddingX="30px" paddingY={5} maxW="1200px">
           <Image src={python_log} paddingY="5px" />
