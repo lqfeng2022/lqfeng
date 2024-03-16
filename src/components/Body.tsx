@@ -13,7 +13,7 @@ import courses from "../data/courses";
 export const Body = () => {
   return (
     <>
-      <Box paddingX={10} paddingY={5} maxW="500px">
+      <Box paddingX={8} paddingY={5} maxW="500px">
         <Heading fontSize="sm" paddingBottom={5}>
           HI, WELCOM TO MY HOMEPAGE.
         </Heading>
@@ -25,7 +25,7 @@ export const Body = () => {
         </Text>
       </Box>
       <Center>
-        <Box paddingX="60px" paddingY={5} maxW="1200px">
+        <Box paddingX="30px" paddingY={5} maxW="1200px">
           <Image src={python_log} paddingY="5px" />
           <Heading as="u" fontSize="sm" paddingY="10px">
             <a href="#">PYTHON</a>
@@ -38,7 +38,7 @@ export const Body = () => {
       <Center>
         <SimpleGrid
           columns={{ sm: 1, md: 2 }}
-          paddingX="60px"
+          paddingX="30px"
           spacing={2}
           maxW="1200px"
         >
@@ -49,7 +49,7 @@ export const Body = () => {
       <Center>
         <SimpleGrid
           columns={{ sm: 1, md: 2 }}
-          paddingX="60px"
+          paddingX="30px"
           spacing={2}
           maxW="1200px"
         >
@@ -60,7 +60,7 @@ export const Body = () => {
       <Center>
         <SimpleGrid
           columns={{ sm: 1, md: 2 }}
-          paddingX="60px"
+          paddingX="30px"
           spacing={2}
           maxW="1200px"
         >
