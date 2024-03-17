@@ -1,18 +1,18 @@
-import { Box, HStack, Icon, Text } from "@chakra-ui/react";
+import { Box, HStack, Heading, Icon, Text } from "@chakra-ui/react";
 import { FaTiktok, FaYoutube } from "react-icons/fa";
 import { HiLanguage } from "react-icons/hi2";
 
 const NavBar = () => {
   return (
     <HStack justifyContent="space-between" paddingX="20px" paddingY={5}>
-      <Text fontSize="2xl" marginY="8px">
+      <Heading fontSize="2xl" marginY="8px">
         LI QIUFENG
-      </Text>
+      </Heading>
       <HStack>
-        <Text fontSize="sm" marginY="8px">
+        <Text fontSize="md" marginY="8px">
           WORK
         </Text>
-        <Text fontSize="sm" marginY="8px" paddingX="10px">
+        <Text fontSize="md" marginY="8px" paddingX="10px">
           ME
         </Text>
         <Icon as={HiLanguage} boxSize="20px" color="gray.600" />

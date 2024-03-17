@@ -1,4 +1,4 @@
-import { Center, Container, Icon, Text } from "@chakra-ui/react";
+import { Center, Container, Heading, Icon, Text } from "@chakra-ui/react";
 import { IoHeart } from "react-icons/io5";
 
 const Footer = () => {
@@ -7,15 +7,14 @@ const Footer = () => {
       <Center paddingY={10}>
         <Container w="180px" h="50px" bg="gray.600" color="white">
           <Center>
-            <Text
-              as="b"
+            <Heading
               textAlign="center"
               fontSize="sm"
               paddingX="15px"
-              paddingY={1}
+              paddingY={2}
             >
               Let's Talk About Your Project
-            </Text>
+            </Heading>
           </Center>
         </Container>
       </Center>

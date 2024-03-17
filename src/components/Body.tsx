@@ -21,9 +21,9 @@ export const Body = () => {
       >
         <Box maxW="580px">
           <Heading fontSize="sm" paddingBottom={5}>
-            HI, WELCOM TO MY HOMEPAGE.
+            <b>HI, WELCOM TO MY HOMEPAGE.</b>
           </Heading>
-          <Text fontSize="xl" as="i">
+          <Text fontSize="2xl" as="i">
             I'm Simon, a full-stack developer. I'm passionate about languages,
             whatever Nature languages or Programming languages. One day I
             suppose we can even understand animal languages and communicate with
