@@ -34,8 +34,8 @@ const Footer = () => {
         <Icon as={FaTiktok} boxSize="15px" color="gray.600" />
       </Center>
       <Center paddingBottom={5}>
-        <Heading paddingRight={1} fontSize="sm" className="fw-lighter">
-          Here you can choose other languges: 日本語 / 中文
+        <Heading as="i" paddingRight={1} fontSize="sm" className="fw-lighter">
+          Here you can choose other languges: 日本語 / 中文 / Le français
         </Heading>
       </Center>
       <Center paddingBottom={5}>
