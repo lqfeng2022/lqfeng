@@ -11,14 +11,14 @@ export default [
     title: "ALGORITHM",
     subTitle: "Ace your coding job interview in a clean way",
     image: "src/assets/algorithm.jpeg",
-    h: "50px",
+    h: "60px",
   },
   {
     id: 2,
     title: "PYTORCH",
     subTitle: "Learn building and deploying deep learning models",
     image: "src/assets/pytorch.jpeg",
-    h: "60px",
+    h: "80px",
   },
   {
     id: 3,
@@ -39,6 +39,6 @@ export default [
     title: "JAPANESE",
     subTitle: "Learn japanese conversation",
     image: "src/assets/japanese.jpeg",
-    h: "100px",
+    h: "80px",
   },
 ];

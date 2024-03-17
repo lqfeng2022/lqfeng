@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <Center paddingY={10}>
-        <Container w="180px" h="50px" bg="gray.700" color="white">
+        <Container w="180px" h="50px" bg="gray.600" color="white">
           <Center>
             <Text
               as="b"

@@ -13,26 +13,25 @@ import courses from "../data/courses";
 export const Body = () => {
   return (
     <>
-      <Center>
-        <SimpleGrid
-          columns={{ sm: 1, md: 2 }}
-          paddingX="20px"
-          spacing={2}
-          maxW="1200px"
-        >
-          <Box maxW="580px">
-            <Heading fontSize="sm" paddingBottom={5}>
-              HI, WELCOM TO MY HOMEPAGE.
-            </Heading>
-            <Text fontSize="xl" as="i">
-              I'm Simon, a web developer. And I'm passionate about languages,
-              whatever human nature languages or programming languages. One day
-              I suppose we can really understand animal languages and even
-              communicate with them using AI soon.
-            </Text>
-          </Box>
-        </SimpleGrid>
-      </Center>
+      <SimpleGrid
+        columns={{ sm: 1, md: 2 }}
+        paddingX="30px"
+        paddingTop="30px"
+        spacing={2}
+        maxW="1200px"
+      >
+        <Box maxW="580px">
+          <Heading fontSize="sm" paddingBottom={5}>
+            HI, WELCOM TO MY HOMEPAGE.
+          </Heading>
+          <Text fontSize="xl" as="i">
+            I'm Simon, a web developer. And I'm passionate about languages,
+            whatever Nature languages or Programming languages. One day I
+            suppose we can even understand animal languages and communicate with
+            them using AI soon..
+          </Text>
+        </Box>
+      </SimpleGrid>
       <Center>
         <Box paddingX="30px" paddingY={5} maxW="1200px">
           <Image src={python_log} paddingY="5px" />
@@ -51,30 +50,9 @@ export const Body = () => {
           spacing={2}
           maxW="1200px"
         >
-          <CourseCard course={courses[0]} />
-          <CourseCard course={courses[1]} />
-        </SimpleGrid>
-      </Center>
-      <Center>
-        <SimpleGrid
-          columns={{ sm: 1, md: 2 }}
-          paddingX="30px"
-          spacing={2}
-          maxW="1200px"
-        >
-          <CourseCard course={courses[2]} />
-          <CourseCard course={courses[3]} />
-        </SimpleGrid>
-      </Center>
-      <Center>
-        <SimpleGrid
-          columns={{ sm: 1, md: 2 }}
-          paddingX="30px"
-          spacing={2}
-          maxW="1200px"
-        >
-          <CourseCard course={courses[4]} />
-          <CourseCard course={courses[5]} />
+          {courses.map((c) => (
+            <CourseCard key={c.id} course={c} />
+          ))}
         </SimpleGrid>
       </Center>
     </>

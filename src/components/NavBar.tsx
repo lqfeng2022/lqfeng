@@ -3,9 +3,9 @@ import { FaTiktok, FaYoutube } from "react-icons/fa";
 
 const NavBar = () => {
   return (
-    <HStack justifyContent="space-between" paddingX="30px" paddingY={3}>
+    <HStack justifyContent="space-between" paddingX="30px" paddingY={5}>
       <Text fontSize="2xl" marginY="8px">
-        SIMON LEE
+        LI QIUFENG
       </Text>
       <HStack>
         <Text fontSize="sm" marginY="8px">
@@ -18,9 +18,9 @@ const NavBar = () => {
           ABOUT
         </Text>
         <Box paddingRight="10px">
-          <Icon as={FaTiktok} boxSize="15px" />
+          <Icon as={FaTiktok} boxSize="15px" color="gray.600" />
         </Box>
-        <Icon as={FaYoutube} boxSize="20px" color="red.500" />
+        <Icon as={FaYoutube} boxSize="20px" color="gray.600" />
       </HStack>
     </HStack>
   );
