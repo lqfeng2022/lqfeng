@@ -3,7 +3,7 @@ import { HiLanguage } from "react-icons/hi2";
 
 const NavBar = () => {
   return (
-    <HStack justifyContent="space-between" paddingX="20px" paddingY={5}>
+    <HStack justifyContent="space-between" padding="10px">
       <Heading fontSize="2xl" marginY="8px">
         LI QIUFENG
       </Heading>

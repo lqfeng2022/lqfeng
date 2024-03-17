@@ -15,7 +15,8 @@ export const Body = () => {
     <>
       <SimpleGrid
         columns={{ sm: 1, md: 2 }}
-        padding="20px"
+        paddingX="10px"
+        paddingY="25px"
         spacing={2}
         maxW="1200px"
       >
