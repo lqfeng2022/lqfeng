@@ -18,7 +18,7 @@ export default [
     title: "PYTORCH",
     subTitle: "Learn building and deploying deep learning models",
     image: "src/assets/pytorch.jpeg",
-    h: "80px",
+    h: "100px",
   },
   {
     id: 3,

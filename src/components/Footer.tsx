@@ -21,7 +21,7 @@ const Footer = () => {
       </Center>
       <Center paddingBottom={5}>
         <Text paddingRight={1} as="i" fontSize="sm">
-          Design and Code by <b>SIMON Lee</b> with Love &
+          Design and Code by LI QIUFENG with Love &
         </Text>
         <Icon as={IoHeart} color="red.400" />
       </Center>
