@@ -11,7 +11,7 @@ interface Course {
 const CourseCard = ({ course }: { course: Course }) => {
   return (
     <Center>
-      <Box maxW="580px">
+      <Box maxW="620px">
         <Show above="md">
           <Box h={course.h} />
         </Show>

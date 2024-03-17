@@ -3,7 +3,7 @@ import { FaTiktok, FaYoutube } from "react-icons/fa";
 
 const NavBar = () => {
   return (
-    <HStack justifyContent="space-between" paddingX="30px" paddingY={5}>
+    <HStack justifyContent="space-between" paddingX="20px" paddingY={5}>
       <Text fontSize="2xl" marginY="8px">
         LI QIUFENG
       </Text>

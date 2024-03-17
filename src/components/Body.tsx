@@ -15,8 +15,7 @@ export const Body = () => {
     <>
       <SimpleGrid
         columns={{ sm: 1, md: 2 }}
-        paddingX="30px"
-        paddingTop="30px"
+        padding="20px"
         spacing={2}
         maxW="1200px"
       >
@@ -25,15 +24,15 @@ export const Body = () => {
             HI, WELCOM TO MY HOMEPAGE.
           </Heading>
           <Text fontSize="xl" as="i">
-            I'm Simon, a web developer. And I'm passionate about languages,
-            whatever Nature languages or Programming languages. One day I
-            suppose we can even understand animal languages and communicate with
-            them using AI soon..
+            I'm Simon, a web developer. I'm passionate about languages, whatever
+            Nature languages or Programming languages. One day I suppose we can
+            even understand animal languages and communicate with them using AI
+            soon..
           </Text>
         </Box>
       </SimpleGrid>
       <Center>
-        <Box paddingX="30px" paddingY={5} maxW="1200px">
+        <Box paddingX="40px" paddingY={5} maxW="1200px">
           <Image src={python_log} paddingY="5px" />
           <Heading as="u" fontSize="sm" paddingY="10px">
             <a href="#">PYTHON</a>
@@ -46,7 +45,7 @@ export const Body = () => {
       <Center>
         <SimpleGrid
           columns={{ sm: 1, md: 2 }}
-          paddingX="30px"
+          paddingX="40px"
           spacing={2}
           maxW="1200px"
         >
