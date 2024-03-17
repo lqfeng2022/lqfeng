@@ -20,8 +20,12 @@ export const Body = () => {
         maxW="1200px"
       >
         <Box maxW="580px">
-          <Heading fontSize="sm" paddingBottom={5}>
-            <b>HI, WELCOM TO MY HOMEPAGE.</b>
+          <Heading
+            fontSize="sm"
+            paddingBottom={5}
+            style={{ letterSpacing: "1px" }}
+          >
+            HI, WELCOM TO MY HOMEPAGE.
           </Heading>
           <Text fontSize="2xl" as="i">
             I'm Simon, a full-stack developer. I'm passionate about languages,

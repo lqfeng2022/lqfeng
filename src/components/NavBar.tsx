@@ -1,5 +1,4 @@
-import { Box, HStack, Heading, Icon } from "@chakra-ui/react";
-import { FaTiktok, FaYoutube } from "react-icons/fa";
+import { HStack, Heading, Icon } from "@chakra-ui/react";
 import { HiLanguage } from "react-icons/hi2";
 
 const NavBar = () => {
@@ -9,22 +8,28 @@ const NavBar = () => {
         LI QIUFENG
       </Heading>
       <HStack>
-        <Heading fontSize="sm" marginY="8px" className="fw-lighter">
-          W O R K
+        <a className="border-bottom border-dark">
+          <Heading fontSize="xs" marginY="5px" className="fw-lighter">
+            W O R K
+          </Heading>
+        </a>
+        <Heading
+          fontSize="xs"
+          marginY="5px"
+          paddingLeft="18px"
+          className="fw-lighter"
+        >
+          P R O D U C T
         </Heading>
         <Heading
-          fontSize="sm"
-          marginY="8px"
-          paddingX="10px"
+          fontSize="xs"
+          marginY="5px"
+          paddingX="18px"
           className="fw-lighter"
         >
           M E
         </Heading>
         <Icon as={HiLanguage} boxSize="20px" color="gray.600" />
-        <Box padding="10px">
-          <Icon as={FaYoutube} boxSize="20px" color="gray.600" />
-        </Box>
-        <Icon as={FaTiktok} boxSize="15px" color="gray.600" />
       </HStack>
     </HStack>
   );
