@@ -11,7 +11,7 @@ export default [
     title: "ALGORITHM",
     subTitle: "Ace your coding job interview in a clean way",
     image: "src/assets/algorithm.jpeg",
-    h: "60px",
+    h: "100px",
   },
   {
     id: 2,
@@ -39,6 +39,6 @@ export default [
     title: "JAPANESE",
     subTitle: "Learn japanese conversation",
     image: "src/assets/japanese.jpeg",
-    h: "80px",
+    h: "100px",
   },
 ];

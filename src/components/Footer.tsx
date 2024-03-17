@@ -4,14 +4,14 @@ import { IoHeart } from "react-icons/io5";
 const Footer = () => {
   return (
     <>
-      <Center paddingY={10}>
+      <Center paddingY="50px">
         <Container w="180px" h="50px" bg="gray.600" color="white">
           <Center>
             <Heading
               textAlign="center"
               fontSize="sm"
               paddingX="15px"
-              paddingY={2}
+              marginY="6px"
             >
               Let's Talk About Your Project
             </Heading>

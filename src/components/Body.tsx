@@ -25,21 +25,25 @@ export const Body = () => {
           </Heading>
           <Text fontSize="2xl" as="i">
             I'm Simon, a full-stack developer. I'm passionate about languages,
-            whatever Nature languages or Programming languages. One day I
-            suppose we can even understand animal languages and communicate with
-            them using AI soon..
+            whatever Nature languages or Programming languages.
           </Text>
         </Box>
       </SimpleGrid>
       <Center>
         <Box paddingX="30px" paddingY={5} maxW="1200px">
           <Image src={python_log} paddingY="5px" />
-          <Heading as="u" fontSize="sm" paddingY="10px">
-            <a href="#">PYTHON</a>
+          <Heading fontSize="sm" marginBottom="2px">
+            <a
+              href="#"
+              className="border-bottom border-dark"
+              style={{ letterSpacing: "1px" }}
+            >
+              PYTHON
+            </a>
           </Heading>
-          <Text fontSize="sm" className="fw-lighter fst-italic">
+          <Heading fontSize="sm" className="fw-lighter fst-italic">
             Everything you need to program in Python is here
-          </Text>
+          </Heading>
         </Box>
       </Center>
       <Center>
