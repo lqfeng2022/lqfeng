@@ -26,15 +26,15 @@ function HomePage() {
       </Box>
       <Center>
         <Box paddingX="30px" paddingY={5} maxW="1200px">
-          <Image src={python_log} paddingY="5px" />
+          <Image src={python_log} paddingBottom="10px" />
           <Heading fontSize="sm" marginBottom="2px">
             <a href="#" className="border-bottom border-dark" style={oneSpace}>
               PYTHON
             </a>
           </Heading>
-          <Heading fontSize="sm" className="fw-lighter fst-italic">
+          <Text fontSize="sm" className="fw-lighter fst-italic">
             Everything you need to program in Python is here
-          </Heading>
+          </Text>
         </Box>
       </Center>
       <Center>
