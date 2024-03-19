@@ -15,13 +15,15 @@ function HomePage() {
 
   return (
     <>
-      <Box paddingX="30px" paddingY="25px" maxW="580px">
+      <Box paddingX="20px" paddingY="25px" maxW="550px">
         <Heading fontSize="sm" paddingBottom={5} style={oneSpace}>
           HI, WELCOM TO MY HOMEPAGE.
         </Heading>
-        <Text fontSize="2xl" as="i">
-          I'm Simon, a full-stack developer. I'm passionate about languages,
-          whatever Nature languages or Programming languages.
+        <Text fontSize="2xl">
+          I'm Simon, a full-stack developer. I'm passionate about nature
+          languages, mathematic and AI. Recently I'm building a serial of
+          projects(courses/apps) with programming tools to help people
+          understand what is AI and how to get it quickly.
         </Text>
       </Box>
       <Center>

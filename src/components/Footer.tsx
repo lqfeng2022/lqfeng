@@ -13,7 +13,7 @@ import { FaTiktok, FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <Center pt="100px">
+      <Center pt="100px" pb="10px">
         <Container w="180px" h="50px" bg="gray.600" color="white">
           <Center>
             <Heading
@@ -27,14 +27,14 @@ const Footer = () => {
           </Center>
         </Container>
       </Center>
-      <Center py="50px" pb="20px">
+      <Center pb="20px">
         <Heading
           marginY={1}
           paddingRight={1}
           fontSize="sm"
           className="fw-lighter"
         >
-          Or you can watch my channel:
+          You can also watch my channel in:
         </Heading>
         <Box paddingX={4}>
           <Icon as={FaYoutube} boxSize="20px" color="red.500" />
