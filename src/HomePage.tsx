@@ -15,7 +15,7 @@ function HomePage() {
 
   return (
     <>
-      <Box paddingX="10px" paddingY="25px" maxW="580px">
+      <Box paddingX="30px" paddingY="25px" maxW="580px">
         <Heading fontSize="sm" paddingBottom={5} style={oneSpace}>
           HI, WELCOM TO MY HOMEPAGE.
         </Heading>
@@ -25,7 +25,7 @@ function HomePage() {
         </Text>
       </Box>
       <Center>
-        <Box paddingX="30px" paddingY={5} maxW="1200px">
+        <Box paddingX="60px" paddingY={5} maxW="1200px">
           <Image src={python_log} paddingBottom="10px" />
           <Heading fontSize="sm" marginBottom="2px">
             <a href="#" className="border-bottom border-dark" style={oneSpace}>
@@ -40,7 +40,7 @@ function HomePage() {
       <Center>
         <SimpleGrid
           columns={{ sm: 1, md: 2 }}
-          paddingX="30px"
+          paddingX="60px"
           spacing="10px"
           maxW="1200px"
         >
