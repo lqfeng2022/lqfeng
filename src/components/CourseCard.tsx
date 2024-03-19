@@ -1,4 +1,4 @@
-import { Box, Center, Heading, Image, Show, Text } from "@chakra-ui/react";
+import { Box, Center, Heading, Image, Show } from "@chakra-ui/react";
 
 interface Course {
   id: number;
@@ -26,9 +26,9 @@ const CourseCard = ({ course }: { course: Course }) => {
               {course.title}
             </a>
           </Heading>
-          <Text fontSize="sm" className="fw-lighter fst-italic">
+          <Heading fontSize="sm" className="fw-lighter fst-italic">
             {course.subTitle}
-          </Text>
+          </Heading>
         </Box>
       </Box>
     </Center>

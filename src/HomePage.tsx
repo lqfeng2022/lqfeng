@@ -25,22 +25,22 @@ function HomePage() {
         </Text>
       </Box>
       <Center>
-        <Box paddingX="60px" paddingY={5} maxW="1200px">
+        <Box paddingX="30px" paddingY={5} maxW="1200px">
           <Image src={python_log} paddingBottom="10px" />
           <Heading fontSize="sm" marginBottom="2px">
             <a href="#" className="border-bottom border-dark" style={oneSpace}>
               PYTHON
             </a>
           </Heading>
-          <Text fontSize="sm" className="fw-lighter fst-italic">
-            Everything you need to program in Python is here
-          </Text>
+          <Heading fontSize="sm" className="fw-lighter fst-italic">
+            Everything you need to program in Python is here.
+          </Heading>
         </Box>
       </Center>
       <Center>
         <SimpleGrid
           columns={{ sm: 1, md: 2 }}
-          paddingX="60px"
+          paddingX="30px"
           spacing="10px"
           maxW="1200px"
         >

@@ -26,7 +26,7 @@ const NavBar = () => {
                 l.pathname === `${link.url}` ? "border-bottom border-dark" : ""
               }
             >
-              <Heading fontSize="xs" my="3px" className="fw-lighter">
+              <Heading fontSize="sm" my="3px" className="fw-lighter">
                 {link.name}
               </Heading>
             </Link>
