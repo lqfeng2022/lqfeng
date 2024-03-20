@@ -1,12 +1,21 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Center } from "@chakra-ui/react";
+import Debackground from "../components/Debackground";
+import GameHub from "../components/GameHub";
+import Project from "../components/Project";
 
 const Product = () => {
   return (
-    <Box paddingX="30px" paddingY="25px">
-      <Text fontSize="xl" paddingBottom={5} style={{ letterSpacing: "1px" }}>
-        Products
-      </Text>
-    </Box>
+    <>
+      <Center px="30px" py="25px">
+        <Project />
+      </Center>
+      <Center px="30px" py="25px">
+        <GameHub />
+      </Center>
+      <Center px="30px" pt="25px">
+        <Debackground />
+      </Center>
+    </>
   );
 };
 
