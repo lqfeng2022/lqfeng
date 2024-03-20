@@ -22,8 +22,8 @@ const EducationCareer = () => {
           2. What's my career?
         </Text>
         <Heading fontSize="md" className="fw-lighter lh-lg">
-          I used to be a staff in an export trading company, nothing special.
-          After that I choosed to be an engineer in a Japanese company.
+          I used to be an engineer in a Japanese company. And the first job, I
+          worked as a salesman in a Chinese company, nothing special.
         </Heading>
       </Box>
     </SimpleGrid>
