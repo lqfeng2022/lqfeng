@@ -7,7 +7,7 @@ const EducationCareer = () => {
       <Box maxW="500px">
         <Image src={book} />
       </Box>
-      <Box maxW="500">
+      <Box maxW="500px">
         <Text fontSize="xl" pb={3} className="fst-italic">
           1. What's my eduction background?
         </Text>

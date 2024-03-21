@@ -10,7 +10,7 @@ export default [
     id: 1,
     title: "ALGORITHM",
     subTitle: "Ace your coding job interview in a clean way.",
-    image: "src/assets/algorithm.jpeg",
+    image: "src/assets/algorithm.jpg",
     h: "100px",
   },
   {

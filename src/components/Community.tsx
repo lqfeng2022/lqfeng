@@ -7,9 +7,9 @@ import {
   SimpleGrid,
   Text,
 } from "@chakra-ui/react";
-import q2room from "../assets/photoroom.jpeg";
+import next from "../assets/next.jpeg";
 
-const Debackground = () => {
+const Community = () => {
   return (
     <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
       <Flex>
@@ -18,19 +18,19 @@ const Debackground = () => {
         </Show>
         <Box maxW="500px">
           <Text fontSize="2xl" className="fst-italic">
-            An AI background remover app
+            A Community web with Next.js
           </Text>
           <Heading fontSize="md" className="fw-lighter lh-lg">
-            Background removing is pretty useful in photo editor, here I just
-            build a small tool for generate the ID photo.
+            Next.js is a React Framework for building full-stack web application
+            with server-side rendering and static website generation.
           </Heading>
         </Box>
       </Flex>
-      <Box maxW="500px" className="border border-dark">
-        <Image src={q2room} />
+      <Box maxW="500px">
+        <Image src={next} />
       </Box>
     </SimpleGrid>
   );
 };
 
-export default Debackground;
+export default Community;

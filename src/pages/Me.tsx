@@ -6,7 +6,7 @@ import SelfIntroduce from "../components/SelfIntroduce";
 const Me = () => {
   return (
     <>
-      <Center px="30px" pt="25px">
+      <Center px="30px" pt="35px">
         <SelfIntroduce />
       </Center>
       <Center px="30px" py="25px">

@@ -1,8 +1,8 @@
-import { Box, Heading, Image, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import { Box, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import ai from "../assets/ai.jpeg";
 
 const Developer = () => (
-  <Stack>
+  <Stack maxW="1200px">
     <Box maxW="500px">
       <Text fontSize="xl" pb={3} className="fst-italic">
         0. What am I doing now?
@@ -14,8 +14,7 @@ const Developer = () => (
         learned, and I can show myself to everyone.
       </Heading>
     </Box>
-    <Box />
-    <Box maxW="1200px">
+    <Box maxW="1040px">
       <Image src={ai} />
     </Box>
   </Stack>

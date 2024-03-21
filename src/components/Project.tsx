@@ -14,16 +14,23 @@ const Project = () => {
     <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
       <Flex>
         <Show above="md">
-          <Box w="100px" />
+          <Box w={1} px="20px" />
         </Show>
         <Box maxW="500px">
-          <Text fontSize="4xl" className="fst-italic">
-            Wy do you need practice?
-          </Text>
+          <Text fontSize="4xl">Why do you need make your own project?</Text>
           <Heading fontSize="md" className="fw-lighter lh-lg">
-            As practice, I build this web for learning React18. React is a
-            popular front-end JavaScript library for building user interfaces
-            based on components.
+            A real project is kind of visual way to apply what you learned. And
+            it is a good approach to show your ability that what you can do and
+            do it well. A nice project can leave peope a greate first impression
+            which make people stick around you. It's the key to attracting
+            audience, to making yourself known to the outside world.
+          </Heading>
+          <Heading py={3} fontSize="md" className="fw-lighter lh-lg">
+            Your friends and customers need to know about you and I'm here to
+            help you with a visualization way.
+          </Heading>
+          <Heading pt="50px" fontSize="sm">
+            SEE WHAT I BUILD:
           </Heading>
         </Box>
       </Flex>
