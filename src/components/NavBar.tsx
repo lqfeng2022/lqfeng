@@ -5,8 +5,9 @@ import { Link, useLocation } from "react-router-dom";
 const NavBar = () => {
   const l = useLocation();
   const links = [
-    { id: 0, name: "W O R K", url: "/product" },
-    { id: 1, name: "M E", url: "/about-me" },
+    { id: 0, name: "W O R K", url: "/" },
+    { id: 1, name: "P R O D U C T", url: "/projects" },
+    { id: 2, name: "M E", url: "/about-me" },
   ];
 
   return (
@@ -25,7 +26,7 @@ const NavBar = () => {
               l.pathname === `${link.url}` ? "border-bottom border-dark" : ""
             }
           >
-            <Heading fontSize="sm" my="3px" className="fw-lighter">
+            <Heading fontSize="xs" my="3px" className="fw-lighter">
               {link.name}
             </Heading>
           </Link>

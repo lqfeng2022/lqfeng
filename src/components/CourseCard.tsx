@@ -16,8 +16,10 @@ const CourseCard = ({ course }: { course: Course }) => {
           <Box h={course.h} />
         </Show>
         <Box>
-          <Image src={course.image} paddingBottom="10px" />
-          <Heading fontSize="sm" marginBottom="3px">
+          <Box className="border border-dark">
+            <Image src={course.image} />
+          </Box>
+          <Heading fontSize="sm" mb="6px" pt="8px">
             <a
               href="#"
               className="border-bottom border-dark"

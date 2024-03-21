@@ -4,10 +4,10 @@ import book from "../assets/book.jpg";
 const EducationCareer = () => {
   return (
     <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="40px">
-      <Box maxW="500px">
+      <Box maxW="600px">
         <Image src={book} />
       </Box>
-      <Box maxW="500px">
+      <Box maxW="600px">
         <Text fontSize="xl" pb={3} className="fst-italic">
           1. What's my eduction background?
         </Text>

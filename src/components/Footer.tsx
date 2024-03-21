@@ -13,7 +13,7 @@ import { FaTiktok, FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <Center pt="100px" pb="10px">
+      <Center pt="80px" pb="10px">
         <Container w="180px" h="50px" bg="gray.600" color="white">
           <Center>
             <Heading

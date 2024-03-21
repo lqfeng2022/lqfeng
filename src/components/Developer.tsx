@@ -3,7 +3,7 @@ import ai from "../assets/ai.jpeg";
 
 const Developer = () => (
   <Stack maxW="1200px">
-    <Box maxW="500px">
+    <Box maxW="600px">
       <Text fontSize="xl" pb={3} className="fst-italic">
         0. What am I doing now?
       </Text>
@@ -14,7 +14,7 @@ const Developer = () => (
         learned, and I can show myself to everyone.
       </Heading>
     </Box>
-    <Box maxW="1040px">
+    <Box maxW="1200px">
       <Image src={ai} />
     </Box>
   </Stack>
