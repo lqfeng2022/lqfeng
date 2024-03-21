@@ -1,8 +1,8 @@
 import { Center } from "@chakra-ui/react";
-import Debackground from "../components/Debackground";
-import GameHub from "../components/GameHub";
-import Project from "../components/Project";
-import Community from "../components/Community";
+import Debackground from "../components/projects/Debackground";
+import GameHub from "../components/projects/GameHub";
+import Project from "../components/projects/Project";
+import Community from "../components/projects/Community";
 
 const Product = () => {
   return (

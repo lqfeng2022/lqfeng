@@ -4,7 +4,8 @@ import Me from "./pages/Me";
 import ErrorPage from "./pages/ErrorPage";
 import Product from "./pages/Product";
 import HomePage from "./HomePage";
-import CoursePython from "./pages/CoursePython";
+import Python from "./components/courses/Python";
+import GameHubDetail from "./components/projects/GameHubDetail";
 
 const router = createBrowserRouter([
   {
@@ -13,8 +14,9 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <HomePage /> },
-      { path: "courses/python", element: <CoursePython /> },
+      { path: "courses/python", element: <Python /> },
       { path: "projects", element: <Product /> },
+      { path: "projects/gamehub", element: <GameHubDetail /> },
       { path: "about-me", element: <Me /> },
     ],
   },

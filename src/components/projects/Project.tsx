@@ -7,7 +7,7 @@ import {
   SimpleGrid,
   Text,
 } from "@chakra-ui/react";
-import project from "../assets/project.jpeg";
+import project from "../../assets/project.jpeg";
 
 const Project = () => {
   return (
