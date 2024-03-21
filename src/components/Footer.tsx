@@ -37,7 +37,7 @@ const Footer = () => {
           You can also watch my channel in:
         </Heading>
         <Box paddingX={4}>
-          <Icon as={FaYoutube} boxSize="20px" color="red.500" />
+          <Icon as={FaYoutube} boxSize="20px" color="gray.600" />
         </Box>
         <Icon as={FaTiktok} boxSize="15px" color="gray.600" />
       </Center>

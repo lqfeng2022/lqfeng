@@ -7,16 +7,16 @@ import Community from "../components/Community";
 const Product = () => {
   return (
     <>
-      <Center px="30px" pt="50px" pb="25px">
+      <Center p="30px" pt="50px">
         <Project />
       </Center>
-      <Center px="30px" py="30px">
+      <Center p="30px">
         <Community />
       </Center>
-      <Center px="30px" py="30px">
+      <Center p="30px">
         <GameHub />
       </Center>
-      <Center px="30px" pt="30px">
+      <Center p="30px">
         <Debackground />
       </Center>
     </>

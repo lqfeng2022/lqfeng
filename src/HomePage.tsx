@@ -9,6 +9,7 @@ import {
 import python_log from "./assets/python_log.jpg";
 import CourseCard from "./components/CourseCard";
 import courses from "./data/courses";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   const oneSpace = { letterSpacing: "1px" };
@@ -30,9 +31,9 @@ function HomePage() {
         <Box px="30px" py={5} maxW="1200px">
           <Image src={python_log} pb="10px" />
           <Heading fontSize="sm" mb="2px">
-            <a href="#" className="border-bottom border-dark" style={oneSpace}>
+            <Link to="/courses/python" className="border-bottom border-dark" style={oneSpace}>
               PYTHON
-            </a>
+            </Link>
           </Heading>
           <Heading fontSize="sm" className="fw-lighter fst-italic">
             Everything you need to program in Python is here.
