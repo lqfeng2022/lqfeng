@@ -6,8 +6,9 @@ const NavBar = () => {
   const l = useLocation();
   const links = [
     { id: 0, name: "W O R K", url: "/" },
-    { id: 1, name: "P R O D U C T", url: "/projects" },
-    { id: 2, name: "M E", url: "/about-me" },
+    { id: 1, name: "M E", url: "/about-me" },
+    { id: 2, name: "P R O D U C T", url: "/projects" },
+    { id: 3, name: "C O U R S E", url: "/courses" },
   ];
 
   return (
