@@ -31,7 +31,11 @@ function HomePage() {
         <Box px="30px" py={5} maxW="1200px">
           <Image src={python_log} pb="10px" />
           <Heading fontSize="sm" mb="2px">
-            <Link to="/courses/python" className="border-bottom border-dark" style={oneSpace}>
+            <Link
+              to="/courses/python"
+              className="border-bottom border-dark"
+              style={oneSpace}
+            >
               PYTHON
             </Link>
           </Heading>

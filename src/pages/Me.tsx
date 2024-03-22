@@ -21,7 +21,7 @@ const Me = () => {
     <>
       {/* 1)Introduce myself */}
       <Center p="30px">
-        <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="40px">
+        <SimpleGrid columns={{ sm: 1, md: 2 }} maxW="1200px" spacing="40px">
           <Box maxW="600px">
             <Image src={simon} />
             <Show above="md">
