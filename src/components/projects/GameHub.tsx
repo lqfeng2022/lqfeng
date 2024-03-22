@@ -8,70 +8,67 @@ import {
   SimpleGrid,
   Text,
   UnorderedList,
+  Link,
 } from "@chakra-ui/react";
 import gameHub from "../../assets/rawg.jpeg";
-import { Link } from "react-router-dom";
 
 const GameHub = () => {
+  const contents = [
+    { title: "Library/Framework: React.js" },
+    { title: "API: RAWG API" },
+    { title: "UI: Chakra UI + Bootstrap" },
+    { title: "Dev tool: Vite.js" },
+  ];
+
+  const links = [
+    {
+      title: "Link:",
+      content: "www.gamehub.com",
+      url: "http://www.gamehub.com",
+    },
+    {
+      title: "Detail:",
+      content: "Lick me",
+      url: "/projects/gamehub",
+    },
+  ];
+
   return (
     <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
-      <Box maxW="500px">
-        <Image src={gameHub} />
-      </Box>
       <Flex>
+        <Show above="md">
+          <Box w={1} px="20px" />
+        </Show>
         <Box maxW="500px">
           <Text fontSize="2xl" className="fst-italic">
             A Video Game Display Web
           </Text>
-          <UnorderedList m="0" pl="15px">
-            <ListItem>
-              <Heading fontSize="md" m="0" className="fw-lighter lh-lg">
-                Library/Framework: React.js
-              </Heading>
-            </ListItem>
-            <ListItem>
-              <Heading fontSize="md" m="0" className="fw-lighter lh-lg">
-                API: RAWG API
-              </Heading>
-            </ListItem>
-            <ListItem>
-              <Heading fontSize="md" m="0" className="fw-lighter lh-lg">
-                UI: Chakra UI + Bootstrap
-              </Heading>
-            </ListItem>
-            <ListItem>
-              <Heading fontSize="md" m="0" className="fw-lighter lh-lg">
-                Dev tool: Vite.js
-              </Heading>
-            </ListItem>
-            <ListItem>
-              <Heading fontSize="md" m="0" className="fw-lighter lh-lg">
-                Link:{" "}
-                <Link
-                  to="http://www.gamehub.com"
-                  className="fst-italic link-offset-2"
-                >
-                  www.gamehub.com
-                </Link>
-              </Heading>
-            </ListItem>
-            <ListItem>
-              <Heading fontSize="md" m="0" className="fw-lighter lh-lg">
-                Detail:{" "}
-                <Link
-                  className="fst-italic link-offset-2"
-                  to="/projects/gamehub"
-                >
-                  Lick me!
-                </Link>
-              </Heading>
-            </ListItem>
+          <UnorderedList m="10px" pl="15px">
+            {contents.map((c) => (
+              <ListItem key={c.title}>
+                <Heading fontSize="sm" m="0" className="fw-lighter lh-lg">
+                  {c.title}
+                </Heading>
+              </ListItem>
+            ))}
+            {links.map((l) => (
+              <ListItem>
+                <Heading fontSize="sm" m="0" className="fw-lighter lh-lg">
+                  {l.title}{" "}
+                  <Link href={l.url} color="green.500">
+                    <Text className="fst-italic link-offset-3" as="u">
+                      {l.content}
+                    </Text>
+                  </Link>
+                </Heading>
+              </ListItem>
+            ))}
           </UnorderedList>
         </Box>
-        <Show above="md">
-          <Box w={1} px="20px" />
-        </Show>
       </Flex>
+      <Box maxW="500px">
+        <Image src={gameHub} />
+      </Box>
     </SimpleGrid>
   );
 };

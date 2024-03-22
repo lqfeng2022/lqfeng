@@ -12,10 +12,10 @@ import next from "../../assets/next.jpeg";
 const Community = () => {
   return (
     <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
+      <Box maxW="500px">
+        <Image src={next} />
+      </Box>
       <Flex>
-        <Show above="md">
-          <Box w={1} px="20px" />
-        </Show>
         <Box maxW="500px">
           <Text fontSize="2xl" className="fst-italic">
             A Community web with Next.js
@@ -25,10 +25,10 @@ const Community = () => {
             with server-side rendering and static website generation.
           </Heading>
         </Box>
+        <Show above="md">
+          <Box w={1} px="20px" />
+        </Show>
       </Flex>
-      <Box maxW="500px">
-        <Image src={next} />
-      </Box>
     </SimpleGrid>
   );
 };

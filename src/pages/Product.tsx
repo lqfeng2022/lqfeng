@@ -11,10 +11,10 @@ const Product = () => {
         <Project />
       </Center>
       <Center p="30px">
-        <Community />
+        <GameHub />
       </Center>
       <Center p="30px">
-        <GameHub />
+        <Community />
       </Center>
       <Center p="30px">
         <Debackground />
