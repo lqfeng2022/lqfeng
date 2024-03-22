@@ -43,7 +43,7 @@ const GameHub = () => {
           <Text fontSize="2xl" className="fst-italic">
             A Video Game Display Web
           </Text>
-          <UnorderedList m="10px" pl="15px">
+          <UnorderedList m="10px" pl="5px">
             {contents.map((c) => (
               <ListItem key={c.title}>
                 <Heading fontSize="sm" m="0" className="fw-lighter lh-lg">
@@ -52,7 +52,7 @@ const GameHub = () => {
               </ListItem>
             ))}
             {links.map((l) => (
-              <ListItem>
+              <ListItem key={l.title}>
                 <Heading fontSize="sm" m="0" className="fw-lighter lh-lg">
                   {l.title}{" "}
                   <Link href={l.url} color="green.500">
