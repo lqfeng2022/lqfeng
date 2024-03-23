@@ -5,10 +5,10 @@ import { Link, useLocation } from "react-router-dom";
 const NavBar = () => {
   const l = useLocation();
   const links = [
-    { id: 0, name: "W O R K", url: "/" },
-    { id: 1, name: "M E", url: "/about-me" },
-    { id: 2, name: "P R O D U C T", url: "/projects" },
-    { id: 3, name: "C O U R S E", url: "/courses" },
+    { name: "W O R K", url: "/" },
+    { name: "M E", url: "/about-me" },
+    { name: "P R O D U C T", url: "/projects" },
+    { name: "A I", url: "/ai" },
   ];
 
   return (
@@ -21,7 +21,7 @@ const NavBar = () => {
       <HStack spacing="25px">
         {links.map((link) => (
           <Link
-            key={link.id}
+            key={link.name}
             to={link.url}
             className={
               l.pathname === `${link.url}` ? "border-bottom border-dark" : ""
