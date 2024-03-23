@@ -1,12 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
-import Layout from "./pages/Layout";
-import Me from "./pages/Me";
-import ErrorPage from "./pages/ErrorPage";
-import Product from "./pages/Product";
 import HomePage from "./HomePage";
-import Python from "./components/courses/Python";
+import PythonDetail from "./components/courses/PythonDetail";
 import GameHubDetail from "./components/projects/GameHubDetail";
 import Course from "./pages/Course";
+import ErrorPage from "./pages/ErrorPage";
+import Layout from "./pages/Layout";
+import Me from "./pages/Me";
+import Product from "./pages/Product";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
       { path: "projects", element: <Product /> },
       { path: "projects/gamehub", element: <GameHubDetail /> },
       { path: "courses", element: <Course /> },
-      { path: "courses/python", element: <Python /> },
+      { path: "courses/python", element: <PythonDetail /> },
     ],
   },
 ]);

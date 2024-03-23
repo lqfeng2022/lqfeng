@@ -55,7 +55,7 @@ const GameHub = () => {
               <ListItem key={l.title}>
                 <Heading fontSize="sm" m="0" className="fw-lighter lh-lg">
                   {l.title}{" "}
-                  <Link href={l.url} color="green.500">
+                  <Link href={l.url} color="gray.600">
                     <Text className="fst-italic link-offset-3" as="u">
                       {l.content}
                     </Text>

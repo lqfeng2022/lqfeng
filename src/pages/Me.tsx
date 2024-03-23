@@ -106,7 +106,7 @@ const Me = () => {
                   SIMON
                 </Heading>
                 <Heading fontSize="sm" className="fw-lighter">
-                  - CE0 @ 3Viual2Feel
+                  - CE0 @ 5Visual1Feel
                 </Heading>
               </Flex>
             </Box>

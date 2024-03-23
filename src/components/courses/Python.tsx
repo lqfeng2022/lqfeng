@@ -26,7 +26,7 @@ const Python = () => {
         <OrderedList m="10px" pl="10px">
           {contents.map((c) => (
             <ListItem key={c.name}>
-              <Heading fontSize="md" m="0" className="fw-lighter lh-lg">
+              <Heading fontSize="sm" m="0" className="fw-lighter lh-lg">
                 {c.name}
               </Heading>
             </ListItem>
