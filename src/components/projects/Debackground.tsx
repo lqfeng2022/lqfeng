@@ -8,6 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import q2room from "../../assets/photoroom.jpeg";
+import Title from "../Title";
 
 const Debackground = () => {
   return (
@@ -17,9 +18,7 @@ const Debackground = () => {
           <Box w={1} px="20px" />
         </Show>
         <Box maxW="500px">
-          <Text fontSize="2xl" className="fst-italic">
-            An AI background remover app
-          </Text>
+          <Title name="An AI background remover app" />
           <Heading fontSize="md" className="fw-lighter lh-lg">
             Background removing is pretty useful in photo editor, here I just
             build a small tool for generate the ID photo.

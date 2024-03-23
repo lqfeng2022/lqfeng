@@ -4,10 +4,10 @@ import {
   Heading,
   Image,
   Show,
-  SimpleGrid,
-  Text,
+  SimpleGrid
 } from "@chakra-ui/react";
 import next from "../../assets/next.jpeg";
+import Title from "../Title";
 
 const Community = () => {
   return (
@@ -17,9 +17,7 @@ const Community = () => {
       </Box>
       <Flex>
         <Box maxW="500px">
-          <Text fontSize="2xl" className="fst-italic">
-            A Community web with Next.js
-          </Text>
+          <Title name="A Community web with Next.js" />
           <Heading fontSize="md" className="fw-lighter lh-lg">
             Next.js is a React Framework for building full-stack web application
             with server-side rendering and static website generation.

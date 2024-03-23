@@ -1,16 +1,16 @@
 import {
   Box,
   Flex,
-  Heading,
   Image,
   ListItem,
   Show,
   SimpleGrid,
-  Text,
   UnorderedList,
-  Link,
 } from "@chakra-ui/react";
 import gameHub from "../../assets/rawg.jpeg";
+import Content from "../Content";
+import ContentWithLink from "../ContentWithLink";
+import Title from "../Title";
 
 const GameHub = () => {
   const contents = [
@@ -40,27 +40,16 @@ const GameHub = () => {
           <Box w={1} px="20px" />
         </Show>
         <Box maxW="500px">
-          <Text fontSize="2xl" className="fst-italic">
-            A Video Game Display Web
-          </Text>
+          <Title name="A Video Game Display Web" />
           <UnorderedList m="10px" pl="5px">
             {contents.map((c) => (
               <ListItem key={c.title}>
-                <Heading fontSize="sm" m="0" className="fw-lighter lh-lg">
-                  {c.title}
-                </Heading>
+                <Content name={c.title} />
               </ListItem>
             ))}
             {links.map((l) => (
               <ListItem key={l.title}>
-                <Heading fontSize="sm" m="0" className="fw-lighter lh-lg">
-                  {l.title}{" "}
-                  <Link href={l.url} color="gray.600">
-                    <Text className="fst-italic link-offset-3" as="u">
-                      {l.content}
-                    </Text>
-                  </Link>
-                </Heading>
+                <ContentWithLink link={l} />
               </ListItem>
             ))}
           </UnorderedList>

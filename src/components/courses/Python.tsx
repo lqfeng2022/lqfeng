@@ -1,15 +1,15 @@
 import {
   Box,
   Flex,
-  Heading,
   Image,
   ListItem,
   OrderedList,
   Show,
   SimpleGrid,
-  Text,
 } from "@chakra-ui/react";
 import python2 from "../../assets/python2.jpeg";
+import Content from "../Content";
+import Title from "../Title";
 
 const Python = () => {
   const contents = [
@@ -22,13 +22,11 @@ const Python = () => {
   return (
     <SimpleGrid columns={{ sm: 1, md: 2 }} maxW="1200px" spacing="30px">
       <Box maxW="500px">
-        <Text fontSize="2xl">Python</Text>
+        <Title name="Python" />
         <OrderedList m="10px" pl="10px">
           {contents.map((c) => (
             <ListItem key={c.name}>
-              <Heading fontSize="sm" m="0" className="fw-lighter lh-lg">
-                {c.name}
-              </Heading>
+              <Content name={c.name} />
             </ListItem>
           ))}
         </OrderedList>
