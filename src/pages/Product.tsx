@@ -6,6 +6,7 @@ import gameHub from "../assets/rawg.jpeg";
 import ProjectDetails from "../components/ProjectDetails";
 import Project from "../components/projects/Project";
 import projects from "../data/projects";
+import CardContainer from "../components/CardContainer";
 
 const Product = () => {
   const gameDetail = projects[0];
@@ -26,19 +27,19 @@ const Product = () => {
             </Show>
             <ProjectDetails details={gameDetail} />
           </Flex>
-          <Box maxW="500px">
+          <CardContainer>
             <Link to="/projects/gamehub">
               <Image src={gameHub} />
             </Link>
-          </Box>
+          </CardContainer>
         </SimpleGrid>
       </Center>
       {/* 2)community web */}
       <Center p="30px">
         <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
-          <Box maxW="500px">
+          <CardContainer>
             <Image src={next} />
-          </Box>
+          </CardContainer>
           <Flex>
             <ProjectDetails details={communityDetail} />
             <Show above="md">
@@ -56,9 +57,9 @@ const Product = () => {
             </Show>
             <ProjectDetails details={debgDetail} />
           </Flex>
-          <Box maxW="500px" className="border border-dark">
+          <CardContainer>
             <Image src={q2room} />
-          </Box>
+          </CardContainer>
         </SimpleGrid>
       </Center>
     </>
