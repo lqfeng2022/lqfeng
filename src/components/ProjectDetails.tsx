@@ -14,7 +14,7 @@ const ProjectDetails = ({ details }: { details: Detail }) => {
         {details.title}
       </Text>
       <Box bg="gray.100">
-        <UnorderedList m="10px" pl="5px">
+        <UnorderedList m="10px" pl="5px" py={2}>
           {details.content.map((c) => (
             <ListItem key={c}>
               <Heading fontSize="sm" m="0" className="fw-lighter lh-lg">
