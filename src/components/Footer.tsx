@@ -55,7 +55,7 @@ const Footer = () => {
       </Stack>
       <Center padding={5}>
         <Text paddingRight={1} as="i" fontSize="sm">
-          Design and Code by LI QIUFENG with Love &
+          Design and Code by LI QIUFENG with
         </Text>
         <Icon as={IoHeart} color="red.400" />
       </Center>

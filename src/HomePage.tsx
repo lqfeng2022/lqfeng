@@ -1,4 +1,4 @@
-import { Box, Center, Heading, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Center, Heading, Show, SimpleGrid, Text } from "@chakra-ui/react";
 import CourseCard from "./components/CourseCard";
 import Python from "./components/courses/Python";
 import courses from "./data/courses";
@@ -18,6 +18,9 @@ function HomePage() {
           build a serial Deep Learning Models code by code. Let's do it!
         </Text>
       </Box>
+      <Show below="md">
+        <Box h="50px" />
+      </Show>
       <Python />
       <Center>
         <SimpleGrid

@@ -27,17 +27,4 @@ export default [
       url: "http://www.community.com",
     },
   },
-  {
-    title: "A Background Remover App",
-    content: [
-      "Language: TypeScript",
-      "Framework/Library: Next.js",
-      "UI: Chakra UI + Bootstrap",
-    ],
-    links: {
-      name: "Web:",
-      web: "www.q2room.com",
-      url: "http://www.q2room.com",
-    },
-  },
 ];
