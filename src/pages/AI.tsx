@@ -18,11 +18,11 @@ const Course = () => {
           <Show above="md">
             <Box w={1} px="20px" />
           </Show>
-          <Box maxW="500px">
+          <Box maxW="700px">
             <Image src={ai2} />
           </Box>
         </Flex>
-        <Box maxW="500px">
+        <Box maxW="700px">
           <Text fontSize="4xl">
             Do we need to learn coding in 2024 while AI is present?
           </Text>

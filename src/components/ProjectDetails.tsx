@@ -9,7 +9,7 @@ interface Detail {
 
 const ProjectDetails = ({ details }: { details: Detail }) => {
   return (
-    <Box maxW="500px" w="100vw">
+    <Box maxW="700px" w="100vw">
       <Text fontSize="2xl" className="fst-italic">
         {details.title}
       </Text>

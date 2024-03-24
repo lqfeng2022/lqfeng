@@ -1,11 +1,14 @@
 import { Box, Center, Heading, Image, Show } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import CardContainer from "./CardContainer";
 
-interface Course {
-  id: number;
+export interface Course {
   title: string;
   subTitle: string;
   image: string;
-  h: string;
+  h1: string;
+  h2: string;
+  url: string;
 }
 
 const CourseCard = ({ course }: { course: Course }) => {
@@ -13,25 +16,30 @@ const CourseCard = ({ course }: { course: Course }) => {
     <Center>
       <Box maxW="708px">
         <Show above="md">
-          <Box h={course.h} />
+          <Box h={course.h1} />
         </Show>
         <Box>
-          <Box className="border border-dark">
-            <Image src={course.image} />
-          </Box>
-          <Heading fontSize="sm" mb="6px" pt="8px">
-            <a
-              href="#"
+          <CardContainer>
+            <Link to={course.url}>
+              <Image src={course.image} />
+            </Link>
+          </CardContainer>
+          <Heading fontSize="sm" my="6px">
+            <Link
+              to="#"
               className="border-bottom border-dark"
               style={{ letterSpacing: "1px" }}
             >
               {course.title}
-            </a>
+            </Link>
           </Heading>
           <Heading fontSize="sm" className="fw-lighter fst-italic">
             {course.subTitle}
           </Heading>
         </Box>
+        <Show above="md">
+          <Box h={course.h2} />
+        </Show>
       </Box>
     </Center>
   );

@@ -1,58 +1,33 @@
-import {
-  Box,
-  Center,
-  Heading,
-  Image,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
-import python_log from "./assets/python_log.jpg";
+import { Box, Center, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 import CourseCard from "./components/CourseCard";
+import Python from "./components/courses/Python";
 import courses from "./data/courses";
-import { Link } from "react-router-dom";
 
 function HomePage() {
   const oneSpace = { letterSpacing: "1px" };
 
   return (
     <>
-      <Box px="30px" py="25px" maxW="550px">
-        <Heading fontSize="sm" paddingBottom={5} style={oneSpace}>
+      <Box px="10px" py="25px" maxW="550px">
+        <Heading fontSize="sm" pb={5} style={oneSpace}>
           HI, WELCOM TO MY HOMEPAGE.
         </Heading>
         <Text fontSize="2xl">
-          I'm Simon, a full-stack developer. I'm passionate about nature
-          languages, mathematic and AI. Recently I'm building a serial of
-          projects(courses/apps) with programming tools to help people
-          understand what is AI and how to get it quickly.
+          I'm Simon, a full-stack developer. I'm passionate about helping people
+          understand what is AI and how it works in a visual way. So I'm gonna
+          build a serial Deep Learning Models code by code. Let's do it!
         </Text>
       </Box>
-      <Center>
-        <Box px="30px" py={5} maxW="1200px">
-          <Image src={python_log} pb="10px" />
-          <Heading fontSize="sm" mb="2px">
-            <Link
-              to="/courses/python"
-              className="border-bottom border-dark"
-              style={oneSpace}
-            >
-              PYTHON
-            </Link>
-          </Heading>
-          <Heading fontSize="sm" className="fw-lighter fst-italic">
-            Everything you need to program in Python is here.
-          </Heading>
-        </Box>
-      </Center>
+      <Python />
       <Center>
         <SimpleGrid
           columns={{ sm: 1, md: 2 }}
           px="30px"
-          spacing="10px"
+          spacing="20px"
           maxW="1200px"
         >
           {courses.map((c) => (
-            <CourseCard key={c.id} course={c} />
+            <CourseCard key={c.title} course={c} />
           ))}
         </SimpleGrid>
       </Center>

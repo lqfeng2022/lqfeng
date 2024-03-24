@@ -8,7 +8,7 @@ const ErrorPage = () => {
   return (
     <>
       <NavBar />
-      <Box paddingX="10px" paddingY="25px">
+      <Box px="30px" py={5}>
         <Text fontSize="xl" paddingBottom={5} style={{ letterSpacing: "1px" }}>
           Oops
         </Text>

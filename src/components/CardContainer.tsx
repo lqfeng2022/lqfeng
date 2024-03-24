@@ -7,7 +7,7 @@ interface Props {
 const CardContainer = ({ children }: Props) => {
   return (
     <Box
-      maxW="500px"
+      maxW="700px"
       className="border border-dark"
       _hover={{
         transform: "scale(1.03)",

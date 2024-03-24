@@ -6,6 +6,7 @@ import ErrorPage from "./pages/ErrorPage";
 import Layout from "./pages/Layout";
 import Me from "./pages/Me";
 import Product from "./pages/Product";
+import PythonDetail from "./components/courses/PythonDetail";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       { path: "about-me", element: <Me /> },
       { path: "projects", element: <Product /> },
       { path: "projects/gamehub", element: <GameHubDetail /> },
+      { path: "courses/python", element: <PythonDetail /> },
       { path: "ai", element: <AI /> },
     ],
   },

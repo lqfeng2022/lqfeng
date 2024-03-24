@@ -16,7 +16,7 @@ const Project = () => {
         <Show above="md">
           <Box w={1} px="20px" />
         </Show>
-        <Box maxW="500px">
+        <Box maxW="700px">
           <Text fontSize="4xl">Why do you need make your own project?</Text>
           <Heading fontSize="md" className="fw-lighter lh-lg">
             A real project is kind of visual way to apply what you learned. And
@@ -34,7 +34,7 @@ const Project = () => {
           </Heading>
         </Box>
       </Flex>
-      <Box maxW="500px">
+      <Box maxW="700px">
         <Image src={project} />
       </Box>
     </SimpleGrid>

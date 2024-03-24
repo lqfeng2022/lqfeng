@@ -38,7 +38,9 @@ const Product = () => {
       <Center p="30px">
         <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
           <CardContainer>
-            <Image src={next} />
+            <Link to="/projects/community">
+              <Image src={next} />
+            </Link>
           </CardContainer>
           <Flex>
             <ProjectDetails details={communityDetail} />
@@ -58,7 +60,9 @@ const Product = () => {
             <ProjectDetails details={debgDetail} />
           </Flex>
           <CardContainer>
-            <Image src={q2room} />
+            <Link to="/projects/debackground">
+              <Image src={q2room} />
+            </Link>
           </CardContainer>
         </SimpleGrid>
       </Center>
