@@ -15,8 +15,10 @@ import ai from "../assets/ai.jpeg";
 import book from "../assets/book.jpg";
 import simon from "../assets/lqfeng.jpeg";
 import quotation from "../assets/quotation.jpeg";
+import { useTranslation } from "react-i18next";
 
 const Me = () => {
+  const [t] = useTranslation("global");
   return (
     <>
       {/* 1)Introduce myself */}
@@ -32,12 +34,9 @@ const Me = () => {
             <Show above="md">
               <Box h="180px" />
             </Show>
-            <Heading fontSize="sm" className="fw-lighter">
-              HI. I'M SIMON.
-            </Heading>
+            <Heading fontSize="sm">{t("aboutme.introduce.header")}</Heading>
             <Text fontSize="3xl" pt={6}>
-              I'm a developer and trainer with a visual approach for your
-              business need and learning target.
+              {t("aboutme.introduce.body")}
             </Text>
           </Box>
         </SimpleGrid>

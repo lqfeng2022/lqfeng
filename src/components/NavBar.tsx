@@ -1,5 +1,6 @@
 import { HStack, Heading, Icon } from "@chakra-ui/react";
-import { FaTiktok, FaYoutube } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+import { IoLanguageOutline } from "react-icons/io5";
 import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
@@ -9,6 +10,11 @@ const NavBar = () => {
     { name: "M E", url: "/about-me" },
     { name: "P R O D U C T", url: "/projects" },
   ];
+
+  const [t, i18n] = useTranslation("global");
+  const handleLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
+  };
 
   return (
     <HStack justifyContent="space-between" p="20px">
@@ -43,8 +49,12 @@ const NavBar = () => {
             </Heading>
           </Link>
         ))}
-        <Icon as={FaYoutube} boxSize="16px" color="gray.600" />
-        <Icon as={FaTiktok} boxSize="15px" color="gray.600" />
+        <Icon
+          as={IoLanguageOutline}
+          boxSize="16px"
+          color="gray.600"
+          onClick={() => handleLanguage("jp")}
+        />
       </HStack>
     </HStack>
   );

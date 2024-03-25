@@ -26,14 +26,12 @@ const Footer = () => {
         <Heading my={1} pr={1} fontSize="sm" className="fw-lighter">
           You can also watch my channel in:
         </Heading>
-      </Center>
-      <Center>
-        <HStack spacing="18px">
+        <HStack spacing="15px" pl="10px">
           <Icon as={FaYoutube} boxSize="20px" color="gray.600" />
           <Icon as={FaTiktok} boxSize="15px" color="gray.600" />
         </HStack>
       </Center>
-      <Center p={5}>
+      <Center p={3}>
         <Text pr={1} as="i" fontSize="sm">
           Design and Code by LI QIUFENG with
         </Text>
