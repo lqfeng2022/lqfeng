@@ -1,21 +1,10 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  Image,
-  Show,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import project from "../../assets/project.jpeg";
 
 const Project = () => {
   return (
     <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
       <Flex>
-        <Show above="md">
-          <Box w={1} px="20px" />
-        </Show>
         <Box maxW="700px">
           <Text fontSize="4xl">Why do you need make your own project?</Text>
           <Heading fontSize="md" className="fw-lighter lh-lg">

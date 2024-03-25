@@ -8,13 +8,24 @@ const NavBar = () => {
     { name: "W O R K", url: "/" },
     { name: "M E", url: "/about-me" },
     { name: "P R O D U C T", url: "/projects" },
-    { name: "A I", url: "/ai" },
   ];
 
   return (
     <HStack justifyContent="space-between" px="30px" py="20px">
       <Link to="/">
-        <Heading fontSize="2xl" my="8px" className="fw-lighter">
+        <Heading
+          display={{ base: "flex", md: "none" }}
+          fontSize="4xl"
+          className="fw-lighter"
+        >
+          楓
+        </Heading>
+        <Heading
+          display={{ base: "none", md: "flex" }}
+          fontSize="2xl"
+          my="8px"
+          className="fw-lighter"
+        >
           LI QIUFENG
         </Heading>
       </Link>
