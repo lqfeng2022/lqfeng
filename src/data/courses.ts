@@ -51,15 +51,15 @@ export default [
 
   {
     title: "ENGLISH",
-    subTitle: "Learn english conversation with me.",
+    subTitle: "Learn english conversation with TikTok.",
     image: "src/assets/english.jpg",
     h1: "",
     h2: "60px",
     url: "/courses/english",
   },
   {
-    title: "JAPANESE",
-    subTitle: "Learn japanese conversation with me.",
+    title: "日本語",
+    subTitle: "Learn japanese with small talk and story.",
     image: "src/assets/japanese.jpeg",
     h1: "60px",
     h2: "",
