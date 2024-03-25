@@ -17,15 +17,15 @@ function HomePage() {
           understand what is AI and how it works in a visual way. So I'm gonna
           build a serial Deep Learning Models code by code. Let's do it!
         </Text>
+        <Show below="md">
+          <Box h="50px" />
+        </Show>
       </Box>
-      <Show below="md">
-        <Box h="50px" />
-      </Show>
       <Python />
       <Center>
         <SimpleGrid
           columns={{ sm: 1, md: 2 }}
-          px="30px"
+          px="20px"
           spacing="20px"
           maxW="1200px"
         >

@@ -11,7 +11,7 @@ const NavBar = () => {
   ];
 
   return (
-    <HStack justifyContent="space-between" px="30px" py="20px">
+    <HStack justifyContent="space-between" p="20px">
       <Link to="/">
         <Heading
           display={{ base: "flex", md: "none" }}

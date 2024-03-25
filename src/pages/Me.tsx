@@ -20,7 +20,7 @@ const Me = () => {
   return (
     <>
       {/* 1)Introduce myself */}
-      <Center p="30px">
+      <Center py="30px" px="20px">
         <SimpleGrid columns={{ sm: 1, md: 2 }} maxW="1200px" spacing="40px">
           <Box maxW="600px">
             <Image src={simon} />
@@ -43,7 +43,7 @@ const Me = () => {
         </SimpleGrid>
       </Center>
       {/* 2)What's my work */}
-      <Center p="30px" pt="0">
+      <Center py="30px" px="20px" pt="0">
         <Stack maxW="1200px">
           <Box maxW="600px">
             <Text fontSize="xl" className="fst-italic">
@@ -63,7 +63,7 @@ const Me = () => {
         </Stack>
       </Center>
       {/* 3)My education background and career */}
-      <Center p="30px">
+      <Center py="30px" px="20px">
         <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="40px">
           <Box>
             <Image src={book} />
@@ -91,7 +91,7 @@ const Me = () => {
         </SimpleGrid>
       </Center>
       {/* 4)Who are you through others' eyes */}
-      <Center p="30px">
+      <Center py="30px" px="20px">
         <SimpleGrid columns={{ base: 1, sm: 2 }} maxW="1000px" spacing="40px">
           <Center>
             <Box maxW="450px">

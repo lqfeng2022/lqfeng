@@ -13,14 +13,14 @@ const Product = () => {
 
   return (
     <>
-      <Center p="30px" pt="50px">
+      <Center py="30px" px="20px" pt="50px">
         <AI />
       </Center>
-      <Center p="30px" pt="30px">
+      <Center py="30px" px="20px" pt="30px">
         <Project />
       </Center>
       {/* 1)gameHub web */}
-      <Center p="30px">
+      <Center py="30px" px="20px">
         <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
           <Flex>
             <ProjectDetails details={gameDetail} />
@@ -33,7 +33,7 @@ const Product = () => {
         </SimpleGrid>
       </Center>
       {/* 2)community web */}
-      <Center p="30px">
+      <Center py="30px" px="20px">
         <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
           <CardContainer>
             <Link to="/projects/community">

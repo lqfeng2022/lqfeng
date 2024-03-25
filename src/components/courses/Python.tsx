@@ -1,11 +1,11 @@
-import { Heading, Box, Image, Center } from "@chakra-ui/react";
+import { Box, Center, Heading, Image } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import python_log from "../../assets/python_log.jpg";
 
 const Python = () => {
   return (
     <Center>
-      <Box px="30px" pb={10} maxW="1200px">
+      <Box px="20px" pb={10} maxW="1200px">
         <Box
           _hover={{
             transform: "scale(1.02)",
@@ -16,7 +16,7 @@ const Python = () => {
             <Image src={python_log} />
           </Link>
         </Box>
-        <Heading fontSize="sm" my="5px">
+        <Heading fontSize="sm" my="6px">
           <Link
             to="/courses/python"
             className="border-bottom border-dark"
