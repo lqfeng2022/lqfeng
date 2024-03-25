@@ -10,7 +10,7 @@ function HomePage() {
   return (
     <>
       <Box px="10px" py="25px" maxW="550px">
-        <Heading fontSize="md" pb={5} style={{ letterSpacing: "1px" }}>
+        <Heading fontSize="lg" pb={5} style={{ letterSpacing: "1px" }}>
           {t("home.head")}
         </Heading>
         <Text fontSize="2xl" as="i">

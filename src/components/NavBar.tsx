@@ -51,7 +51,7 @@ const NavBar = () => {
         ))}
         <Icon
           as={IoLanguageOutline}
-          boxSize="16px"
+          boxSize="20px"
           color="gray.600"
           onClick={() => handleLanguage("jp")}
         />

@@ -34,7 +34,7 @@ const Me = () => {
             <Show above="md">
               <Box h="180px" />
             </Show>
-            <Heading fontSize="sm">{t("aboutme.introduce.header")}</Heading>
+            <Heading fontSize="lg">{t("aboutme.introduce.head")}</Heading>
             <Text fontSize="3xl" pt={6}>
               {t("aboutme.introduce.body")}
             </Text>
