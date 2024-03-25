@@ -5,9 +5,6 @@ const Course = () => {
   return (
     <SimpleGrid columns={{ sm: 1, md: 2 }} maxW="1200px" spacing="30px">
       <Box maxW="700px">
-        <Image src={ai2} />
-      </Box>
-      <Box maxW="700px">
         <Text fontSize="4xl">
           Do we need to learn coding in 2024 while AI is present?
         </Text>
@@ -24,6 +21,9 @@ const Course = () => {
           want it to do, make your own cool projects, and even help make AI
           smarter and safer for everyone.
         </Heading>
+      </Box>
+      <Box maxW="700px">
+        <Image src={ai2} />
       </Box>
     </SimpleGrid>
   );

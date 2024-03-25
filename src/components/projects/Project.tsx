@@ -4,6 +4,9 @@ import project from "../../assets/project.jpeg";
 const Project = () => {
   return (
     <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
+      <Box maxW="700px">
+        <Image src={project} />
+      </Box>
       <Flex>
         <Box maxW="700px">
           <Text fontSize="4xl">Why do you need make your own project?</Text>
@@ -23,9 +26,6 @@ const Project = () => {
           </Heading>
         </Box>
       </Flex>
-      <Box maxW="700px">
-        <Image src={project} />
-      </Box>
     </SimpleGrid>
   );
 };
