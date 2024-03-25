@@ -1,5 +1,5 @@
 import { HStack, Heading, Icon } from "@chakra-ui/react";
-import { HiLanguage } from "react-icons/hi2";
+import { FaTiktok, FaYoutube } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
@@ -43,7 +43,8 @@ const NavBar = () => {
             </Heading>
           </Link>
         ))}
-        <Icon as={HiLanguage} boxSize="20px" color="gray.600" />
+        <Icon as={FaYoutube} boxSize="16px" color="gray.600" />
+        <Icon as={FaTiktok} boxSize="15px" color="gray.600" />
       </HStack>
     </HStack>
   );

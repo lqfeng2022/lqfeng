@@ -1,14 +1,14 @@
 import {
-  Box,
   Center,
   Container,
   Heading,
+  HStack,
   Icon,
   Stack,
   Text,
 } from "@chakra-ui/react";
-import { IoHeart } from "react-icons/io5";
 import { FaTiktok, FaYoutube } from "react-icons/fa";
+import { IoHeart } from "react-icons/io5";
 
 const Footer = () => {
   return (
@@ -22,24 +22,16 @@ const Footer = () => {
           </Center>
         </Container>
       </Center>
-      <Center pb="10px">
+      <Center>
         <Heading my={1} pr={1} fontSize="sm" className="fw-lighter">
           You can also watch my channel in:
         </Heading>
-        <Box px={3}>
+      </Center>
+      <Center>
+        <HStack spacing="18px">
           <Icon as={FaYoutube} boxSize="20px" color="gray.600" />
-        </Box>
-        <Icon as={FaTiktok} boxSize="15px" color="gray.600" />
-      </Center>
-      <Center>
-        <Heading as="i" fontSize="sm" className="fw-lighter">
-          Here you can choose other languges:
-        </Heading>
-      </Center>
-      <Center>
-        <Heading as="i" fontSize="sm" className="fw-lighter">
-          <b>Le français / 日本語 / 中文</b>
-        </Heading>
+          <Icon as={FaTiktok} boxSize="15px" color="gray.600" />
+        </HStack>
       </Center>
       <Center p={5}>
         <Text pr={1} as="i" fontSize="sm">
