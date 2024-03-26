@@ -14,7 +14,7 @@ const Product = () => {
   return (
     <>
       {/* 0)project summary */}
-      <Center p="20px" pt="30px">
+      <Center p="20px" pt="35px">
         <Project />
       </Center>
       {/* 1)gameHub web */}

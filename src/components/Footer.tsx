@@ -13,10 +13,10 @@ const Footer = () => {
   return (
     <Stack>
       <Center pt="80px" pb="10px">
-        <Container w="180px" h="50px" bg="gray.600" color="white">
+        <Container w="200px" h="50px" bg="gray.600" color="white">
           <Center>
             <Heading textAlign="center" fontSize="sm" px="15px" my="7px">
-              Let's Talk About Your Plan
+              Let's Talk About Your Plan ^__
             </Heading>
           </Center>
         </Container>
@@ -27,7 +27,7 @@ const Footer = () => {
         </Heading>
         <HStack spacing="15px" pl="10px">
           <Icon as={FaYoutube} boxSize="20px" color="gray.600" />
-          <Icon as={FaTiktok} boxSize="15px" color="gray.600" />
+          <Icon as={FaTiktok} boxSize="20px" color="gray.600" />
         </HStack>
       </Center>
       <Center p={3}>

@@ -8,9 +8,9 @@ function HomePage() {
   return (
     <>
       {/* 0)hp introduce */}
-      <Box px="10px" py="30px" maxW="550px">
+      <Box px="10px" py="35px" maxW="550px">
         <Heading fontSize="sm" pb={5} style={{ letterSpacing: "1px" }}>
-          HI, WELCOM TO MY HOMEPAGE.
+          HI, WELCOM TO MY HP.
         </Heading>
         <Text fontSize="2xl">
           I'm Simon, a web developer. And I'm passionate about making people

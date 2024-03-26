@@ -1,5 +1,6 @@
-import { HStack, Heading, Icon } from "@chakra-ui/react";
-import { FaTiktok, FaYoutube } from "react-icons/fa";
+import { HStack, Heading, Icon, Text } from "@chakra-ui/react";
+import { FaYoutube } from "react-icons/fa";
+import { HiLanguage } from "react-icons/hi2";
 import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
@@ -18,7 +19,7 @@ const NavBar = () => {
           fontSize="4xl"
           className="fw-lighter"
         >
-          楓
+          楓<Text fontSize="sm">.STUDIO</Text>
         </Heading>
         <Heading
           display={{ base: "none", md: "flex" }}
@@ -26,7 +27,7 @@ const NavBar = () => {
           my="8px"
           className="fw-lighter"
         >
-          LI QIUFENG
+          LI_QIUFENG<Text fontSize="sm">.STUDIO</Text>
         </Heading>
       </Link>
       <HStack spacing="22px">
@@ -48,8 +49,8 @@ const NavBar = () => {
             </Heading>
           </Link>
         ))}
+        <Icon as={HiLanguage} boxSize="18px" color="gray.600" />
         <Icon as={FaYoutube} boxSize="18px" color="gray.600" />
-        <Icon as={FaTiktok} boxSize="18px" color="gray.600" />
       </HStack>
     </HStack>
   );

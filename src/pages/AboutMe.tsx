@@ -9,7 +9,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import { ImQuotesLeft } from "react-icons/im";
+import { FaQuoteLeft } from "react-icons/fa";
 import ai from "../assets/ai.jpeg";
 import book from "../assets/book.jpg";
 import simon from "../assets/lqfeng.jpeg";
@@ -19,7 +19,7 @@ const AboutMe = () => {
   return (
     <>
       {/* 1)Introduce myself */}
-      <Center p="20px">
+      <Center px="20px" py="35px">
         <SimpleGrid columns={{ sm: 1, md: 2 }} maxW="1000px" spacing="40px">
           <Box>
             <Image src={simon} />
@@ -29,7 +29,7 @@ const AboutMe = () => {
             <Box hideBelow="md" h="180px" />
             <Heading fontSize="sm">HI, I'M SIMON.</Heading>
             <Text fontSize="2xl" pt={6}>
-              A developer for helping you build your own business. I'm
+              A developer for helping you build your own application. I'm
               passionate about AI and nature languages, like le français and
               japanese. What if I trained an personality AI assistant who can
               help people learning languages and building apps, that's gonna be
@@ -90,16 +90,14 @@ const AboutMe = () => {
         <SimpleGrid columns={{ base: 1, sm: 2 }} maxW="1000px" spacing="40px">
           <Center>
             <Box maxW="450px">
-              <Icon as={ImQuotesLeft} />
-              <Text fontSize="xl" className="lh-md" mb="10px" pl={1}>
+              <Text fontSize="xl" className="lh-md" mb="10px">
+                <Icon boxSize="25px" as={FaQuoteLeft} pr={2} pb={3} />
                 Lee is a reliable business parter and friend. He have a talent
                 to get something new quickly, he took 1 year becomming a
                 full-stack developer from zero.
               </Text>
-              <Flex pl={1}>
-                <Heading fontSize="sm" pr={1}>
-                  SIMON
-                </Heading>
+              <Flex>
+                <Heading fontSize="sm">SIMON </Heading>
                 <Heading fontSize="sm" className="fw-lighter">
                   - CE0 @ 5Visual1Feel
                 </Heading>
