@@ -34,9 +34,10 @@ const Me = () => {
             <Show above="md">
               <Box h="180px" />
             </Show>
-            <Heading fontSize="lg">{t("aboutme.introduce.head")}</Heading>
+            <Heading fontSize="lg">HI, I'M SIMON.</Heading>
             <Text fontSize="3xl" pt={6}>
-              {t("aboutme.introduce.body")}
+              I'm a developer and trainer with a visual approach for your
+              business need and learning target.
             </Text>
           </Box>
         </SimpleGrid>

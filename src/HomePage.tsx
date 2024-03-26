@@ -11,10 +11,12 @@ function HomePage() {
     <>
       <Box px="10px" py="25px" maxW="550px">
         <Heading fontSize="lg" pb={5} style={{ letterSpacing: "1px" }}>
-          {t("home.head")}
+          HI, WELCOM TO MY HOMEPAGE.
         </Heading>
         <Text fontSize="2xl" as="i">
-          {t("home.body")}
+          I'm Simon, a full-stack developer. I'm passionate about helping people
+          understand what is AI and how it works in a visual way. So I'm gonna
+          build a serial Deep Learning Models code by code. Let's do it!
         </Text>
         <Show below="md">
           <Box h="50px" />
