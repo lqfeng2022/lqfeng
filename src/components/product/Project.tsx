@@ -9,7 +9,7 @@ const Project = () => {
       </Box>
       <Flex>
         <Box maxW="700px">
-          <Text fontSize="4xl">What about build your own app?</Text>
+          <Text fontSize="3xl">What about build your own app?</Text>
           <Heading fontSize="md" className="fw-lighter lh-lg">
             You can design and build a full-stack app as your first product. A
             popular product can leave peope a great first impression which make

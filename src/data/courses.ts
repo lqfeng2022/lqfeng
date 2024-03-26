@@ -11,7 +11,7 @@ export default [
     title: "TENSORFLOW",
     subTitle:
       "Learn building & deploying deep learning models with TensorFlow.",
-    image: "src/assets/tensorflow.jpg",
+    image: "src/assets/tensorflow.jpeg",
     h1: "60px",
     h2: "",
     url: "/work/tensorflow",

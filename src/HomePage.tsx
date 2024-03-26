@@ -8,7 +8,7 @@ function HomePage() {
   return (
     <>
       {/* 0)hp introduce */}
-      <Box px="10px" py="25px" maxW="550px">
+      <Box px="10px" py="30px" maxW="550px">
         <Heading fontSize="sm" pb={5} style={{ letterSpacing: "1px" }}>
           HI, WELCOM TO MY HOMEPAGE.
         </Heading>
@@ -17,12 +17,11 @@ function HomePage() {
           know what is AI and how it works in a visual way. So I'm gonna build a
           serial Deep Learning projects code by code. Let's hit the road!
         </Text>
-        <Box hideFrom="md" h="50px" />
+        <Box hideFrom="md" h="30px" />
       </Box>
-      {/* 1)talk about AI */}
-      <AI />
       {/* 2)PYTHON course */}
       <Python />
+      <AI />
       {/* 3)other courses */}
       <Center>
         <SimpleGrid

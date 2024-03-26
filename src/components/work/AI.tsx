@@ -1,6 +1,7 @@
 import {
   Box,
   Center,
+  Flex,
   Heading,
   Image,
   SimpleGrid,
@@ -20,23 +21,26 @@ const Course = () => {
         <Box maxW="708px">
           <Image src={ai2} />
         </Box>
-        <Box maxW="708px">
-          <Text fontSize="4xl">
-            Do we need to learn coding in 2024 the Age of AI?
-          </Text>
-          <Heading fontSize="md" className="fw-lighter lh-lg">
-            AI is becomming so powerful espacially as ChatGPT launched. It's so
-            smart and can do lots of tech stuff by itself, like coding. I think
-            most of us should learn programming. Cus it can help you understand
-            how computers and AI work, it is super important because they're
-            everywhere now and future.
-          </Heading>
-          <Heading py={3} fontSize="md" className="fw-lighter lh-lg">
-            Plus, when you know how to code, you can tell the AI exactly what
-            you want it to do, make your own cool projects, and even help make
-            AI smarter and safer for everyone.
-          </Heading>
-        </Box>
+        <Flex>
+          <Box maxW="708px">
+            <Text fontSize="3xl">
+              Do we need to learn coding in 2024 the Age of AI?
+            </Text>
+            <Heading fontSize="md" className="fw-lighter lh-lg">
+              AI is becomming so powerful espacially as ChatGPT launched. It's
+              so smart and can do lots of tech stuff by itself, like coding. I
+              think most of us should learn programming. Cus it can help you
+              understand how computers and AI work, it is super important
+              because they're everywhere now and future.
+            </Heading>
+            <Heading py={3} fontSize="md" className="fw-lighter lh-lg">
+              Plus, when you know how to code, you can tell the AI exactly what
+              you want it to do, make your own cool projects, and even help make
+              AI smarter and safer for everyone.
+            </Heading>
+          </Box>
+          <Box hideBelow="md" w="5px" pr="30px" />
+        </Flex>
       </SimpleGrid>
     </Center>
   );

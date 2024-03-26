@@ -5,7 +5,7 @@ const Python = () => {
   const pyCourse = {
     title: " PYTHON",
     subTitle: "Everything you need to program in Python is here.",
-    image: "src/assets/python_log.jpg",
+    image: "src/assets/python_log.jpeg",
     url: "/work/python",
   };
 
