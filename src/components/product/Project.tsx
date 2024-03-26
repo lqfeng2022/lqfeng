@@ -9,7 +9,7 @@ const Project = () => {
       </Box>
       <Flex>
         <Box maxW="700px">
-          <Text fontSize="4xl">Why do you need make your own project?</Text>
+          <Text fontSize="4xl">Why do you need build your own project?</Text>
           <Heading fontSize="md" className="fw-lighter lh-lg">
             A real project is kind of visual way to apply what you learned. And
             it is a good approach to show your ability that what you can do and
@@ -25,6 +25,7 @@ const Project = () => {
             SEE WHAT I BUILD:
           </Heading>
         </Box>
+        <Box hideBelow="md" w="5px" pr="30px" />
       </Flex>
     </SimpleGrid>
   );

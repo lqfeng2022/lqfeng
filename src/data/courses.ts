@@ -5,7 +5,7 @@ export default [
     image: "src/assets/pytorch.jpeg",
     h1: "",
     h2: "60px",
-    url: "/courses/pytorch",
+    url: "/work/pytorch",
   },
   {
     title: "TENSORFLOW",
@@ -14,7 +14,7 @@ export default [
     image: "src/assets/tensorflow.jpg",
     h1: "60px",
     h2: "",
-    url: "/courses/tensorflow",
+    url: "/work/tensorflow",
   },
   {
     title: "DJANGO",
@@ -22,7 +22,7 @@ export default [
     image: "src/assets/django.jpg",
     h1: "",
     h2: "60px",
-    url: "/courses/django",
+    url: "/work/django",
   },
   {
     title: "MYSQL",
@@ -30,15 +30,15 @@ export default [
     image: "src/assets/mysql.jpg",
     h1: "60px",
     h2: "",
-    url: "/courses/mysql",
+    url: "/work/mysql",
   },
   {
     title: "DATA STRUCTURE",
-    subTitle: "With visualization way to learn data structures.",
+    subTitle: "With a visual approach to learn data structure.",
     image: "src/assets/data_structure.png",
     h1: "",
     h2: "60px",
-    url: "/courses/datastructure",
+    url: "/work/datastructure",
   },
   {
     title: "ALGORITHM",
@@ -46,7 +46,7 @@ export default [
     image: "src/assets/algorithm.jpg",
     h1: "60px",
     h2: "",
-    url: "/courses/algorithm",
+    url: "/work/algorithm",
   },
 
   {
@@ -55,14 +55,14 @@ export default [
     image: "src/assets/english.jpg",
     h1: "",
     h2: "60px",
-    url: "/courses/english",
+    url: "/work/english",
   },
   {
     title: "日本語",
-    subTitle: "Learn japanese with small talk and story.",
+    subTitle: "Learn japanese with small talk/story.",
     image: "src/assets/japanese.jpeg",
     h1: "60px",
     h2: "",
-    url: "/courses/japanese",
+    url: "/work/japanese",
   },
 ];

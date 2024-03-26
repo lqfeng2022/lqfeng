@@ -5,7 +5,6 @@ import {
   Heading,
   Icon,
   Image,
-  Show,
   SimpleGrid,
   Stack,
   Text,
@@ -15,26 +14,20 @@ import ai from "../assets/ai.jpeg";
 import book from "../assets/book.jpg";
 import simon from "../assets/lqfeng.jpeg";
 import quotation from "../assets/quotation.jpeg";
-import { useTranslation } from "react-i18next";
 
-const Me = () => {
-  const [t] = useTranslation("global");
+const AboutMe = () => {
   return (
     <>
       {/* 1)Introduce myself */}
       <Center p="20px">
-        <SimpleGrid columns={{ sm: 1, md: 2 }} maxW="1200px" spacing="40px">
-          <Box maxW="600px">
+        <SimpleGrid columns={{ sm: 1, md: 2 }} maxW="1000px" spacing="40px">
+          <Box>
             <Image src={simon} />
-            <Show above="md">
-              <Box h="100px" />
-            </Show>
+            <Box hideBelow="md" h="100px" />
           </Box>
           <Box>
-            <Show above="md">
-              <Box h="180px" />
-            </Show>
-            <Heading fontSize="lg">HI, I'M SIMON.</Heading>
+            <Box hideBelow="md" h="180px" />
+            <Heading fontSize="sm">HI, I'M SIMON.</Heading>
             <Text fontSize="3xl" pt={6}>
               I'm a developer and trainer with a visual approach for your
               business need and learning target.
@@ -45,8 +38,8 @@ const Me = () => {
       {/* 2)What's my work */}
       <Center p="20px" pt="0">
         <Stack>
-          <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="40px">
-            <Box maxW="600px">
+          <SimpleGrid columns={[1, null, 2]} maxW="1000px" spacing="40px">
+            <Box maxW="500px">
               <Text fontSize="xl" className="fst-italic">
                 0. What am I doing now?
               </Text>
@@ -59,14 +52,14 @@ const Me = () => {
               </Heading>
             </Box>
           </SimpleGrid>
-          <Box maxW="1200px">
+          <Box maxW="1000px">
             <Image src={ai} />
           </Box>
         </Stack>
       </Center>
       {/* 3)My education background and career */}
       <Center p="20px">
-        <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="40px">
+        <SimpleGrid columns={[1, null, 2]} maxW="1000px" spacing="40px">
           <Box>
             <Image src={book} />
           </Box>
@@ -122,4 +115,4 @@ const Me = () => {
   );
 };
 
-export default Me;
+export default AboutMe;

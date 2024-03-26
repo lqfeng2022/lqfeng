@@ -5,7 +5,6 @@ import {
   HStack,
   Icon,
   Stack,
-  Text,
 } from "@chakra-ui/react";
 import { FaTiktok, FaYoutube } from "react-icons/fa";
 import { IoHeart } from "react-icons/io5";
@@ -32,9 +31,9 @@ const Footer = () => {
         </HStack>
       </Center>
       <Center p={3}>
-        <Text pr={1} as="i" fontSize="sm">
-          Design and Code by LI QIUFENG with
-        </Text>
+        <Heading pr={1} as="i" fontSize="sm" className="fw-lighter">
+          Code and Share by LI QIUFENG with
+        </Heading>
         <Icon as={IoHeart} color="red.400" />
       </Center>
     </Stack>

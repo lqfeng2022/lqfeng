@@ -1,32 +1,33 @@
-import { Box, Center, Heading, Show, SimpleGrid, Text } from "@chakra-ui/react";
-import CourseCard from "./components/CourseCard";
-import Python from "./components/courses/Python";
+import { Box, Center, Heading, SimpleGrid, Text } from "@chakra-ui/react";
+import AI from "./components/work/AI";
+import CourseCard from "./components/work/CourseCard";
+import Python from "./components/work/Python";
 import courses from "./data/courses";
-import { useTranslation } from "react-i18next";
 
 function HomePage() {
-  const [t] = useTranslation("global");
-
   return (
     <>
+      {/* 0)hp introduce */}
       <Box px="10px" py="25px" maxW="550px">
-        <Heading fontSize="lg" pb={5} style={{ letterSpacing: "1px" }}>
+        <Heading fontSize="sm" pb={5} style={{ letterSpacing: "1px" }}>
           HI, WELCOM TO MY HOMEPAGE.
         </Heading>
-        <Text fontSize="2xl" as="i">
+        <Text fontSize="2xl">
           I'm Simon, a full-stack developer. I'm passionate about helping people
           understand what is AI and how it works in a visual way. So I'm gonna
           build a serial Deep Learning Models code by code. Let's do it!
         </Text>
-        <Show below="md">
-          <Box h="50px" />
-        </Show>
+        <Box hideFrom="md" h="50px" />
       </Box>
+      {/* 1)talk about AI */}
+      <AI />
+      {/* 2)PYTHON course */}
       <Python />
+      {/* 3)other courses */}
       <Center>
         <SimpleGrid
           columns={{ sm: 1, md: 2 }}
-          px="20px"
+          p="20px"
           spacing="20px"
           maxW="1200px"
         >

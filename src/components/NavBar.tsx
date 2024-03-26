@@ -1,20 +1,14 @@
 import { HStack, Heading, Icon } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
-import { IoLanguageOutline } from "react-icons/io5";
+import { FaTiktok, FaYoutube } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const l = useLocation();
   const links = [
-    { name: "W O R K", url: "/" },
-    { name: "M E", url: "/about-me" },
-    { name: "P R O D U C T", url: "/projects" },
+    { name: "WORK", url: "/" },
+    { name: "PRODUCT", url: "/product" },
+    { name: "ME", url: "/about-me" },
   ];
-
-  const [t, i18n] = useTranslation("global");
-  const handleLanguage = (lang: string) => {
-    i18n.changeLanguage(lang);
-  };
 
   return (
     <HStack justifyContent="space-between" p="20px">
@@ -35,7 +29,7 @@ const NavBar = () => {
           LI QIUFENG
         </Heading>
       </Link>
-      <HStack spacing="25px">
+      <HStack spacing="22px">
         {links.map((link) => (
           <Link
             key={link.name}
@@ -44,17 +38,18 @@ const NavBar = () => {
               l.pathname === `${link.url}` ? "border-bottom border-dark" : ""
             }
           >
-            <Heading fontSize="xs" my="3px" className="fw-lighter">
+            <Heading
+              fontSize="xs"
+              my="3px"
+              className="fw-lighter"
+              style={{ letterSpacing: "1px" }}
+            >
               {link.name}
             </Heading>
           </Link>
         ))}
-        <Icon
-          as={IoLanguageOutline}
-          boxSize="20px"
-          color="gray.600"
-          onClick={() => handleLanguage("jp")}
-        />
+        <Icon as={FaYoutube} boxSize="18px" color="gray.600" />
+        <Icon as={FaTiktok} boxSize="18px" color="gray.600" />
       </HStack>
     </HStack>
   );

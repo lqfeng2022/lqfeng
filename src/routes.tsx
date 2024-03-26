@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import HomePage from "./HomePage";
-import PythonDetail from "./components/courses/PythonDetail";
-import GameHubDetail from "./components/projects/GameHubDetail";
+import PythonDetail from "./components/work/PythonDetail";
+import GameHubDetail from "./components/product/GameHubDetail";
 import ErrorPage from "./pages/ErrorPage";
 import Layout from "./pages/Layout";
-import Me from "./pages/Me";
+import AboutMe from "./pages/AboutMe";
 import Product from "./pages/Product";
 
 const router = createBrowserRouter([
@@ -14,10 +14,10 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <HomePage /> },
-      { path: "about-me", element: <Me /> },
-      { path: "projects", element: <Product /> },
-      { path: "projects/gamehub", element: <GameHubDetail /> },
-      { path: "courses/python", element: <PythonDetail /> },
+      { path: "about-me", element: <AboutMe /> },
+      { path: "product", element: <Product /> },
+      { path: "product/gamehub", element: <GameHubDetail /> },
+      { path: "work/python", element: <PythonDetail /> },
     ],
   },
 ]);
