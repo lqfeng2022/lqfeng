@@ -22,7 +22,7 @@ const CourseCard = ({ course }: { course: Course }) => {
               <Image src={course.image} />
             </Link>
           </CardContainer>
-          <Heading fontSize="sm" my="6px">
+          <Heading fontSize="sm" my="10px">
             <Link
               to="#"
               className="border-bottom border-dark"

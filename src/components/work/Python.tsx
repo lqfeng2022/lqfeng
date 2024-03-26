@@ -22,7 +22,7 @@ const Python = () => {
             <Image src={pyCourse.image} />
           </Link>
         </Box>
-        <Heading fontSize="sm" my="6px">
+        <Heading fontSize="sm" my="10px">
           <Link
             to={pyCourse.url}
             className="border-bottom border-dark"
