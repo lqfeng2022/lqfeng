@@ -13,9 +13,9 @@ function HomePage() {
           HI, WELCOM TO MY HOMEPAGE.
         </Heading>
         <Text fontSize="2xl">
-          I'm Simon, a full-stack developer. I'm passionate about helping people
-          understand what is AI and how it works in a visual way. So I'm gonna
-          build a serial Deep Learning Models code by code. Let's do it!
+          I'm Simon, a web developer. And I'm passionate about making people
+          know what is AI and how it works in a visual way. So I'm gonna build a
+          serial Deep Learning projects code by code. Let's hit the road!
         </Text>
         <Box hideFrom="md" h="50px" />
       </Box>

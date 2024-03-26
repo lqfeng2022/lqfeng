@@ -28,9 +28,12 @@ const AboutMe = () => {
           <Box>
             <Box hideBelow="md" h="180px" />
             <Heading fontSize="sm">HI, I'M SIMON.</Heading>
-            <Text fontSize="3xl" pt={6}>
-              I'm a developer and trainer with a visual approach for your
-              business need and learning target.
+            <Text fontSize="2xl" pt={6}>
+              A developer for helping you build your own business. I'm
+              passionate about AI and nature languages, like le français and
+              japanese. What if I trained an personality AI assistant who can
+              help people learning languages and building apps, that's gonna be
+              fun!
             </Text>
           </Box>
         </SimpleGrid>
@@ -44,11 +47,9 @@ const AboutMe = () => {
                 0. What am I doing now?
               </Text>
               <Heading fontSize="md" className="fw-lighter lh-lg">
-                A full-stack developer. I think with coding eveything can be
-                easily understand by a cleaner and visual approach. I really
-                appreciate choosing to be a developer, cus I can visualize
-                anything what I thought, learned, and I can show myself to
-                everyone.
+                As a web developer, I'm building serveral personal apps, like
+                Background remover app with Computer Vision model. Plus, I'm
+                preparing a serial coding and english conversation lessons.
               </Heading>
             </Box>
           </SimpleGrid>
@@ -69,18 +70,17 @@ const AboutMe = () => {
             </Text>
             <Heading fontSize="md" className="fw-lighter lh-lg">
               A graduate of Hubei University of Technology in Wuhan. I love
-              philosophy, and I read lots of about Laozi, Buddha, René Descartes
-              etc. I am a big fun of GIBLI and I started to know more about
-              Japanese culture and history, then I learned Japanese and got N1
-              in JLPT test.
+              philosophy, read some books about Laozi, Buddha, and Descartes.
+              And I am a big fun of GIBLI, so I started to know more about
+              Japanese culture and history in college.
             </Heading>
             <Box paddingTop={4} my={5} className="border-bottom border-dark" />
             <Text fontSize="xl" pt={3} className="fst-italic">
               2. What's my career?
             </Text>
             <Heading fontSize="md" className="fw-lighter lh-lg">
-              I used to be an engineer in a Japanese company. And the first job,
-              I worked as a salesman in a Chinese company, nothing special.
+              I used to be an engineer in a Japanese company for some years. And
+              before that I worked as a sales in an export traiding company.
             </Heading>
           </Box>
         </SimpleGrid>
@@ -92,8 +92,8 @@ const AboutMe = () => {
             <Box maxW="450px">
               <Icon as={ImQuotesLeft} />
               <Text fontSize="xl" className="lh-md" mb="10px" pl={1}>
-                Lee is a reliable business parter and friend. He realy have the
-                talent to get something new, he used 2 years becomming a
+                Lee is a reliable business parter and friend. He have a talent
+                to get something new quickly, he took 1 year becomming a
                 full-stack developer from zero.
               </Text>
               <Flex pl={1}>

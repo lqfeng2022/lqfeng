@@ -9,17 +9,16 @@ const Project = () => {
       </Box>
       <Flex>
         <Box maxW="700px">
-          <Text fontSize="4xl">Why do you need build your own project?</Text>
+          <Text fontSize="4xl">What about build your own app?</Text>
           <Heading fontSize="md" className="fw-lighter lh-lg">
-            A real project is kind of visual way to apply what you learned. And
-            it is a good approach to show your ability that what you can do and
-            do it well. A nice project can leave peope a greate first impression
-            which make people stick around you. It's the key to attracting
-            audience, to making yourself known to the outside world.
+            You can design and build a full-stack app as your first product. A
+            popular product can leave peope a great first impression which make
+            people stick around you, even it's just an APP not a Photo or
+            Paiting. It's the key to attracting audience, to making yourself
+            known to the outside world.
           </Heading>
           <Heading py={3} fontSize="md" className="fw-lighter lh-lg">
-            Your friends and customers need to know about you and I'm here to
-            help you with a visualization way.
+            Here I'm gonna build a web app from scratch.
           </Heading>
           <Heading pt="50px" fontSize="sm">
             SEE WHAT I BUILD:

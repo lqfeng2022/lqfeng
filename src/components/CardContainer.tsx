@@ -8,7 +8,6 @@ const CardContainer = ({ children }: Props) => {
   return (
     <Box
       maxW="700px"
-      className="border border-dark"
       _hover={{
         transform: "scale(1.02)",
         transition: "transform .15s ease-in",
