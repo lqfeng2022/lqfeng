@@ -16,7 +16,7 @@ const Footer = () => {
         <Container w="200px" h="50px" bg="gray.600" color="white">
           <Center>
             <Heading textAlign="center" fontSize="sm" px="15px" my="7px">
-              Let's Talk About Your Plan ^__
+              Let's Talk About Your Plan : )
             </Heading>
           </Center>
         </Container>

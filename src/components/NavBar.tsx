@@ -1,4 +1,4 @@
-import { HStack, Heading, Icon, Text } from "@chakra-ui/react";
+import { Button, HStack, Heading, Icon, Text } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import { HiLanguage } from "react-icons/hi2";
 import { Link, useLocation } from "react-router-dom";
@@ -15,6 +15,7 @@ const NavBar = () => {
   const handleLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
   };
+  const jp = i18n.language === "jp";
 
   return (
     <HStack justifyContent="space-between" p="20px">
@@ -54,12 +55,13 @@ const NavBar = () => {
             </Heading>
           </Link>
         ))}
-        <Icon
-          as={HiLanguage}
-          boxSize="18px"
-          color="gray.600"
-          onClick={() => handleLanguage("jp")}
-        />
+        <Button
+          leftIcon={<Icon as={HiLanguage} boxSize="20px"></Icon>}
+          colorScheme="teal"
+          w="20px"
+          variant="link"
+          onClick={() => handleLanguage(jp ? "en" : "jp")}
+        ></Button>
       </HStack>
     </HStack>
   );
