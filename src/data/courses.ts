@@ -48,13 +48,20 @@ export default [
     h2: "",
     url: "/work/algorithm",
   },
-
   {
     title: "ENGLISH",
     subTitle: "Learn english conversation with small talk and story.",
     image: "src/assets/english.jpg",
+    h1: "50px",
+    h2: "",
+    url: "/work/english",
+  },
+  {
+    title: "JAPANESE",
+    subTitle: "Learn japanese conversation with small talk.",
+    image: "src/assets/japanese.png",
     h1: "",
-    h2: "60px",
+    h2: "220px",
     url: "/work/english",
   },
 ];

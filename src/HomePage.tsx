@@ -8,14 +8,15 @@ function HomePage() {
   return (
     <>
       {/* 0)hp introduce */}
-      <Box px="10px" py="35px" maxW="550px">
+      <Box px="10px" py="35px" maxW="500px">
         <Heading fontSize="sm" pb={5} style={{ letterSpacing: "1px" }}>
           HI, WELCOM TO MY HP.
         </Heading>
         <Text fontSize="2xl">
-          I'm Simon, a web developer. And I'm passionate about making people
-          know what is AI and how it works in a visual way. So I'm gonna build a
-          serial Deep Learning projects code by code. Let's hit the road!
+          I'm Simon, a web developer. I'm passionate about talking what is AI
+          and how it works in a visualization approach. And I'm building a
+          serial courses and apps to explain programming and AI's working
+          process. Let's hit the road!
         </Text>
         <Box hideFrom="md" h="30px" />
       </Box>

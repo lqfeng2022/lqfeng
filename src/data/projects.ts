@@ -1,6 +1,6 @@
 export default [
   {
-    title: "A Video Game Display Web",
+    title: "A Video Game Display Web:",
     content: [
       "Language: TypeScript",
       "Framework/Library: React.js",
@@ -13,9 +13,11 @@ export default [
       web: "www.gamehub.com",
       url: "http://www.gamehub.com",
     },
+    image: "src/assets/rawg.jpeg",
+    path: "/product/gamehub",
   },
   {
-    title: "A Community Web",
+    title: "A Community Web:",
     content: [
       "Language: TypeScript",
       "Framework/Library: Next.js",
@@ -26,5 +28,7 @@ export default [
       web: "www.community.com",
       url: "http://www.community.com",
     },
+    image: "src/assets/next.jpeg",
+    path: "/product/community",
   },
 ];
