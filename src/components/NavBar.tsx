@@ -1,5 +1,5 @@
 import { HStack, Heading, Icon, Text } from "@chakra-ui/react";
-import { FaYoutube } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import { HiLanguage } from "react-icons/hi2";
 import { Link, useLocation } from "react-router-dom";
 
@@ -10,6 +10,11 @@ const NavBar = () => {
     { name: "PRODUCT", url: "/product" },
     { name: "ME", url: "/about-me" },
   ];
+
+  const [t, i18n] = useTranslation("global");
+  const handleLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
+  };
 
   return (
     <HStack justifyContent="space-between" p="20px">
@@ -49,8 +54,12 @@ const NavBar = () => {
             </Heading>
           </Link>
         ))}
-        <Icon as={HiLanguage} boxSize="18px" color="gray.600" />
-        <Icon as={FaYoutube} boxSize="18px" color="gray.600" />
+        <Icon
+          as={HiLanguage}
+          boxSize="18px"
+          color="gray.600"
+          onClick={() => handleLanguage("jp")}
+        />
       </HStack>
     </HStack>
   );

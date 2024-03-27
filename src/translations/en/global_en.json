@@ -1,0 +1,72 @@
+{
+  "hp": {
+    "intro": {
+      "head": "HI, WELCOM TO MY HP.",
+      "body": "I'm Simon, a web developer. I'm passionate about talking what is AI and how it works in a visualization approach. And I'm building a serial courses and apps to explain programming and AI's working process. Let's hit the road!"
+    },
+    "py": {
+      "head": "PYTHON",
+      "body": "Everything you need to program in Python is here."
+    },
+    "ai": {
+      "head": "Do we need to learn coding in 2024 the Age of AI?",
+      "body": "AI is becomming so powerful espacially as ChatGPT launched. It's so smart and can do lots of tech stuff by itself, like coding. I think most of us should learn programming. Cus it can help you understand how computers and AI work, it is super important because they're everywhere now and future.",
+      "foot": "Plus, when you know how to code, you can tell the AI exactly what you want it to do to make your own cool projects. And even help make AI smarter and safer for everyone."
+    },
+    "pytorch": {
+      "head": "PYTORCH",
+      "body": "Learn building & deploying deep learning models with PyTorch."
+    },
+    "tensorflow": {
+      "head": "TENSORFLOW",
+      "body": "Learn building & deploying deep learning models with TensorFlow."
+    },
+    "mysql": {
+      "head": "MYSQL",
+      "body": "Learn everything about DATABASE with MySQL."
+    },
+    "dbstructure": {
+      "head": "DATASTRUCTURE",
+      "body": "With a visual approach to learn data structure."
+    },
+    "algorithm": {
+      "head": "ALGORITHM",
+      "body": "Ace your coding job interview in a clean way."
+    },
+    "english": {
+      "head": "ENGLISH",
+      "body": "Learn english conversation with small talk and story."
+    },
+    "japanese": {
+      "head": "JAPANESE",
+      "body": "Learn japanese conversation with small talk."
+    }
+  },
+  "product": {
+    "app": {
+      "head": "What about build your personal app?",
+      "body": "You can design and build a full-stack app as your first product. A popular product can leave peope a great first impression which make people stick around you, even it's just an APP not a Photo or Paiting. It's the key to attracting audience, to making yourself known to the outside world.",
+      "foot": "Here I'm gonna build a web app from scratch.",
+      "toe": "SEE WHAT I BUILD:"
+    }
+  },
+  "simon": {
+    "intro": {
+      "head": "HI, I'M SIMON.",
+      "body": "A developer for helping you build your own application. I'm passionate about AI and nature languages, like le français and japanese. What if I trained an personality AI assistant who can help people learning languages and building apps, that's gonna be fun!"
+    },
+    "job": {
+      "quest": "0. What am I doing now?",
+      "answ": "As a web developer, I'm building serveral personal apps, like Background remover app with Computer Vision model. Plus, I'm preparing a serial coding and english conversation lessons."
+    },
+    "educ": {
+      "quest": "1. What's my eduction background?",
+      "answ": "A graduate of Hubei University of Technology in Wuhan. I love philosophy, read some books about Laozi, Buddha, and Descartes. And I am a big fun of GIBLI, so I started to know more about Japanese culture and history in college."
+    },
+    "career": {
+      "quest": "2. What's my career?",
+      "answ": "I used to be an engineer in a Japanese company for some years. And before that I worked as a sales in an export traiding company."
+    },
+    "view": "Lee is a reliable business parter and friend. He have a talent to get something new quickly, he took 1 year becomming a full-stack developer from zero."
+  }
+}
