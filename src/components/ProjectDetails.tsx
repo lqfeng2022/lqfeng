@@ -6,6 +6,7 @@ import {
   UnorderedList,
   Image,
   Stack,
+  useColorMode,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import CardContainer from "./CardContainer";
@@ -23,6 +24,7 @@ interface Detail {
 const ProjectDetails = ({ details }: { details: Detail }) => {
   const [t, i18n] = useTranslation("global");
   const jp = i18n.language === "jp";
+  const { colorMode } = useColorMode();
 
   return (
     <Stack>
@@ -35,7 +37,7 @@ const ProjectDetails = ({ details }: { details: Detail }) => {
         <Text my="8px" fontSize="2xl" className="fst-italic">
           {jp ? details.title_jp : details.title_en}
         </Text>
-        <Box bg="gray.100">
+        <Box bg={colorMode === "light" ? "gray.100" : "gray.700"}>
           <UnorderedList m="10px" pl="5px" py={2}>
             {details.content.map((c) => (
               <ListItem key={c}>

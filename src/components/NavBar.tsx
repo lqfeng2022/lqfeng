@@ -1,4 +1,11 @@
-import { Button, HStack, Heading, Icon, Text } from "@chakra-ui/react";
+import {
+  Button,
+  HStack,
+  Heading,
+  Icon,
+  Text,
+  useColorMode,
+} from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import { HiLanguage } from "react-icons/hi2";
 import { Link, useLocation } from "react-router-dom";
@@ -16,6 +23,10 @@ const NavBar = () => {
     i18n.changeLanguage(lang);
   };
   const jp = i18n.language === "jp";
+
+  const { colorMode } = useColorMode();
+  const lightDarkSwitch =
+    colorMode === "light" ? "border-bottom border-dark" : "border-bottom";
 
   return (
     <HStack justifyContent="space-between" p="20px">
@@ -36,14 +47,12 @@ const NavBar = () => {
           LI_QIUFENG<Text fontSize="sm">.STUDIO</Text>
         </Heading>
       </Link>
-      <HStack spacing="22px">
+      <HStack spacing="25px">
         {links.map((link) => (
           <Link
             key={link.name}
             to={link.url}
-            className={
-              l.pathname === `${link.url}` ? "border-bottom border-dark" : ""
-            }
+            className={l.pathname === `${link.url}` ? lightDarkSwitch : ""}
           >
             <Heading
               fontSize="xs"
@@ -58,7 +67,6 @@ const NavBar = () => {
         <Button
           leftIcon={<Icon as={HiLanguage} boxSize="20px"></Icon>}
           colorScheme="teal"
-          w="20px"
           variant="link"
           onClick={() => handleLanguage(jp ? "en" : "jp")}
         ></Button>

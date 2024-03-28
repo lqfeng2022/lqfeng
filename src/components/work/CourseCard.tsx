@@ -1,4 +1,11 @@
-import { Box, Center, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  Heading,
+  Image,
+  Text,
+  useColorMode,
+} from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import CardContainer from "../CardContainer";
 import { useTranslation } from "react-i18next";
@@ -17,6 +24,10 @@ const CourseCard = ({ course }: { course: Course }) => {
   const [t, i18n] = useTranslation("global");
   const jp = i18n.language === "jp";
 
+  const { colorMode } = useColorMode();
+  const lightDarkSwitch =
+    colorMode === "light" ? "border-bottom border-dark" : "border-bottom";
+
   return (
     <Center>
       <Box maxW="708px">
@@ -30,7 +41,7 @@ const CourseCard = ({ course }: { course: Course }) => {
           <Heading fontSize="sm" my="10px">
             <Link
               to="#"
-              className="border-bottom border-dark"
+              className={lightDarkSwitch}
               style={{ letterSpacing: "1px" }}
             >
               {course.title}
