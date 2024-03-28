@@ -43,7 +43,7 @@ function HomePage() {
           maxW="1200px"
         >
           {courses.map((c) => (
-            <CourseCard key={c.title} course={c} />
+            <CourseCard key={c.title} course={c}/>
           ))}
         </SimpleGrid>
       </Center>

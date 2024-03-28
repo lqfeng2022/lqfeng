@@ -6,40 +6,12 @@
     },
     "py": {
       "head": "PYTHON",
-      "body": "Everything you need to program in Python is here."
+      "body": "プログラミングPythonの全てがあるよ、ここに。"
     },
     "ai": {
       "head": "人工知能次代にコードを身につける必要がありますか？",
       "body": "ChatGPT3.5が誕生する前に、人工知能が人工アホだといれています。これは個人的な認識です。 でもねえ、GPTの能力が世の中にすごく強い印象が残っています。 人間っぽいチャットとか、翻訳とか、コーディングとか、何とか早くて答えること出来ます。 なぜこんなにすごいAIモデルが生まれていますか、これはコードの魅力だと思います。 コードのスキルを身につけることが必要になりそうです。しかも、プログラミングができれば、 コンピューターやAIがどうプロセスするかを理解しやすです。 これからは世の中にAIに関わることどんどん増えていますが、 もしAIが分からなくて使用出来ない人間がクズになっちゃた。",
       "foot": "さらに、コーディングのスキルを身につければ、AIに何をやってあげたいとか明確的に伝えることができます。 それに従って、優れたアプリとかAIモデルとか作成にすることが出来ます。 しかも、みんなの努力をあつめて、AIがもっとスマトとセキュリティになっています。"
-    },
-    "pytorch": {
-      "head": "PYTORCH",
-      "body": "Learn building & deploying deep learning models with PyTorch."
-    },
-    "tensorflow": {
-      "head": "TENSORFLOW",
-      "body": "Learn building & deploying deep learning models with TensorFlow."
-    },
-    "mysql": {
-      "head": "MYSQL",
-      "body": "Learn everything about DATABASE with MySQL."
-    },
-    "dbstructure": {
-      "head": "DATASTRUCTURE",
-      "body": "With a visual approach to learn data structure."
-    },
-    "algorithm": {
-      "head": "ALGORITHM",
-      "body": "Ace your coding job interview in a clean way."
-    },
-    "english": {
-      "head": "ENGLISH",
-      "body": "Learn english conversation with small talk and story."
-    },
-    "japanese": {
-      "head": "JAPANESE",
-      "body": "Learn japanese conversation with small talk."
     }
   },
   "product": {

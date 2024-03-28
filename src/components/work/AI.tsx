@@ -28,7 +28,11 @@ const Course = () => {
         <Flex>
           <Box maxW="500px">
             {!jp && <Text fontSize="3xl">{t("hp.ai.head")}</Text>}
-            {jp && <Text fontSize="xl">{t("hp.ai.head")}</Text>}
+            {jp && (
+              <Text fontSize="xl" className="fst-italic">
+                {t("hp.ai.head")}
+              </Text>
+            )}
             {!jp && (
               <Heading fontSize="md" className="fw-lighter lh-lg">
                 {t("hp.ai.body")}

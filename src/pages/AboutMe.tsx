@@ -43,7 +43,7 @@ const AboutMe = () => {
               </Text>
             )}
             {jp && (
-              <Text fontSize="lg" pt={6} style={{ letterSpacing: "1px" }}>
+              <Text fontSize="md" pt={6} style={{ letterSpacing: "1px" }}>
                 {t("simon.intro.body")}
               </Text>
             )}
@@ -55,16 +55,9 @@ const AboutMe = () => {
         <Stack>
           <SimpleGrid columns={[1, null, 2]} maxW="1000px" spacing="40px">
             <Box maxW="500px">
-              {!jp && (
-                <Text fontSize="xl" className="fst-italic">
-                  {t("simon.job.quest")}
-                </Text>
-              )}
-              {jp && (
-                <Text fontSize="xl" style={{ letterSpacing: "1px" }}>
-                  {t("simon.job.quest")}
-                </Text>
-              )}
+              <Text fontSize="xl" className="fst-italic">
+                {t("simon.job.quest")}
+              </Text>
               {!jp && (
                 <Heading fontSize="md" className="fw-lighter lh-lg">
                   {t("simon.job.answ")}
@@ -89,16 +82,9 @@ const AboutMe = () => {
             <Image src={book} />
           </Box>
           <Box>
-            {!jp && (
-              <Text fontSize="xl" className="fst-italic">
-                {t("simon.educ.quest")}
-              </Text>
-            )}
-            {jp && (
-              <Text fontSize="xl" style={{ letterSpacing: "1px" }}>
-                {t("simon.educ.quest")}
-              </Text>
-            )}
+            <Text fontSize="xl" className="fst-italic">
+              {t("simon.educ.quest")}
+            </Text>
             {!jp && (
               <Heading fontSize="md" className="fw-lighter lh-lg">
                 {t("simon.educ.answ")}
@@ -110,16 +96,9 @@ const AboutMe = () => {
               </Text>
             )}
             <Box paddingTop={4} my={5} className="border-bottom border-dark" />
-            {!jp && (
-              <Text fontSize="xl" pt={3} className="fst-italic">
-                {t("simon.career.quest")}
-              </Text>
-            )}
-            {jp && (
-              <Text fontSize="xl" pt={3} style={{ letterSpacing: "1px" }}>
-                {t("simon.career.quest")}
-              </Text>
-            )}
+            <Text fontSize="xl" pt={3} className="fst-italic">
+              {t("simon.career.quest")}
+            </Text>
             {!jp && (
               <Heading fontSize="md" className="fw-lighter lh-lg">
                 {t("simon.career.answ")}

@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 const Project = () => {
   const [t, i18n] = useTranslation("global");
   const jp = i18n.language === "jp";
+  const oneSpace = { letterSpacing: "1px" };
 
   return (
     <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
@@ -13,17 +14,20 @@ const Project = () => {
       </Box>
       <Box maxW="700px" pr="40px">
         {!jp && <Text fontSize="3xl">{t("product.app.head")}</Text>}
-        {jp && <Text fontSize="xl">{t("product.app.head")}</Text>}
-        <Text fontSize="lg" style={{ letterSpacing: "1px" }}>
-          {t("product.app.body")}
-        </Text>
+        {jp && <Text fontSize="2xl">{t("product.app.head")}</Text>}
+        {!jp && <Text fontSize="xl">{t("product.app.body")}</Text>}
+        {jp && (
+          <Text fontSize="sm" style={oneSpace}>
+            {t("product.app.body")}
+          </Text>
+        )}
         {!jp && (
           <Heading py={3} fontSize="md" className="fw-lighter lh-lg">
             {t("product.app.foot")}
           </Heading>
         )}
         {jp && (
-          <Text py={3} fontSize="md" style={{ letterSpacing: "1px" }}>
+          <Text py={3} fontSize="sm" style={oneSpace}>
             {t("product.app.foot")}
           </Text>
         )}
@@ -33,7 +37,7 @@ const Project = () => {
           </Heading>
         )}
         {jp && (
-          <Text pt="50px" fontSize="md" style={{ letterSpacing: "1px" }}>
+          <Text pt="50px" fontSize="sm" style={oneSpace}>
             {t("product.app.toe")}
           </Text>
         )}

@@ -1,10 +1,12 @@
-import { Box, Center, Heading, Image } from "@chakra-ui/react";
+import { Box, Center, Heading, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import CardContainer from "../CardContainer";
+import { useTranslation } from "react-i18next";
 
 export interface Course {
   title: string;
-  subTitle: string;
+  subTitle_en: string;
+  subTitle_jp: string;
   image: string;
   h1: string;
   h2: string;
@@ -12,6 +14,9 @@ export interface Course {
 }
 
 const CourseCard = ({ course }: { course: Course }) => {
+  const [t, i18n] = useTranslation("global");
+  const jp = i18n.language === "jp";
+
   return (
     <Center>
       <Box maxW="708px">
@@ -31,9 +36,16 @@ const CourseCard = ({ course }: { course: Course }) => {
               {course.title}
             </Link>
           </Heading>
-          <Heading fontSize="sm" className="fw-lighter fst-italic">
-            {course.subTitle}
-          </Heading>
+          {!jp && (
+            <Heading fontSize="sm" className="fw-lighter fst-italic">
+              {course.subTitle_en}
+            </Heading>
+          )}
+          {jp && (
+            <Text fontSize="sm" className="fst-italic">
+              {course.subTitle_jp}
+            </Text>
+          )}
         </Box>
         <Box hideBelow="md" h={course.h2} />
       </Box>

@@ -1,13 +1,16 @@
-import { Box, Center, Heading, Image } from "@chakra-ui/react";
+import { Box, Center, Heading, Image, Text } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const Python = () => {
   const pyCourse = {
     title: " PYTHON",
-    subTitle: "Everything you need to program in Python is here.",
     image: "src/assets/python_log.jpeg",
     url: "/work/python",
   };
+
+  const [t, i18n] = useTranslation("global");
+  const jp = i18n.language === "jp";
 
   return (
     <Center>
@@ -31,9 +34,16 @@ const Python = () => {
             {pyCourse.title}
           </Link>
         </Heading>
-        <Heading fontSize="sm" className="fw-lighter fst-italic">
-          {pyCourse.subTitle}
-        </Heading>
+        {!jp && (
+          <Heading fontSize="sm" className="fw-lighter fst-italic">
+            {t("hp.py.body")}
+          </Heading>
+        )}
+        {jp && (
+          <Text fontSize="sm" className="fst-italic">
+            {t("hp.py.body")}
+          </Text>
+        )}
       </Box>
     </Center>
   );

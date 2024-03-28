@@ -1,7 +1,9 @@
 export default [
   {
     title: "PYTORCH",
-    subTitle: "Learn building & deploying deep learning models with PyTorch.",
+    subTitle_en:
+      "Learn building & deploying deep learning models with PyTorch.",
+    subTitle_jp: "PyTorchでディープラーニングモデルを構築とデプロイする。",
     image: "src/assets/pytorch.jpeg",
     h1: "",
     h2: "60px",
@@ -9,8 +11,9 @@ export default [
   },
   {
     title: "TENSORFLOW",
-    subTitle:
+    subTitle_en:
       "Learn building & deploying deep learning models with TensorFlow.",
+    subTitle_jp: "TensorFlowでディープラーニングモデルを構築とデプロイする。",
     image: "src/assets/tensorflow.jpeg",
     h1: "60px",
     h2: "",
@@ -18,7 +21,8 @@ export default [
   },
   {
     title: "DJANGO",
-    subTitle: "Learn to build fast and secure APIs with Django.",
+    subTitle_en: "Learn to build fast and secure APIs with Django.",
+    subTitle_jp: "Djangoでセキュリティ、しっかりと反応早くのAPIsを構築する。",
     image: "src/assets/django.jpg",
     h1: "60px",
     h2: "",
@@ -26,7 +30,8 @@ export default [
   },
   {
     title: "MYSQL",
-    subTitle: "Learn everything about DATABASE with MySQL.",
+    subTitle_en: "Learn everything about DATABASE with MySQL.",
+    subTitle_jp: "MySQLでデータベースの全てが身につけて。",
     image: "src/assets/mysql.jpg",
     h1: "",
     h2: "60px",
@@ -34,7 +39,8 @@ export default [
   },
   {
     title: "DATA STRUCTURE",
-    subTitle: "With a visual approach to learn data structure.",
+    subTitle_en: "With a visual approach to learn data structure.",
+    subTitle_jp: "視覚的なアプローチでデータ構造の基本的な知識を身につけて。",
     image: "src/assets/data_structure.png",
     h1: "",
     h2: "60px",
@@ -42,7 +48,8 @@ export default [
   },
   {
     title: "ALGORITHM",
-    subTitle: "Ace your coding job interview in a clean way.",
+    subTitle_en: "Ace your coding job interview in a clean way.",
+    subTitle_jp: "IT面接によく問われているアルゴリズムを理解しやすい教え方で",
     image: "src/assets/algorithm.jpg",
     h1: "60px",
     h2: "",
@@ -50,7 +57,9 @@ export default [
   },
   {
     title: "ENGLISH",
-    subTitle: "Learn english conversation with small talk and story.",
+    subTitle_en: "Learn english conversation with small talk and story.",
+    subTitle_jp:
+      "英語日常会話のシリーズを作っていますが、興味があったら、ご覧ください。",
     image: "src/assets/english.jpg",
     h1: "50px",
     h2: "",
@@ -58,7 +67,9 @@ export default [
   },
   {
     title: "JAPANESE",
-    subTitle: "Learn japanese conversation with small talk.",
+    subTitle_en: "Learn japanese conversation with small talk.",
+    subTitle_jp:
+      "日本語日常界隈のシリーズを作っていますが、興味があれば、ごらんください。",
     image: "src/assets/japanese.png",
     h1: "",
     h2: "220px",

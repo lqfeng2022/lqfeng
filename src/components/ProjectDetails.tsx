@@ -9,9 +9,11 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import CardContainer from "./CardContainer";
+import { useTranslation } from "react-i18next";
 
 interface Detail {
-  title: string;
+  title_en: string;
+  title_jp: string;
   content: string[];
   links: { name: string; web: string; url: string };
   image: string;
@@ -19,17 +21,20 @@ interface Detail {
 }
 
 const ProjectDetails = ({ details }: { details: Detail }) => {
+  const [t, i18n] = useTranslation("global");
+  const jp = i18n.language === "jp";
+
   return (
     <Stack>
-      <Text fontSize="2xl" className="fst-italic">
-        {details.title}
-      </Text>
       <CardContainer>
         <Link to={details.path}>
           <Image src={details.image} />
         </Link>
       </CardContainer>
       <Box>
+        <Text my="8px" fontSize="2xl" className="fst-italic">
+          {jp ? details.title_jp : details.title_en}
+        </Text>
         <Box bg="gray.100">
           <UnorderedList m="10px" pl="5px" py={2}>
             {details.content.map((c) => (

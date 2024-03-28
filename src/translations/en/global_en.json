@@ -12,34 +12,6 @@
       "head": "Do we need to learn coding in 2024 the Age of AI?",
       "body": "AI is becomming so powerful espacially as ChatGPT launched. It's so smart and can do lots of tech stuff by itself, like coding. I think most of us should learn programming. Cus it can help you understand how computers and AI work, it is super important because they're everywhere now and future.",
       "foot": "Plus, when you know how to code, you can tell the AI exactly what you want it to do to make your own cool projects. And even help make AI smarter and safer for everyone."
-    },
-    "pytorch": {
-      "head": "PYTORCH",
-      "body": "Learn building & deploying deep learning models with PyTorch."
-    },
-    "tensorflow": {
-      "head": "TENSORFLOW",
-      "body": "Learn building & deploying deep learning models with TensorFlow."
-    },
-    "mysql": {
-      "head": "MYSQL",
-      "body": "Learn everything about DATABASE with MySQL."
-    },
-    "dbstructure": {
-      "head": "DATASTRUCTURE",
-      "body": "With a visual approach to learn data structure."
-    },
-    "algorithm": {
-      "head": "ALGORITHM",
-      "body": "Ace your coding job interview in a clean way."
-    },
-    "english": {
-      "head": "ENGLISH",
-      "body": "Learn english conversation with small talk and story."
-    },
-    "japanese": {
-      "head": "JAPANESE",
-      "body": "Learn japanese conversation with small talk."
     }
   },
   "product": {

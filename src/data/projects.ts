@@ -1,6 +1,7 @@
 export default [
   {
-    title: "A Video Game Display Web:",
+    title_en: "A Video Game Display Web:",
+    title_jp: "ビデオゲーム情報を検索用のアプリ",
     content: [
       "Language: TypeScript",
       "Framework/Library: React.js",
@@ -17,7 +18,8 @@ export default [
     path: "/product/gamehub",
   },
   {
-    title: "A Community Web:",
+    title_en: "A Community Web:",
+    title_jp: "ブログのようなウェブ",
     content: [
       "Language: TypeScript",
       "Framework/Library: Next.js",
