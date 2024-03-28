@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <Stack>
       {/* 1)contact box */}
-      <Center pt="80px" pb="10px">
+      <Center pt="50px" pb="10px">
         <Container w="200px" h="60px" bg="gray.600" color="white">
           <Center>
             <Heading textAlign="center" fontSize="sm" px="15px" my="11px">

@@ -22,7 +22,7 @@ export default [
   {
     title: "DJANGO",
     subTitle_en: "Learn to build fast and secure APIs with Django.",
-    subTitle_jp: "Djangoでセキュリティ、しっかりと反応早くのAPIsを構築する。",
+    subTitle_jp: "Djangoでセキュリティー、しっかりと反応早くのAPIsを構築する。",
     image: "src/assets/django.jpg",
     h1: "60px",
     h2: "",
@@ -31,7 +31,7 @@ export default [
   {
     title: "MYSQL",
     subTitle_en: "Learn everything about DATABASE with MySQL.",
-    subTitle_jp: "MySQLでデータベースの全てが身につけて。",
+    subTitle_jp: "MySQLでデータベースの全てが身につけてる。",
     image: "src/assets/mysql.jpg",
     h1: "",
     h2: "60px",
@@ -40,7 +40,7 @@ export default [
   {
     title: "DATA STRUCTURE",
     subTitle_en: "With a visual approach to learn data structure.",
-    subTitle_jp: "視覚的なアプローチでデータ構造の基本的な知識を身につけて。",
+    subTitle_jp: "視覚的なアプローチでデータ構造の基本的な知識を身につけてる。",
     image: "src/assets/data_structure.png",
     h1: "",
     h2: "60px",
@@ -66,10 +66,10 @@ export default [
     url: "/work/english",
   },
   {
-    title: "JAPANESE",
+    title: "日本語",
     subTitle_en: "Learn japanese conversation with small talk.",
     subTitle_jp:
-      "日本語日常界隈のシリーズを作っていますが、興味があれば、ごらんください。",
+      "日本語日常会話のシリーズを作っていますが、興味があれば、ごらんください。",
     image: "src/assets/japanese.png",
     h1: "",
     h2: "220px",
