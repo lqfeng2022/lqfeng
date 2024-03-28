@@ -34,15 +34,14 @@ const Python = () => {
             {pyCourse.title}
           </Link>
         </Heading>
-        {!jp && (
-          <Heading fontSize="sm" className="fw-lighter fst-italic">
-            {t("hp.py.body")}
-          </Heading>
-        )}
-        {jp && (
+        {jp ? (
           <Text fontSize="sm" className="fst-italic">
             {t("hp.py.body")}
           </Text>
+        ) : (
+          <Heading fontSize="sm" className="fw-lighter fst-italic">
+            {t("hp.py.body")}
+          </Heading>
         )}
       </Box>
     </Center>

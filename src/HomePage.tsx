@@ -13,21 +13,21 @@ function HomePage() {
     <>
       {/* 0)hp introduce */}
       <Box px="10px" py="35px" maxW="500px">
-        {!jp && (
+        {jp ? (
+          <Heading fontSize="lg" pb={5}>
+            {t("hp.intro.head")}
+          </Heading>
+        ) : (
           <Heading fontSize="sm" pb={5} style={{ letterSpacing: "1px" }}>
             {t("hp.intro.head")}
           </Heading>
         )}
-        {jp && (
-          <Heading fontSize="lg" pb={5}>
-            {t("hp.intro.head")}
-          </Heading>
-        )}
-        {!jp && <Text fontSize="2xl">{t("hp.intro.body")}</Text>}
-        {jp && (
+        {jp ? (
           <Text fontSize="lg" style={{ letterSpacing: "1px" }}>
             {t("hp.intro.body")}
           </Text>
+        ) : (
+          <Text fontSize="2xl">{t("hp.intro.body")}</Text>
         )}
         <Box hideFrom="md" h="30px" />
       </Box>
@@ -43,7 +43,7 @@ function HomePage() {
           maxW="1200px"
         >
           {courses.map((c) => (
-            <CourseCard key={c.title} course={c}/>
+            <CourseCard key={c.title} course={c} />
           ))}
         </SimpleGrid>
       </Center>

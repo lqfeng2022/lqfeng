@@ -31,22 +31,20 @@ const AboutMe = () => {
           </Box>
           <Box>
             <Box hideBelow="md" h="180px" />
-            {!jp && (
+            {jp ? (
+              <Text fontSize="md">{t("simon.intro.head")}</Text>
+            ) : (
               <Heading fontSize="md" style={{ letterSpacing: "1px" }}>
                 {t("simon.intro.head")}
               </Heading>
             )}
-            {jp && <Text fontSize="md">{t("simon.intro.head")}</Text>}
-            {!jp && (
-              <Text fontSize="2xl" pt={6}>
-                {t("simon.intro.body")}
-              </Text>
-            )}
-            {jp && (
-              <Text fontSize="md" pt={6} style={{ letterSpacing: "1px" }}>
-                {t("simon.intro.body")}
-              </Text>
-            )}
+            <Text
+              pt={6}
+              fontSize={jp ? "md" : "2xl"}
+              style={jp ? { letterSpacing: "1px" } : {}}
+            >
+              {t("simon.intro.body")}
+            </Text>
           </Box>
         </SimpleGrid>
       </Center>
@@ -58,15 +56,14 @@ const AboutMe = () => {
               <Text fontSize="xl" className="fst-italic">
                 {t("simon.job.quest")}
               </Text>
-              {!jp && (
-                <Heading fontSize="md" className="fw-lighter lh-lg">
-                  {t("simon.job.answ")}
-                </Heading>
-              )}
-              {jp && (
+              {jp ? (
                 <Text fontSize="md" style={{ letterSpacing: "1px" }}>
                   {t("simon.job.answ")}
                 </Text>
+              ) : (
+                <Heading fontSize="md" className="fw-lighter lh-lg">
+                  {t("simon.job.answ")}
+                </Heading>
               )}
             </Box>
           </SimpleGrid>
@@ -85,29 +82,27 @@ const AboutMe = () => {
             <Text fontSize="xl" className="fst-italic">
               {t("simon.educ.quest")}
             </Text>
-            {!jp && (
-              <Heading fontSize="md" className="fw-lighter lh-lg">
-                {t("simon.educ.answ")}
-              </Heading>
-            )}
-            {jp && (
+            {jp ? (
               <Text fontSize="md" style={{ letterSpacing: "1px" }}>
                 {t("simon.educ.answ")}
               </Text>
+            ) : (
+              <Heading fontSize="md" className="fw-lighter lh-lg">
+                {t("simon.educ.answ")}
+              </Heading>
             )}
             <Box paddingTop={4} my={5} className="border-bottom border-dark" />
             <Text fontSize="xl" pt={3} className="fst-italic">
               {t("simon.career.quest")}
             </Text>
-            {!jp && (
-              <Heading fontSize="md" className="fw-lighter lh-lg">
-                {t("simon.career.answ")}
-              </Heading>
-            )}
-            {jp && (
+            {jp ? (
               <Text fontSize="md" style={{ letterSpacing: "1px" }}>
                 {t("simon.career.answ")}
               </Text>
+            ) : (
+              <Heading fontSize="md" className="fw-lighter lh-lg">
+                {t("simon.career.answ")}
+              </Heading>
             )}
           </Box>
         </SimpleGrid>
@@ -117,18 +112,15 @@ const AboutMe = () => {
         <SimpleGrid columns={{ base: 1, sm: 2 }} maxW="1000px" spacing="40px">
           <Center>
             <Box maxW="450px">
-              {!jp && (
-                <Text fontSize="xl" mb="10px" className="lh-md">
-                  <Icon boxSize="25px" as={FaQuoteLeft} pr={2} pb={3} />
-                  {t("simon.view")}
-                </Text>
-              )}
-              {jp && (
-                <Text fontSize="md" mb="10px" style={{ letterSpacing: "1px" }}>
-                  <Icon boxSize="25px" as={FaQuoteLeft} pr={2} pb={3} />
-                  {t("simon.view")}
-                </Text>
-              )}
+              <Text
+                mb="10px"
+                fontSize={jp ? "md" : "xl"}
+                className={jp ? "" : "lh-md"}
+                style={jp ? { letterSpacing: "1px" } : {}}
+              >
+                <Icon boxSize="25px" as={FaQuoteLeft} pr={2} pb={3} />
+                {t("simon.view")}
+              </Text>
               <Flex>
                 <Heading fontSize="sm">SIMON </Heading>
                 <Heading fontSize="sm" className="fw-lighter">

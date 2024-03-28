@@ -27,31 +27,30 @@ const Course = () => {
         </Box>
         <Flex>
           <Box maxW="500px">
-            {!jp && <Text fontSize="3xl">{t("hp.ai.head")}</Text>}
-            {jp && (
+            {jp ? (
               <Text fontSize="xl" className="fst-italic">
                 {t("hp.ai.head")}
               </Text>
+            ) : (
+              <Text fontSize="3xl">{t("hp.ai.head")}</Text>
             )}
-            {!jp && (
+            {jp ? (
+              <Text fontSize="md" style={{ letterSpacing: "1px" }}>
+                {t("hp.ai.body")}
+              </Text>
+            ) : (
               <Heading fontSize="md" className="fw-lighter lh-lg">
                 {t("hp.ai.body")}
               </Heading>
             )}
-            {jp && (
-              <Text fontSize="md" style={{ letterSpacing: "1px" }}>
-                {t("hp.ai.body")}
-              </Text>
-            )}
-            {!jp && (
-              <Heading py={3} fontSize="md" className="fw-lighter lh-lg">
-                {t("hp.ai.foot")}
-              </Heading>
-            )}
-            {jp && (
+            {jp ? (
               <Text py={3} fontSize="md" style={{ letterSpacing: "1px" }}>
                 {t("hp.ai.foot")}
               </Text>
+            ) : (
+              <Heading py={3} fontSize="md" className="fw-lighter lh-lg">
+                {t("hp.ai.foot")}
+              </Heading>
             )}
           </Box>
           <Box hideBelow="md" w="5px" pr="30px" />

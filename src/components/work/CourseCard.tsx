@@ -36,15 +36,14 @@ const CourseCard = ({ course }: { course: Course }) => {
               {course.title}
             </Link>
           </Heading>
-          {!jp && (
+          {jp ? (
+            <Text fontSize="sm" mb="5.62px" className="fst-italic">
+              {course.subTitle_jp}
+            </Text>
+          ) : (
             <Heading fontSize="sm" className="fw-lighter fst-italic">
               {course.subTitle_en}
             </Heading>
-          )}
-          {jp && (
-            <Text fontSize="sm" className="fst-italic">
-              {course.subTitle_jp}
-            </Text>
           )}
         </Box>
         <Box hideBelow="md" h={course.h2} />

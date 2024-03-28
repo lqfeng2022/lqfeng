@@ -6,7 +6,8 @@
     },
     "py": {
       "head": "PYTHON",
-      "body": "Everything you need to program in Python is here."
+      "body": "Everything you need to program in Python is here.",
+      "detail": "Waitting for edit..."
     },
     "ai": {
       "head": "Do we need to learn coding in 2024 the Age of AI?",
@@ -20,6 +21,9 @@
       "body": "You can design and build a full-stack app as your first product. A popular product can leave peope a great first impression which make people stick around you, even it's just an APP not a Photo or Paiting. It's the key to attracting audience, to making yourself known to the outside world.",
       "foot": "Here I'm gonna build a web app from scratch.",
       "toe": "SEE WHAT I BUILD:"
+    },
+    "detail": {
+      "games": "Waitting for edit..."
     }
   },
   "simon": {
@@ -40,5 +44,12 @@
       "answ": "I used to be an engineer in a Japanese company for some years. And before that I worked as a sales in an export traiding company."
     },
     "view": "Lee is a reliable business parter and friend. He have a talent to get something new quickly, he took 1 year becomming a full-stack developer from zero."
+  },
+  "footer": {
+    "contact": "Let's Talk About Your Plan",
+    "channels": "You can watch my Social Media Channel:",
+    "languages": "You can change to other language version:",
+    "intro": "This is my personal portfolio web, it's just for introduce who I am, what's my interesting, what I'm doing now etc. What I am doing now is creating a serial application and programming courses wich including AI fundamental knowledge.",
+    "copyright": "Code and Share by LI QIUFENG with "
   }
 }

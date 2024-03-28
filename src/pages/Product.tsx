@@ -16,9 +16,9 @@ const Product = () => {
         <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
           <Box>
             <Box hideBelow="md" h="200px" />
-            <ProjectDetails details={communityDetail} />
+            <ProjectDetails details={gameDetail} />
           </Box>
-          <ProjectDetails details={gameDetail} />
+          <ProjectDetails details={communityDetail} />
         </SimpleGrid>
       </Center>
     </>

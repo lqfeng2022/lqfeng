@@ -13,33 +13,27 @@ const Project = () => {
         <Image src={project} />
       </Box>
       <Box maxW="700px" pr="40px">
-        {!jp && <Text fontSize="3xl">{t("product.app.head")}</Text>}
-        {jp && <Text fontSize="2xl">{t("product.app.head")}</Text>}
-        {!jp && <Text fontSize="xl">{t("product.app.body")}</Text>}
-        {jp && (
-          <Text fontSize="sm" style={oneSpace}>
-            {t("product.app.body")}
+        <Text fontSize={jp ? "2xl" : "3xl"}>{t("product.app.head")}</Text>
+        <Text fontSize={jp ? "sm" : "xl"} style={jp ? oneSpace : {}}>
+          {t("product.app.body")}
+        </Text>
+        {jp ? (
+          <Text py={3} fontSize="sm" style={oneSpace}>
+            {t("product.app.foot")}
           </Text>
-        )}
-        {!jp && (
+        ) : (
           <Heading py={3} fontSize="md" className="fw-lighter lh-lg">
             {t("product.app.foot")}
           </Heading>
         )}
-        {jp && (
-          <Text py={3} fontSize="sm" style={oneSpace}>
-            {t("product.app.foot")}
-          </Text>
-        )}
-        {!jp && (
-          <Heading pt="50px" fontSize="sm">
-            {t("product.app.toe")}
-          </Heading>
-        )}
-        {jp && (
+        {jp ? (
           <Text pt="50px" fontSize="sm" style={oneSpace}>
             {t("product.app.toe")}
           </Text>
+        ) : (
+          <Heading pt="50px" fontSize="sm">
+            {t("product.app.toe")}
+          </Heading>
         )}
       </Box>
     </SimpleGrid>
