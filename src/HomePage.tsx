@@ -12,6 +12,7 @@ function HomePage() {
 
   return (
     <>
+      {/* hp introduction */}
       <Box px="10px" py="35px" maxW="500px">
         <Heading fontSize="sm" pb={5} style={oneSpace}>
           {t("hp.intro.head")}
@@ -23,6 +24,7 @@ function HomePage() {
       </Box>
       <Python />
       <AI />
+      {/* Course list */}
       <Center>
         <SimpleGrid
           columns={{ sm: 1, md: 2 }}

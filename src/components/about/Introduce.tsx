@@ -3,7 +3,7 @@ import simon from "../../assets/lqfeng.jpeg";
 import { useTranslation } from "react-i18next";
 
 const Introduce = ({ jp }: { jp: boolean }) => {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
   return (
     <SimpleGrid columns={{ sm: 1, md: 2 }} maxW="1000px" spacing="40px">

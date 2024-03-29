@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import book from "../../assets/book.jpg";
 
 const Back = ({ jp }: { jp: boolean }) => {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
   return (
     <SimpleGrid columns={[1, null, 2]} maxW="1000px" spacing="40px">

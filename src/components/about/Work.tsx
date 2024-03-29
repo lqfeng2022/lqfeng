@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import ai from "../../assets/ai.jpeg";
 
 const Work = ({ jp }: { jp: boolean }) => {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
   return (
     <Stack>

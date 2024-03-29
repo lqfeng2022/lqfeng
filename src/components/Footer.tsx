@@ -1,157 +1,35 @@
-import {
-  Box,
-  Button,
-  Center,
-  Container,
-  Heading,
-  HStack,
-  Icon,
-  Stack,
-  Text,
-  useColorMode,
-} from "@chakra-ui/react";
+import { Center, Stack } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import { FaTiktok, FaYoutube } from "react-icons/fa";
-import { IoHeart } from "react-icons/io5";
-import { FaGithub } from "react-icons/fa";
-import { FiMoon, FiSun } from "react-icons/fi";
+import Channels from "./footer/Channels";
+import ContactBox from "./footer/ContactBox";
+import CopyRight from "./footer/CopyRight";
+import Languages from "./footer/Languages";
+import ToggleColorMode from "./footer/ToggleColorMode";
+import WebIntroduce from "./footer/WebIntroduce";
 
 const Footer = () => {
   const [t, i18n] = useTranslation("global");
   const jp = i18n.language === "jp";
-  const handleLanguage = (lang: string) => {
-    i18n.changeLanguage(lang);
-  };
-
-  const { colorMode, toggleColorMode } = useColorMode();
 
   return (
     <Stack>
-      {/* 1)contact box */}
       <Center pt="50px" pb="10px">
-        <Container w="200px" h="60px" bg="gray.600" color="white">
-          <Center>
-            <Heading textAlign="center" fontSize="sm" px="15px" my="13px">
-              {t("footer.contact")}
-            </Heading>
-          </Center>
-        </Container>
+        <ContactBox />
       </Center>
-      {/* 2)social media and github */}
       <Center px="20px" py="6px">
-        <Stack>
-          {jp ? (
-            <Text textAlign="center" my={1} pr={1} fontSize="sm">
-              {t("footer.channels")}
-            </Text>
-          ) : (
-            <Heading
-              textAlign="center"
-              my={1}
-              pr={1}
-              fontSize="sm"
-              className="fw-lighter"
-            >
-              {t("footer.channels")}
-            </Heading>
-          )}
-          <Center>
-            <HStack spacing="15px" pl="10px">
-              <Icon as={FaYoutube} boxSize="20px" color="gray.600" />
-              <Icon as={FaTiktok} boxSize="20px" color="gray.600" />
-              <Icon as={FaGithub} boxSize="20px" color="gray.600" />
-            </HStack>
-          </Center>
-        </Stack>
+        <Channels jp={jp} />
       </Center>
-      {/* 3)languages switch */}
       <Center p="6px">
-        <Stack>
-          <Center>
-            {jp ? (
-              <Text as="i" fontSize="sm">
-                {t("footer.languages")}
-              </Text>
-            ) : (
-              <Heading as="i" fontSize="sm" className="fw-lighter">
-                {t("footer.languages")}
-              </Heading>
-            )}
-          </Center>
-          <Center>
-            <Button variant="link" onClick={() => handleLanguage("en")}>
-              <Heading as="i" fontSize="sm" pr={1}>
-                English
-              </Heading>
-            </Button>
-            <Text as="i" fontSize="sm">
-              /
-            </Text>
-            <Button variant="link" onClick={() => handleLanguage("jp")}>
-              <Text as="i" pr={1} fontSize="sm" pl={1}>
-                日本語
-              </Text>
-            </Button>
-          </Center>
-        </Stack>
+        <Languages jp={jp} />
       </Center>
-      {/* 4)hp introduce.. */}
       <Center px="20px" py="6px">
-        <Box maxW="500px">
-          <Center>
-            {jp ? (
-              <Text textAlign="center" as="i" fontSize="sm">
-                {t("footer.intro")}
-              </Text>
-            ) : (
-              <Heading
-                textAlign="center"
-                as="i"
-                fontSize="sm"
-                className="fw-lighter"
-              >
-                {t("footer.intro")}
-              </Heading>
-            )}
-          </Center>
-        </Box>
+        <WebIntroduce jp={jp} />
       </Center>
-      {/* 5)colormode switch */}
       <Center px="20px" pt="6px" pb="10px">
-        <Heading
-          textAlign="center"
-          pr={3}
-          as="i"
-          fontSize="sm"
-          className="fw-lighter"
-        >
-          {t("footer.colormode")}
-        </Heading>
-        <Icon
-          boxSize="20px"
-          as={colorMode == "light" ? FiMoon : FiSun}
-          onClick={toggleColorMode}
-        />
+        <ToggleColorMode jp={jp} />
       </Center>
-      {/* 6)copyright */}
       <Center px="20px" pt="6px" pb="10px">
-        {jp ? (
-          <Text textAlign="center" as="i" fontSize="sm">
-            {t("footer.copyright")}
-            <Icon boxSize="18px" pl="5px" as={IoHeart} color="red.400" />
-          </Text>
-        ) : (
-          <Heading
-            textAlign="center"
-            pr={1}
-            as="i"
-            fontSize="sm"
-            className="fw-lighter"
-          >
-            {t("footer.copyright")}
-            <Icon boxSize="18px" mb="3px" as={IoHeart} color="red.400" />
-          </Heading>
-        )}
+        <CopyRight jp={jp} />
       </Center>
     </Stack>
   );

@@ -13,7 +13,7 @@ import { FaQuoteLeft } from "react-icons/fa";
 import quotation from "../../assets/quotation.jpeg";
 
 const View = ({ jp }: { jp: boolean }) => {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
   return (
     <SimpleGrid columns={{ base: 1, sm: 2 }} maxW="1000px" spacing="40px">
