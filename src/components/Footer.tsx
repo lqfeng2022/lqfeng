@@ -8,11 +8,13 @@ import {
   Icon,
   Stack,
   Text,
+  useColorMode,
 } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import { FaTiktok, FaYoutube } from "react-icons/fa";
 import { IoHeart } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
+import { FiMoon, FiSun } from "react-icons/fi";
 
 const Footer = () => {
   const [t, i18n] = useTranslation("global");
@@ -20,6 +22,8 @@ const Footer = () => {
   const handleLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
   };
+
+  const { colorMode, toggleColorMode } = useColorMode();
 
   return (
     <Stack>
@@ -112,12 +116,29 @@ const Footer = () => {
           </Center>
         </Box>
       </Center>
-      {/* 5)copyright */}
+      {/* 5)colormode switch */}
+      <Center px="20px" pt="6px" pb="10px">
+        <Heading
+          textAlign="center"
+          pr={3}
+          as="i"
+          fontSize="sm"
+          className="fw-lighter"
+        >
+          {t("footer.colormode")}
+        </Heading>
+        <Icon
+          boxSize="20px"
+          as={colorMode == "light" ? FiMoon : FiSun}
+          onClick={toggleColorMode}
+        />
+      </Center>
+      {/* 6)copyright */}
       <Center px="20px" pt="6px" pb="10px">
         {jp ? (
           <Text textAlign="center" as="i" fontSize="sm">
             {t("footer.copyright")}
-            <Icon boxSize="18px" mb="3px" as={IoHeart} color="red.400" />
+            <Icon boxSize="18px" pl="5px" as={IoHeart} color="red.400" />
           </Text>
         ) : (
           <Heading
