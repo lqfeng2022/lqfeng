@@ -2,7 +2,7 @@ import { Center } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import Back from "../components/about/Back";
 import Introduce from "../components/about/Introduce";
-import View from "../components/about/view";
+import View from "../components/about/View";
 import Work from "../components/about/Work";
 
 const AboutMe = () => {

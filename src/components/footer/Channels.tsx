@@ -1,4 +1,12 @@
-import { Center, Heading, HStack, Icon, Stack, Text } from "@chakra-ui/react";
+import {
+  Center,
+  Heading,
+  HStack,
+  Icon,
+  Link,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import { FaGithub, FaTiktok, FaYoutube } from "react-icons/fa";
 
@@ -24,9 +32,14 @@ const Channels = ({ jp }: { jp: boolean }) => {
       )}
       <Center>
         <HStack spacing="15px" pl="10px">
-          <Icon as={FaYoutube} boxSize="20px" color="gray.600" />
-          <Icon as={FaTiktok} boxSize="20px" color="gray.600" />
-          <Icon as={FaGithub} boxSize="20px" color="gray.600" />
+          <Icon as={FaYoutube} boxSize="25px" color="red.500" />
+          <Icon as={FaTiktok} boxSize="25px" color="gray.600" />
+          <Link
+            target="_blank"
+            href="https://github.com/lqfeng2022/game-display"
+          >
+            <Icon as={FaGithub} boxSize="25px" color="gray.600" />
+          </Link>
         </HStack>
       </Center>
     </Stack>

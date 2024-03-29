@@ -16,7 +16,11 @@ const Introduce = ({ jp }: { jp: boolean }) => {
         {jp ? (
           <Text fontSize="md">{t("simon.intro.head")}</Text>
         ) : (
-          <Heading fontSize="md" style={{ letterSpacing: "1px" }}>
+          <Heading
+            fontSize="md"
+            className="fw-lighter"
+            style={{ letterSpacing: "1px" }}
+          >
             {t("simon.intro.head")}
           </Heading>
         )}
