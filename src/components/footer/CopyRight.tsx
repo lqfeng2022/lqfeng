@@ -10,7 +10,7 @@ const CopyRight = ({ jp }: { jp: boolean }) => {
       {jp ? (
         <Text textAlign="center" as="i" fontSize="sm">
           {t("footer.copyright")}
-          <Icon boxSize="18px" pl="5px" as={IoHeart} color="red.400" />
+          <Icon boxSize="25px" pl="5px" as={IoHeart} color="red.400" />
         </Text>
       ) : (
         <Heading
@@ -21,7 +21,7 @@ const CopyRight = ({ jp }: { jp: boolean }) => {
           className="fw-lighter"
         >
           {t("footer.copyright")}
-          <Icon boxSize="18px" mb="3px" as={IoHeart} color="red.400" />
+          <Icon boxSize="20px" mb="3px" as={IoHeart} color="red.400" />
         </Heading>
       )}
     </>

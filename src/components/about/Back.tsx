@@ -1,9 +1,20 @@
-import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Image,
+  SimpleGrid,
+  Text,
+  useColorMode,
+} from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import book from "../../assets/book.jpg";
 
 const Back = ({ jp }: { jp: boolean }) => {
   const [t] = useTranslation("global");
+
+  const { colorMode } = useColorMode();
+  const lightDarkSwitch =
+    colorMode === "light" ? "border-bottom border-dark" : "border-bottom";
 
   return (
     <SimpleGrid columns={[1, null, 2]} maxW="1000px" spacing="40px">
@@ -23,7 +34,7 @@ const Back = ({ jp }: { jp: boolean }) => {
             {t("simon.educ.answ")}
           </Heading>
         )}
-        <Box paddingTop={4} my={5} className="border-bottom border-dark" />
+        <Box paddingTop={4} my={5} className={lightDarkSwitch} />
         <Text fontSize="xl" pt={3} className="fst-italic">
           {t("simon.career.quest")}
         </Text>

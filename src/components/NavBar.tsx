@@ -22,7 +22,7 @@ const NavBar = () => {
     colorMode === "light" ? "border-bottom border-dark" : "border-bottom";
 
   return (
-    <HStack justifyContent="space-between" p="20px">
+    <HStack justifyContent="space-between" p="20px" pr="10px">
       <Link to="/">
         <Heading hideFrom="md" fontSize="4xl" my="8px" className="fw-lighter">
           楓
