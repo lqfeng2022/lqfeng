@@ -1,11 +1,4 @@
-import {
-  Button,
-  HStack,
-  Heading,
-  Icon,
-  Text,
-  useColorMode,
-} from "@chakra-ui/react";
+import { Button, HStack, Heading, Icon, useColorMode } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import { HiLanguage } from "react-icons/hi2";
 import { Link, useLocation } from "react-router-dom";
@@ -31,45 +24,39 @@ const NavBar = () => {
   return (
     <HStack justifyContent="space-between" p="20px">
       <Link to="/">
-        <Heading
-          display={{ base: "flex", md: "none" }}
-          fontSize="4xl"
-          className="fw-lighter"
-        >
-          楓<Text fontSize="sm">.STUDIO</Text>
+        <Heading hideFrom="md" fontSize="4xl" my="8px" className="fw-lighter">
+          楓
         </Heading>
-        <Heading
-          display={{ base: "none", md: "flex" }}
-          fontSize="2xl"
-          my="8px"
-          className="fw-lighter"
-        >
-          LI_QIUFENG<Text fontSize="sm">.STUDIO</Text>
+        <Heading hideBelow="md" fontSize="2xl" my="8px" className="fw-lighter">
+          LI_QIUFENG
         </Heading>
       </Link>
-      <HStack spacing="25px">
-        {links.map((link) => (
-          <Link
-            key={link.name}
-            to={link.url}
-            className={l.pathname === `${link.url}` ? lightDarkSwitch : ""}
-          >
-            <Heading
-              fontSize="xs"
-              my="3px"
-              className="fw-lighter"
-              style={{ letterSpacing: "1px" }}
+      <HStack spacing="15px">
+        <HStack spacing="25px">
+          {links.map((link) => (
+            <Link
+              key={link.name}
+              to={link.url}
+              className={l.pathname === `${link.url}` ? lightDarkSwitch : ""}
             >
-              {link.name}
-            </Heading>
-          </Link>
-        ))}
+              <Heading
+                fontSize="xs"
+                my="3px"
+                className="fw-lighter"
+                style={{ letterSpacing: "1px" }}
+              >
+                {link.name}
+              </Heading>
+            </Link>
+          ))}
+        </HStack>
         <Button
-          leftIcon={<Icon as={HiLanguage} boxSize="20px"></Icon>}
-          colorScheme="teal"
+          colorScheme="gray"
           variant="link"
           onClick={() => handleLanguage(jp ? "en" : "jp")}
-        ></Button>
+        >
+          <Icon as={HiLanguage} boxSize="20px" />
+        </Button>
       </HStack>
     </HStack>
   );

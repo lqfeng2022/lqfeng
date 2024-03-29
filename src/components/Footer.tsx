@@ -12,6 +12,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { FaTiktok, FaYoutube } from "react-icons/fa";
 import { IoHeart } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   const [t, i18n] = useTranslation("global");
@@ -26,13 +27,13 @@ const Footer = () => {
       <Center pt="50px" pb="10px">
         <Container w="200px" h="60px" bg="gray.600" color="white">
           <Center>
-            <Heading textAlign="center" fontSize="sm" px="15px" my="11px">
+            <Heading textAlign="center" fontSize="sm" px="15px" my="13px">
               {t("footer.contact")}
             </Heading>
           </Center>
         </Container>
       </Center>
-      {/* 2)social media */}
+      {/* 2)social media and github */}
       <Center px="20px" py="6px">
         <Stack>
           {jp ? (
@@ -54,6 +55,7 @@ const Footer = () => {
             <HStack spacing="15px" pl="10px">
               <Icon as={FaYoutube} boxSize="20px" color="gray.600" />
               <Icon as={FaTiktok} boxSize="20px" color="gray.600" />
+              <Icon as={FaGithub} boxSize="20px" color="gray.600" />
             </HStack>
           </Center>
         </Stack>
@@ -91,7 +93,7 @@ const Footer = () => {
       </Center>
       {/* 4)hp introduce.. */}
       <Center px="20px" py="6px">
-        <Box maxW="600px">
+        <Box maxW="500px">
           <Center>
             {jp ? (
               <Text textAlign="center" as="i" fontSize="sm">

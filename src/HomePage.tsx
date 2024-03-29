@@ -8,33 +8,21 @@ import { useTranslation } from "react-i18next";
 function HomePage() {
   const [t, i18n] = useTranslation("global");
   const jp = i18n.language === "jp";
+  const oneSpace = { letterSpacing: "1px" };
 
   return (
     <>
-      {/* 0)hp introduce */}
       <Box px="10px" py="35px" maxW="500px">
-        {jp ? (
-          <Heading fontSize="lg" pb={5}>
-            {t("hp.intro.head")}
-          </Heading>
-        ) : (
-          <Heading fontSize="sm" pb={5} style={{ letterSpacing: "1px" }}>
-            {t("hp.intro.head")}
-          </Heading>
-        )}
-        {jp ? (
-          <Text fontSize="lg" style={{ letterSpacing: "1px" }}>
-            {t("hp.intro.body")}
-          </Text>
-        ) : (
-          <Text fontSize="2xl">{t("hp.intro.body")}</Text>
-        )}
+        <Heading fontSize="sm" pb={5} style={oneSpace}>
+          {t("hp.intro.head")}
+        </Heading>
+        <Text fontSize={jp ? "lg" : "2xl"} style={oneSpace}>
+          {t("hp.intro.body")}
+        </Text>
         <Box hideFrom="md" h="30px" />
       </Box>
-      {/* 2)PYTHON course */}
       <Python />
       <AI />
-      {/* 3)other courses */}
       <Center>
         <SimpleGrid
           columns={{ sm: 1, md: 2 }}
