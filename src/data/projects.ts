@@ -33,4 +33,36 @@ export default [
     image: "src/assets/next.jpeg",
     path: "/product/community",
   },
+  {
+    title_en: "A Background Remover Web:",
+    title_jp: "写真のバックグランドを削除するウェブ",
+    content: [
+      "Language: JavaScript",
+      "Framework/Library: React.js",
+      "UI: Radix UI + Bootstrap CSS",
+    ],
+    links: {
+      name: "Web:",
+      web: "Q2 ROOM",
+      url: "https://q2-room.vercel.app/",
+    },
+    image: "src/assets/q2room.jpeg",
+    path: "/product/q2room",
+  },
+  {
+    title_en: "A Shopping Store api Server:",
+    title_jp: "バックエンドのショッピングシステム",
+    content: [
+      "Language: Python",
+      "Framework/Library: Django",
+      "DATABASE: MySQL",
+    ],
+    links: {
+      name: "Web:",
+      web: "shoppingstore api",
+      url: "#",
+    },
+    image: "src/assets/store.jpeg",
+    path: "/product/shoppingstore",
+  },
 ];
