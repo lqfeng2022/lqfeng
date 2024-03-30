@@ -35,7 +35,7 @@ export default [
   },
   {
     title_en: "A Background Remover Web:",
-    title_jp: "写真のバックグランドを削除するウェブ",
+    title_jp: "写真のバックを削除するウェブ",
     content: [
       "Language: JavaScript",
       "Framework/Library: React.js",
