@@ -5,7 +5,7 @@ const WebIntroduce = ({ jp }: { jp: boolean }) => {
   const [t] = useTranslation("global");
 
   return (
-    <Box maxW="500px">
+    <Box maxW="600px">
       <Center>
         {jp ? (
           <Text textAlign="center" as="i" fontSize="sm">
