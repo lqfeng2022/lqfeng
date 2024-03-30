@@ -34,10 +34,7 @@ const Channels = ({ jp }: { jp: boolean }) => {
         <HStack spacing="15px" pl="10px">
           <Icon as={FaYoutube} boxSize="25px" color="red.500" />
           <Icon as={FaTiktok} boxSize="25px" color="gray.600" />
-          <Link
-            target="_blank"
-            href="https://github.com/lqfeng2022/game-display"
-          >
+          <Link target="_blank" href="https://github.com/lqfeng2022">
             <Icon as={FaGithub} boxSize="25px" color="gray.600" />
           </Link>
         </HStack>

@@ -11,10 +11,10 @@ export default [
     ],
     links: {
       name: "Web:",
-      web: "www.game-hub-henna-seven-83.vercel.app",
+      web: "GAMEs",
       url: "https://game-hub-henna-seven-83.vercel.app/",
     },
-    image: "src/assets/rawg.jpeg",
+    image: "src/assets/games.jpeg",
     path: "/product/gamehub",
   },
   {
@@ -27,7 +27,7 @@ export default [
     ],
     links: {
       name: "Web:",
-      web: "www.community.com",
+      web: "BLOGs",
       url: "#",
     },
     image: "src/assets/next.jpeg",

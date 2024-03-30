@@ -49,7 +49,7 @@ const ProjectDetails = ({ details }: { details: Detail }) => {
             <ListItem>
               <Heading fontSize="sm" m="0" className="fw-lighter lh-lg">
                 {details.links.name}{" "}
-                <Link to={details.links.url} color="gray.600">
+                <Link target="_blank" to={details.links.url} color="gray.600">
                   <Text as="b" color="blue.500" className="fst-italic">
                     {details.links.web}
                   </Text>
