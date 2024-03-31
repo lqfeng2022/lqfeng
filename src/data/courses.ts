@@ -75,4 +75,25 @@ export default [
     h2: "220px",
     url: "/work/english",
   },
+  {
+    title: "le françai",
+    subTitle_en: "Learn french conversation with Le Grand Journal.",
+    subTitle_jp:
+      "超面白いテレビ番組「Le Grand Journal」と一緒にフランス語会話を勉強します。",
+    image: "src/assets/lgjournal.jpeg",
+    h1: "",
+    h2: "100px",
+    url: "/work/french",
+  },
+  {
+    title: "QUANTUM COMPUTER",
+    subTitle_en:
+      "Learn everything basics about Quantum Computing and algorithms",
+    subTitle_jp:
+      "量子コンピューターの基本知識と量子アルゴリズムを身につけます。",
+    image: "src/assets/quantum.jpg",
+    h1: "100px",
+    h2: "",
+    url: "/work/qubit",
+  },
 ];
