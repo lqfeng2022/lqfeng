@@ -49,20 +49,4 @@ export default [
     image: "src/assets/q2room.jpeg",
     path: "/product/q2room",
   },
-  {
-    title_en: "A Shopping Store api Server:",
-    title_jp: "バックエンドのショッピングシステム",
-    content: [
-      "Language: Python",
-      "Framework/Library: Django",
-      "DATABASE: MySQL",
-    ],
-    links: {
-      name: "Web:",
-      web: "shoppingstore api",
-      url: "#",
-    },
-    image: "src/assets/store.jpeg",
-    path: "/product/shoppingstore",
-  },
 ];

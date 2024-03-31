@@ -7,7 +7,6 @@ const Product = () => {
   const gameDetail = projects[0];
   const communityDetail = projects[1];
   const q2Detail = projects[2];
-  const storeDetail = projects[3];
 
   return (
     <>
@@ -26,10 +25,6 @@ const Product = () => {
       <Center p="20px">
         <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
           <ProjectDetails details={q2Detail} />
-          <Box>
-            <Box hideBelow="md" h="100px" />
-            <ProjectDetails details={storeDetail} />
-          </Box>
         </SimpleGrid>
       </Center>
     </>
