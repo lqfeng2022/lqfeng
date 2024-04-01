@@ -1,17 +1,10 @@
-import {
-  Button,
-  HStack,
-  Heading,
-  Icon,
-  useColorMode,
-  Text,
-} from "@chakra-ui/react";
+import { Button, HStack, Heading, Icon, useColorMode } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import { HiLanguage } from "react-icons/hi2";
 import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
-  const l = useLocation();
+  const l = useLocation().pathname;
   const links = [
     { name: "WORK", url: "/" },
     { name: "PRODUCT", url: "/product" },
@@ -19,10 +12,10 @@ const NavBar = () => {
   ];
 
   const [t, i18n] = useTranslation("global");
+  const jp = i18n.language === "jp";
   const handleLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
   };
-  const jp = i18n.language === "jp";
 
   const { colorMode } = useColorMode();
   const lightDarkSwitch =
@@ -32,9 +25,6 @@ const NavBar = () => {
     <HStack justifyContent="space-between" p="20px" pr="10px">
       <Link to="/">
         <Heading hideFrom="md" fontSize="4xl" my="8px" className="fw-lighter">
-          <Text as="span" fontSize="xl">
-            秋
-          </Text>
           楓
         </Heading>
         <Heading hideBelow="md" fontSize="2xl" my="8px" className="fw-lighter">
@@ -47,7 +37,7 @@ const NavBar = () => {
             <Link
               key={link.name}
               to={link.url}
-              className={l.pathname === `${link.url}` ? lightDarkSwitch : ""}
+              className={l === `${link.url}` ? lightDarkSwitch : ""}
             >
               <Heading
                 fontSize="xs"
