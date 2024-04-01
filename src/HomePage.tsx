@@ -1,7 +1,7 @@
 import { Box, Center, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import AI from "./components/AI";
-import Dlearning from "./components/Dlearing";
+import Dlearning from "./components/Dlearning";
 import CourseCard from "./components/work/CourseCard";
 import courses from "./data/courses";
 

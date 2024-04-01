@@ -6,6 +6,7 @@ import ErrorPage from "./pages/ErrorPage";
 import Layout from "./pages/Layout";
 import AboutMe from "./pages/AboutMe";
 import Product from "./pages/Product";
+import DlearningDetail from "./components/DlearningDetail";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       { path: "product", element: <Product /> },
       { path: "product/gamehub", element: <GameHubDetail /> },
       { path: "work/python", element: <PythonDetail /> },
+      { path: "work/dlearning", element: <DlearningDetail /> },
     ],
   },
 ]);

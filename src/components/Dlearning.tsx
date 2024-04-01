@@ -18,7 +18,7 @@ const Dlearning = () => {
   return (
     <Box p="20px" pb={10} maxW="1200px">
       <Box _hover={hover}>
-        <Link to="/work/dlearing">
+        <Link to="/work/dlearning">
           <Image src={dlearing} />
         </Link>
       </Box>
