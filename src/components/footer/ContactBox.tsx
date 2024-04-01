@@ -1,4 +1,4 @@
-import { Center, Container, Heading } from "@chakra-ui/react";
+import { Center, Container, Heading, Link } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 
 const ContactBox = () => {
@@ -7,9 +7,11 @@ const ContactBox = () => {
   return (
     <Container w="200px" h="60px" bg="gray.600" color="white">
       <Center>
-        <Heading textAlign="center" fontSize="sm" px="15px" my="13px">
-          {t("footer.contact")}
-        </Heading>
+        <Link href="mailto: makinohuu@gmail.com" _hover={{ color: "pink" }}>
+          <Heading textAlign="center" fontSize="sm" px="15px" my="13px">
+            {t("footer.contact")}
+          </Heading>
+        </Link>
       </Center>
     </Container>
   );
