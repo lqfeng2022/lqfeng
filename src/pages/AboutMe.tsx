@@ -14,13 +14,13 @@ const AboutMe = () => {
 
   return (
     <>
-      <Center px="20px" py="35px">
+      <Center px="15px" py="35px">
         <Introduce t={t} jp={jp} oneSpace={oneSpace} />
       </Center>
-      <Center p="20px">
+      <Center p="15px">
         <Back t={t} jp={jp} uline={uline} oneSpace={oneSpace} />
       </Center>
-      <Center p="20px">
+      <Center p="15px">
         <View t={t} jp={jp} />
       </Center>
     </>

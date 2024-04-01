@@ -16,21 +16,21 @@ function HomePage() {
 
   return (
     <>
-      <Box px="10px" py="35px" maxW="500px">
+      <Box px="5px" py="35px" maxW="500px">
         <HpIntroduce jp={jp} t={t} oneSpace={oneSpace} />
       </Box>
-      <Box p="20px" pb="35px">
+      <Box p="15px" pb="35px">
         <AI jp={jp} t={t} oneSpace={oneSpace} />
       </Box>
       <Center>
-        <Box p="20px" pb={10} maxW="1200px">
+        <Box p="15px" pb={10} maxW="1200px">
           <Dlearning jp={jp} t={t} uline={uline} />
         </Box>
       </Center>
       <Center>
         <SimpleGrid
           columns={{ sm: 1, md: 2 }}
-          p="20px"
+          p="15px"
           spacing="20px"
           maxW="1200px"
         >
