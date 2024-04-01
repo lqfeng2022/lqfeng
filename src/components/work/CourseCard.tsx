@@ -6,9 +6,8 @@ import {
   Text,
   useColorMode,
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
-import CardContainer from "../CardContainer";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export interface Course {
   title: string;
@@ -33,11 +32,11 @@ const CourseCard = ({ course }: { course: Course }) => {
       <Box maxW="708px">
         <Box hideBelow="md" h={course.h1} />
         <Box>
-          <CardContainer>
+          <Box maxW="700px">
             <Link to={course.url}>
               <Image src={course.image} />
             </Link>
-          </CardContainer>
+          </Box>
           <Heading fontSize="sm" my="10px">
             <Link
               to="#"

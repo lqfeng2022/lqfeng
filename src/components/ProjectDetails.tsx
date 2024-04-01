@@ -1,16 +1,15 @@
 import {
   Box,
   Heading,
+  Image,
   ListItem,
+  Stack,
   Text,
   UnorderedList,
-  Image,
-  Stack,
   useColorMode,
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
-import CardContainer from "./CardContainer";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 interface Detail {
   title_en: string;
@@ -28,11 +27,11 @@ const ProjectDetails = ({ details }: { details: Detail }) => {
 
   return (
     <Stack>
-      <CardContainer>
+      <Box maxW="700px">
         <Link to={details.path}>
           <Image src={details.image} />
         </Link>
-      </CardContainer>
+      </Box>
       <Box>
         <Text my="8px" fontSize="2xl" className="fst-italic">
           {jp ? details.title_jp : details.title_en}

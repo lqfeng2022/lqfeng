@@ -21,7 +21,7 @@ const CopyRight = ({ jp }: { jp: boolean }) => {
           className="fw-lighter"
         >
           {t("footer.copyright")}
-          <Icon boxSize="20px" mb="3px" as={IoHeart} color="red.400" />
+          <Icon boxSize="20px" mb="3px" as={IoHeart} color="gray.600" />
         </Heading>
       )}
     </>

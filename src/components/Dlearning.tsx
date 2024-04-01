@@ -10,18 +10,12 @@ const Dlearning = () => {
   const { colorMode } = useColorMode();
   const lightDarkSwitch =
     colorMode === "light" ? "border-bottom border-dark" : "border-bottom";
-  const hover = {
-    transform: "scale(1.02)",
-    transition: "transform .15s ease-in",
-  };
 
   return (
     <Box p="20px" pb={10} maxW="1200px">
-      <Box _hover={hover}>
-        <Link to="/work/dlearning">
-          <Image src={dlearing} />
-        </Link>
-      </Box>
+      <Link to="/work/dlearning">
+        <Image src={dlearing} />
+      </Link>
       <Heading fontSize="sm" my="10px">
         <Link
           to="/work/dlearing"

@@ -25,6 +25,7 @@ const ToggleColorMode = ({ jp }: { jp: boolean }) => {
       )}
       <Icon
         boxSize="20px"
+        color="gray.600"
         as={colorMode == "light" ? FiMoon : FiSun}
         onClick={toggleColorMode}
       />

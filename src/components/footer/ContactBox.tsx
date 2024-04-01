@@ -7,7 +7,7 @@ const ContactBox = () => {
   return (
     <Container w="200px" h="60px" bg="gray.600" color="white">
       <Center>
-        <Link href="mailto: makinohuu@gmail.com" _hover={{ color: "pink" }}>
+        <Link href="mailto: makinohuu@gmail.com">
           <Heading textAlign="center" fontSize="sm" px="15px" my="13px">
             {t("footer.contact")}
           </Heading>
