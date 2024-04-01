@@ -23,7 +23,6 @@ function HomePage() {
         <Box hideFrom="md" h="30px" />
       </Box>
       <Python />
-      <AI />
       {/* Course list */}
       <Center>
         <SimpleGrid
