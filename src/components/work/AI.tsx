@@ -1,6 +1,6 @@
 import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { TFunction } from "i18next";
-import ai2 from "../../assets/ai2.jpeg";
+import dlearning2 from "../../assets/dlearning2.jpeg";
 
 interface Props {
   jp: boolean;
@@ -12,7 +12,7 @@ const Course = ({ jp, t, oneSpace }: Props) => {
   return (
     <SimpleGrid columns={{ sm: 1, md: 2 }} maxW="1200px" spacing="20px">
       <Box maxW="708px">
-        <Image src={ai2} />
+        <Image src={dlearning2} />
       </Box>
       <Box maxW="700px" pr="40px">
         <Text fontSize={jp ? "xl" : "3xl"}>{t("hp.ai.head")}</Text>
