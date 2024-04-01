@@ -19,19 +19,19 @@ const Footer = () => {
       <Center pt="50px" pb="10px">
         <ContactBox t={t} />
       </Center>
-      <Center px="20px" py="6px">
+      <Center px="10px" py="6px">
         <Channels t={t} jp={jp} />
       </Center>
       <Center p="6px">
         <Languages t={t} jp={jp} handleLanguage={handleLanguage} />
       </Center>
-      <Center px="20px" py="6px">
+      <Center px="10px" py="6px">
         <WebIntroduce t={t} jp={jp} />
       </Center>
-      <Center px="20px" pt="6px" pb="10px">
+      <Center px="10px" pt="6px" pb="10px">
         <ToggleColorMode t={t} jp={jp} />
       </Center>
-      <Center px="20px" pt="6px" pb="10px">
+      <Center px="10px" pt="6px" pb="10px">
         <CopyRight t={t} jp={jp} />
       </Center>
     </Stack>
