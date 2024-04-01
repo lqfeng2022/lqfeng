@@ -29,7 +29,7 @@ const Channels = ({ t, jp }: { t: TFunction; jp: boolean }) => {
         </Heading>
       )}
       <Center>
-        <HStack spacing="20px" pl="10px">
+        <HStack spacing="20px">
           <Icon as={FaYoutube} boxSize="25px" color="gray.600" />
           <Icon as={FaTiktok} boxSize="25px" color="gray.600" />
           <Link target="_blank" href="https://github.com/lqfeng2022">
