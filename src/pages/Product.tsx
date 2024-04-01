@@ -10,23 +10,27 @@ const Product = () => {
 
   return (
     <>
+      {/* 1)Why we need project */}
       <Center p="20px" pt="35px">
         <Project />
       </Center>
-      <Center p="20px">
-        <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
-          <Box>
-            <Box hideBelow="md" h="100px" />
-            <ProjectDetails details={communityDetail} />
-          </Box>
-          <ProjectDetails details={gameDetail} />
-        </SimpleGrid>
-      </Center>
-      <Center p="20px">
-        <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
-          <ProjectDetails details={q2Detail} />
-        </SimpleGrid>
-      </Center>
+      {/* 2)The projects we've built */}
+      <Box>
+        <Center p="20px">
+          <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
+            <Box>
+              <Box hideBelow="md" h="150px" />
+              <ProjectDetails details={communityDetail} />
+            </Box>
+            <ProjectDetails details={gameDetail} />
+          </SimpleGrid>
+        </Center>
+        <Center p="20px">
+          <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
+            <ProjectDetails details={q2Detail} />
+          </SimpleGrid>
+        </Center>
+      </Box>
     </>
   );
 };

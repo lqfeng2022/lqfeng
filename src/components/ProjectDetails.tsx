@@ -37,7 +37,7 @@ const ProjectDetails = ({ details }: { details: Detail }) => {
           {jp ? details.title_jp : details.title_en}
         </Text>
         <Box bg={colorMode === "light" ? "gray.100" : "gray.700"}>
-          <UnorderedList m="10px" pl="5px" py={2}>
+          <UnorderedList m="10px" px="15px" py={2}>
             {details.content.map((c) => (
               <ListItem key={c}>
                 <Heading fontSize="sm" m="0" className="fw-lighter lh-lg">

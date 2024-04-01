@@ -1,4 +1,4 @@
-import { Box, Heading, Image, Text, useColorMode } from "@chakra-ui/react";
+import { Heading, Image, Text, useColorMode } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import dlearing from "../assets/dlearing.jpeg";
@@ -12,7 +12,7 @@ const Dlearning = () => {
     colorMode === "light" ? "border-bottom border-dark" : "border-bottom";
 
   return (
-    <Box p="20px" pb={10} maxW="1200px">
+    <>
       <Link to="/work/dlearning">
         <Image src={dlearing} />
       </Link>
@@ -34,7 +34,7 @@ const Dlearning = () => {
           {t("hp.dlearn.body")}
         </Heading>
       )}
-    </Box>
+    </>
   );
 };
 

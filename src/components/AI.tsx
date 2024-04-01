@@ -12,24 +12,25 @@ const Course = () => {
         <Image src={ai2} />
       </Box>
       <Box maxW="700px" pr="40px">
-        <Text fontSize={jp ? "xl" : "3xl"}>{t("product.ai.head")}</Text>
+        <Text fontSize={jp ? "xl" : "3xl"}>{t("hp.ai.head")}</Text>
         {jp ? (
-          <Text fontSize="md" style={{ letterSpacing: "1px" }}>
-            {t("product.ai.body")}
-          </Text>
+          <>
+            <Text fontSize="md" style={{ letterSpacing: "1px" }}>
+              {t("hp.ai.body")}
+            </Text>
+            <Text py={3} fontSize="md" style={{ letterSpacing: "1px" }}>
+              {t("hp.ai.foot")}
+            </Text>
+          </>
         ) : (
-          <Heading fontSize="md" className="fw-lighter lh-lg">
-            {t("product.ai.body")}
-          </Heading>
-        )}
-        {jp ? (
-          <Text py={3} fontSize="md" style={{ letterSpacing: "1px" }}>
-            {t("product.ai.foot")}
-          </Text>
-        ) : (
-          <Heading py={3} fontSize="md" className="fw-lighter lh-lg">
-            {t("product.ai.foot")}
-          </Heading>
+          <>
+            <Heading fontSize="md" className="fw-lighter lh-lg">
+              {t("hp.ai.body")}
+            </Heading>
+            <Heading py={3} fontSize="md" className="fw-lighter lh-lg">
+              {t("hp.ai.foot")}
+            </Heading>
+          </>
         )}
       </Box>
     </SimpleGrid>

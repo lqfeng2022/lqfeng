@@ -12,7 +12,7 @@ function HomePage() {
 
   return (
     <>
-      {/* hp introduction */}
+      {/* 1)hp introduction */}
       <Box px="10px" py="35px" maxW="500px">
         <Heading fontSize="sm" pb={5} style={oneSpace}>
           {t("hp.intro.head")}
@@ -22,13 +22,17 @@ function HomePage() {
         </Text>
         <Box hideFrom="md" h="30px" />
       </Box>
+      {/* 2)artificial intelligent */}
       <Box p="20px" pb="35px">
         <AI />
       </Box>
+      {/* 3)Deep Learning */}
       <Center>
-        <Dlearning />
+        <Box p="20px" pb={10} maxW="1200px">
+          <Dlearning />
+        </Box>
       </Center>
-      {/* Course list */}
+      {/* 4)Course list */}
       <Center>
         <SimpleGrid
           columns={{ sm: 1, md: 2 }}

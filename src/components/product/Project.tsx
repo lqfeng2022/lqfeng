@@ -18,22 +18,23 @@ const Project = () => {
           {t("product.app.body")}
         </Text>
         {jp ? (
-          <Text py={3} fontSize="sm" style={oneSpace}>
-            {t("product.app.foot")}
-          </Text>
+          <>
+            <Text py={3} fontSize="sm" style={oneSpace}>
+              {t("product.app.foot")}
+            </Text>
+            <Text pt="50px" fontSize="sm" style={oneSpace}>
+              {t("product.app.toe")}
+            </Text>
+          </>
         ) : (
-          <Heading py={3} fontSize="md" className="fw-lighter lh-lg">
-            {t("product.app.foot")}
-          </Heading>
-        )}
-        {jp ? (
-          <Text pt="50px" fontSize="sm" style={oneSpace}>
-            {t("product.app.toe")}
-          </Text>
-        ) : (
-          <Heading pt="50px" fontSize="sm">
-            {t("product.app.toe")}
-          </Heading>
+          <>
+            <Heading py={3} fontSize="md" className="fw-lighter lh-lg">
+              {t("product.app.foot")}
+            </Heading>
+            <Heading pt="50px" fontSize="sm">
+              {t("product.app.toe")}
+            </Heading>
+          </>
         )}
       </Box>
     </SimpleGrid>

@@ -4,6 +4,11 @@
       "head": "HI, WELCOM TO MY HP.",
       "body": "I'm Simon, a web developer. I'm passionate about talking what is AI and how it works in a visualization approach. And I'm building a serial courses and apps to explain programming and AI's working process. Let's hit the road!"
     },
+    "ai": {
+      "head": "Do we need to learn coding in 2024 the Age of AI?",
+      "body": "AI is becomming so powerful espacially as ChatGPT launched. It's so smart and can do lots of tech stuff by itself, like coding. I think most of us should learn programming. Cus it can help you understand how computers and AI work, it is super important because they're everywhere now and future.",
+      "foot": "Plus, when you know how to code, you can tell the AI exactly what you want it to do to make your own cool projects. And even help make AI smarter and safer for everyone."
+    },
     "dlearn": {
       "head": "DEEP LEARNING",
       "body": "Everything you need to know about deep learing is here.",
@@ -14,11 +19,6 @@
     }
   },
   "product": {
-    "ai": {
-      "head": "Do we need to learn coding in 2024 the Age of AI?",
-      "body": "AI is becomming so powerful espacially as ChatGPT launched. It's so smart and can do lots of tech stuff by itself, like coding. I think most of us should learn programming. Cus it can help you understand how computers and AI work, it is super important because they're everywhere now and future.",
-      "foot": "Plus, when you know how to code, you can tell the AI exactly what you want it to do to make your own cool projects. And even help make AI smarter and safer for everyone."
-    },
     "app": {
       "head": "What about build your personal app?",
       "body": "You can design and build a full-stack app as your first product. A popular product can leave peope a great first impression which make people stick around you, even it's just an APP not a Photo or Paiting. It's the key to attracting audience, to making yourself known to the outside world.",
