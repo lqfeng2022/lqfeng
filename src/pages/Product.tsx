@@ -2,7 +2,6 @@ import { Box, Center, SimpleGrid } from "@chakra-ui/react";
 import Project from "../components/product/Project";
 import ProjectDetails from "../components/ProjectDetails";
 import projects from "../data/projects";
-import AI from "../components/work/AI";
 
 const Product = () => {
   const gameDetail = projects[0];
@@ -11,9 +10,6 @@ const Product = () => {
 
   return (
     <>
-      <Center p="20px" pt="35px">
-        <AI />
-      </Center>
       <Center p="20px" pt="35px">
         <Project />
       </Center>

@@ -4,9 +4,9 @@
       "head": "HI, WELCOM TO MY HP.",
       "body": "I'm Simon, a web developer. I'm passionate about talking what is AI and how it works in a visualization approach. And I'm building a serial courses and apps to explain programming and AI's working process. Let's hit the road!"
     },
-    "py": {
-      "head": "PYTHON",
-      "body": "Everything you need to program in Python is here.",
+    "dlearn": {
+      "head": "DEEP LEARNING",
+      "body": "Everything you need to know about deep learing is here.",
       "detail": "Waitting for edit..."
     }
   },
@@ -30,10 +30,6 @@
     "intro": {
       "head": "HI, I'M SIMON.",
       "body": "A developer for helping you build your own application. I'm passionate about AI and nature languages, like le français and japanese. What if I trained an personality AI assistant who can help people learning languages and building apps, that's gonna be fun!"
-    },
-    "job": {
-      "quest": "0. What am I doing now?",
-      "answ": "As a web developer, I'm building serveral personal apps, like Background remover app with Computer Vision model. Plus, I'm preparing a serial coding and english conversation lessons."
     },
     "educ": {
       "quest": "1. What's my eduction background?",

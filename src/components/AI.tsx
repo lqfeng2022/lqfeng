@@ -1,6 +1,6 @@
 import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import ai2 from "../../assets/ai2.jpeg";
+import ai2 from "../assets/ai2.jpeg";
 
 const Course = () => {
   const [t, i18n] = useTranslation("global");

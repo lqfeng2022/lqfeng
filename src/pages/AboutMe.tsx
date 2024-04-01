@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import Back from "../components/about/Back";
 import Introduce from "../components/about/Introduce";
 import View from "../components/about/View";
-import Work from "../components/about/Work";
 
 const AboutMe = () => {
   const [t, i18n] = useTranslation("global");
@@ -13,9 +12,6 @@ const AboutMe = () => {
     <>
       <Center px="20px" py="35px">
         <Introduce jp={jp} />
-      </Center>
-      <Center p="20px" pt="0">
-        <Work jp={jp} />
       </Center>
       <Center p="20px">
         <Back jp={jp} />

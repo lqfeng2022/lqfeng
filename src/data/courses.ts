@@ -8,16 +8,27 @@ import english from "../assets/english.jpg";
 import japanese from "../assets/japanese.png";
 import lgjournal from "../assets/lgjournal.jpeg";
 import quantum from "../assets/quantum.jpg";
+import python from "../assets/python_log.jpeg";
 
 export default [
+  {
+    title: "PYTHON",
+    subTitle_en: "Everything you need to program in Python is here.",
+    subTitle_jp:
+      "動画でプログラミング言語のPython、その全てが詳しくてシェアいたします。",
+    image: python,
+    h1: "",
+    h2: "60px",
+    url: "/work/python",
+  },
   {
     title: "PYTORCH",
     subTitle_en:
       "Learn building & deploying deep learning models with PyTorch.",
     subTitle_jp: "PyTorchでディープラーニングモデルを構築とデプロイする。",
     image: pytorch,
-    h1: "",
-    h2: "60px",
+    h1: "60px",
+    h2: "",
     url: "/work/pytorch",
   },
   {
@@ -35,8 +46,8 @@ export default [
     subTitle_en: "Learn to build fast and secure APIs with Django.",
     subTitle_jp: "Djangoでセキュリティー、しっかりと反応早くのAPIsを構築する。",
     image: django,
-    h1: "60px",
-    h2: "",
+    h1: "",
+    h2: "60px",
     url: "/work/django",
   },
   {
@@ -53,8 +64,8 @@ export default [
     subTitle_en: "With a visual approach to learn data structure.",
     subTitle_jp: "視覚的なアプローチでデータ構造の基本的な知識を身につけてる。",
     image: data_structure,
-    h1: "",
-    h2: "60px",
+    h1: "60px",
+    h2: "",
     url: "/work/datastructure",
   },
   {
@@ -72,8 +83,8 @@ export default [
     subTitle_jp:
       "英語日常会話のシリーズを作っていますが、興味があったら、ご覧ください。",
     image: english,
-    h1: "50px",
-    h2: "",
+    h1: "",
+    h2: "50px",
     url: "/work/english",
   },
   {
@@ -83,17 +94,17 @@ export default [
       "日本語日常会話のシリーズを作っていますが、興味があれば、ごらんください。",
     image: japanese,
     h1: "",
-    h2: "220px",
+    h2: "180px",
     url: "/work/english",
   },
   {
-    title: "le françai",
+    title: "le français",
     subTitle_en: "Learn french conversation with Le Grand Journal.",
     subTitle_jp:
       "超面白いテレビ番組「Le Grand Journal」と一緒にフランス語会話を勉強します。",
     image: lgjournal,
-    h1: "",
-    h2: "100px",
+    h1: "100px",
+    h2: "",
     url: "/work/french",
   },
   {
@@ -103,7 +114,7 @@ export default [
     subTitle_jp:
       "量子コンピューターの基本知識と量子アルゴリズムを身につけます。",
     image: quantum,
-    h1: "100px",
+    h1: "",
     h2: "",
     url: "/work/qubit",
   },

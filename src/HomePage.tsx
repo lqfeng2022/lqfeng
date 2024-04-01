@@ -1,9 +1,9 @@
 import { Box, Center, Heading, SimpleGrid, Text } from "@chakra-ui/react";
-import AI from "./components/work/AI";
-import CourseCard from "./components/work/CourseCard";
-import Python from "./components/work/Python";
-import courses from "./data/courses";
 import { useTranslation } from "react-i18next";
+import AI from "./components/AI";
+import Dlearning from "./components/Dlearing";
+import CourseCard from "./components/work/CourseCard";
+import courses from "./data/courses";
 
 function HomePage() {
   const [t, i18n] = useTranslation("global");
@@ -22,7 +22,12 @@ function HomePage() {
         </Text>
         <Box hideFrom="md" h="30px" />
       </Box>
-      <Python />
+      <Box p="20px" pb="35px">
+        <AI />
+      </Box>
+      <Center>
+        <Dlearning />
+      </Center>
       {/* Course list */}
       <Center>
         <SimpleGrid
