@@ -1,10 +1,8 @@
 import { Heading, Icon, Text } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
+import { TFunction } from "i18next";
 import { IoHeart } from "react-icons/io5";
 
-const CopyRight = ({ jp }: { jp: boolean }) => {
-  const [t] = useTranslation("global");
-
+const CopyRight = ({ t, jp }: { t: TFunction; jp: boolean }) => {
   return (
     <>
       {jp ? (
@@ -21,7 +19,7 @@ const CopyRight = ({ jp }: { jp: boolean }) => {
           className="fw-lighter"
         >
           {t("footer.copyright")}
-          <Icon boxSize="20px" mb="3px" as={IoHeart} color="gray.600" />
+          <Icon boxSize="20px" mb="3px" as={IoHeart} color="red.400" />
         </Heading>
       )}
     </>

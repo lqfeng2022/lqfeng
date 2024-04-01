@@ -7,12 +7,10 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
+import { TFunction } from "i18next";
 import { FaGithub, FaTiktok, FaYoutube } from "react-icons/fa";
 
-const Channels = ({ jp }: { jp: boolean }) => {
-  const [t] = useTranslation("global");
-
+const Channels = ({ t, jp }: { t: TFunction; jp: boolean }) => {
   return (
     <Stack>
       {jp ? (

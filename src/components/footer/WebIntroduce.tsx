@@ -1,9 +1,7 @@
 import { Box, Center, Heading, Text } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
+import { TFunction } from "i18next";
 
-const WebIntroduce = ({ jp }: { jp: boolean }) => {
-  const [t] = useTranslation("global");
-
+const WebIntroduce = ({ t, jp }: { t: TFunction; jp: boolean }) => {
   return (
     <Box maxW="600px">
       <Center>

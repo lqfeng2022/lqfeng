@@ -1,10 +1,13 @@
 import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import simon from "../../assets/lqfeng.jpeg";
-import { useTranslation } from "react-i18next";
+import { TFunction } from "i18next";
 
-const Introduce = ({ jp }: { jp: boolean }) => {
-  const [t] = useTranslation("global");
-
+interface Props {
+  t: TFunction;
+  jp: boolean;
+  oneSpace: Object;
+}
+const Introduce = ({ t, jp, oneSpace }: Props) => {
   return (
     <SimpleGrid columns={{ sm: 1, md: 2 }} maxW="1000px" spacing="40px">
       <Box>
@@ -16,19 +19,11 @@ const Introduce = ({ jp }: { jp: boolean }) => {
         {jp ? (
           <Text fontSize="md">{t("simon.intro.head")}</Text>
         ) : (
-          <Heading
-            fontSize="md"
-            className="fw-lighter"
-            style={{ letterSpacing: "1px" }}
-          >
+          <Heading fontSize="md" className="fw-lighter" style={oneSpace}>
             {t("simon.intro.head")}
           </Heading>
         )}
-        <Text
-          pt={6}
-          fontSize={jp ? "md" : "2xl"}
-          style={jp ? { letterSpacing: "1px" } : {}}
-        >
+        <Text pt={6} fontSize={jp ? "md" : "2xl"} style={jp ? oneSpace : {}}>
           {t("simon.intro.body")}
         </Text>
       </Box>

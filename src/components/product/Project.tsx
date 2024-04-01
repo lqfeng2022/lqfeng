@@ -1,12 +1,14 @@
 import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import project from "../../assets/project.jpeg";
-import { useTranslation } from "react-i18next";
+import { TFunction } from "i18next";
 
-const Project = () => {
-  const [t, i18n] = useTranslation("global");
-  const jp = i18n.language === "jp";
-  const oneSpace = { letterSpacing: "1px" };
+interface Props {
+  t: TFunction;
+  jp: boolean;
+  oneSpace: Object;
+}
 
+const Project = ({ t, jp, oneSpace }: Props) => {
   return (
     <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
       <Box maxW="700px">

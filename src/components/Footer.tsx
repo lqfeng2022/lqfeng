@@ -10,26 +10,29 @@ import WebIntroduce from "./footer/WebIntroduce";
 const Footer = () => {
   const [t, i18n] = useTranslation("global");
   const jp = i18n.language === "jp";
+  const handleLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
+  };
 
   return (
     <Stack>
       <Center pt="50px" pb="10px">
-        <ContactBox />
+        <ContactBox t={t} />
       </Center>
       <Center px="20px" py="6px">
-        <Channels jp={jp} />
+        <Channels t={t} jp={jp} />
       </Center>
       <Center p="6px">
-        <Languages jp={jp} />
+        <Languages t={t} jp={jp} handleLanguage={handleLanguage} />
       </Center>
       <Center px="20px" py="6px">
-        <WebIntroduce jp={jp} />
+        <WebIntroduce t={t} jp={jp} />
       </Center>
       <Center px="20px" pt="6px" pb="10px">
-        <ToggleColorMode jp={jp} />
+        <ToggleColorMode t={t} jp={jp} />
       </Center>
       <Center px="20px" pt="6px" pb="10px">
-        <CopyRight jp={jp} />
+        <CopyRight t={t} jp={jp} />
       </Center>
     </Stack>
   );

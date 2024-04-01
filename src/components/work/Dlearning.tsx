@@ -1,16 +1,15 @@
-import { Heading, Image, Text, useColorMode } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
+import { Heading, Image, Text } from "@chakra-ui/react";
+import { TFunction } from "i18next";
 import { Link } from "react-router-dom";
-import dlearing from "../assets/dlearing.jpeg";
+import dlearing from "../../assets/dlearing.jpeg";
 
-const Dlearning = () => {
-  const [t, i18n] = useTranslation("global");
-  const jp = i18n.language === "jp";
+interface Props {
+  jp: boolean;
+  t: TFunction;
+  uline: string;
+}
 
-  const { colorMode } = useColorMode();
-  const lightDarkSwitch =
-    colorMode === "light" ? "border-bottom border-dark" : "border-bottom";
-
+const Dlearning = ({ jp, t, uline }: Props) => {
   return (
     <>
       <Link to="/work/dlearning">
@@ -19,7 +18,7 @@ const Dlearning = () => {
       <Heading fontSize="sm" my="10px">
         <Link
           to="/work/dlearing"
-          className={lightDarkSwitch}
+          className={uline}
           style={{ letterSpacing: "1px" }}
         >
           {t("hp.dlearn.head")}

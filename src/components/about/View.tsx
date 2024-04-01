@@ -8,13 +8,11 @@ import {
   SimpleGrid,
   Text,
 } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
+import { TFunction } from "i18next";
 import { FaQuoteLeft } from "react-icons/fa";
 import quotation from "../../assets/quotation.jpeg";
 
-const View = ({ jp }: { jp: boolean }) => {
-  const [t] = useTranslation("global");
-
+const View = ({ t, jp }: { t: TFunction; jp: boolean }) => {
   return (
     <SimpleGrid columns={{ base: 1, sm: 2 }} maxW="1000px" spacing="40px">
       <Center>

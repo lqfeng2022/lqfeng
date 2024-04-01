@@ -1,14 +1,13 @@
 import {
   Box,
+  ColorMode,
   Heading,
   Image,
   ListItem,
   Stack,
   Text,
   UnorderedList,
-  useColorMode,
 } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 interface Detail {
@@ -20,11 +19,12 @@ interface Detail {
   path: string;
 }
 
-const ProjectDetails = ({ details }: { details: Detail }) => {
-  const [t, i18n] = useTranslation("global");
-  const jp = i18n.language === "jp";
-  const { colorMode } = useColorMode();
-
+interface Props {
+  jp: boolean;
+  colorMode: ColorMode;
+  details: Detail;
+}
+const ProjectDetails = ({ jp, colorMode, details }: Props) => {
   return (
     <Stack>
       <Box maxW="700px">

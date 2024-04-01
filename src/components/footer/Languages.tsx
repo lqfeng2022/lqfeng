@@ -1,12 +1,12 @@
 import { Button, Center, Heading, Stack, Text } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
+import { TFunction } from "i18next";
 
-const Languages = ({ jp }: { jp: boolean }) => {
-  const [t, i18n] = useTranslation("global");
-  const handleLanguage = (lang: string) => {
-    i18n.changeLanguage(lang);
-  };
-
+interface Props {
+  t: TFunction;
+  jp: boolean;
+  handleLanguage: (lang: string) => void;
+}
+const Languages = ({ t, jp, handleLanguage }: Props) => {
   return (
     <Stack>
       <Center>

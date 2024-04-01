@@ -1,11 +1,14 @@
 import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
-import ai2 from "../assets/ai2.jpeg";
+import { TFunction } from "i18next";
+import ai2 from "../../assets/ai2.jpeg";
 
-const Course = () => {
-  const [t, i18n] = useTranslation("global");
-  const jp = i18n.language === "jp";
+interface Props {
+  jp: boolean;
+  t: TFunction;
+  oneSpace: Object;
+}
 
+const Course = ({ jp, t, oneSpace }: Props) => {
   return (
     <SimpleGrid columns={{ sm: 1, md: 2 }} maxW="1200px" spacing="20px">
       <Box maxW="708px">
@@ -15,10 +18,10 @@ const Course = () => {
         <Text fontSize={jp ? "xl" : "3xl"}>{t("hp.ai.head")}</Text>
         {jp ? (
           <>
-            <Text fontSize="md" style={{ letterSpacing: "1px" }}>
+            <Text fontSize="md" style={oneSpace}>
               {t("hp.ai.body")}
             </Text>
-            <Text py={3} fontSize="md" style={{ letterSpacing: "1px" }}>
+            <Text py={3} fontSize="md" style={oneSpace}>
               {t("hp.ai.foot")}
             </Text>
           </>

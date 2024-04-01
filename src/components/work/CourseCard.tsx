@@ -1,15 +1,7 @@
-import {
-  Box,
-  Center,
-  Heading,
-  Image,
-  Text,
-  useColorMode,
-} from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
+import { Box, Center, Heading, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
-export interface Course {
+interface Course {
   title: string;
   subTitle_en: string;
   subTitle_jp: string;
@@ -19,14 +11,13 @@ export interface Course {
   url: string;
 }
 
-const CourseCard = ({ course }: { course: Course }) => {
-  const [t, i18n] = useTranslation("global");
-  const jp = i18n.language === "jp";
+interface Props {
+  course: Course;
+  jp: boolean;
+  uline: string;
+}
 
-  const { colorMode } = useColorMode();
-  const lightDarkSwitch =
-    colorMode === "light" ? "border-bottom border-dark" : "border-bottom";
-
+const CourseCard = ({ course, jp, uline }: Props) => {
   return (
     <Center>
       <Box maxW="708px">
@@ -38,11 +29,7 @@ const CourseCard = ({ course }: { course: Course }) => {
             </Link>
           </Box>
           <Heading fontSize="sm" my="10px">
-            <Link
-              to="#"
-              className={lightDarkSwitch}
-              style={{ letterSpacing: "1px" }}
-            >
+            <Link to="#" className={uline} style={{ letterSpacing: "1px" }}>
               {course.title}
             </Link>
           </Heading>

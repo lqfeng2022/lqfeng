@@ -1,21 +1,14 @@
-import {
-  Box,
-  Heading,
-  Image,
-  SimpleGrid,
-  Text,
-  useColorMode,
-} from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
+import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { TFunction } from "i18next";
 import book from "../../assets/book.jpg";
 
-const Back = ({ jp }: { jp: boolean }) => {
-  const [t] = useTranslation("global");
-
-  const { colorMode } = useColorMode();
-  const lightDarkSwitch =
-    colorMode === "light" ? "border-bottom border-dark" : "border-bottom";
-
+interface Props {
+  t: TFunction;
+  jp: boolean;
+  uline: string;
+  oneSpace: Object;
+}
+const Back = ({ t, jp, uline, oneSpace }: Props) => {
   return (
     <SimpleGrid columns={[1, null, 2]} maxW="1000px" spacing="40px">
       <Box>
@@ -26,7 +19,7 @@ const Back = ({ jp }: { jp: boolean }) => {
           {t("simon.educ.quest")}
         </Text>
         {jp ? (
-          <Text fontSize="md" style={{ letterSpacing: "1px" }}>
+          <Text fontSize="md" style={oneSpace}>
             {t("simon.educ.answ")}
           </Text>
         ) : (
@@ -34,12 +27,12 @@ const Back = ({ jp }: { jp: boolean }) => {
             {t("simon.educ.answ")}
           </Heading>
         )}
-        <Box paddingTop={4} my={5} className={lightDarkSwitch} />
+        <Box paddingTop={4} my={5} className={uline} />
         <Text fontSize="xl" pt={3} className="fst-italic">
           {t("simon.career.quest")}
         </Text>
         {jp ? (
-          <Text fontSize="md" style={{ letterSpacing: "1px" }}>
+          <Text fontSize="md" style={oneSpace}>
             {t("simon.career.answ")}
           </Text>
         ) : (

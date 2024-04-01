@@ -1,9 +1,8 @@
 import { Heading, Icon, Text, useColorMode } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
+import { TFunction } from "i18next";
 import { FiMoon, FiSun } from "react-icons/fi";
 
-const ToggleColorMode = ({ jp }: { jp: boolean }) => {
-  const [t] = useTranslation("global");
+const ToggleColorMode = ({ t, jp }: { t: TFunction; jp: boolean }) => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
@@ -24,7 +23,7 @@ const ToggleColorMode = ({ jp }: { jp: boolean }) => {
         </Heading>
       )}
       <Icon
-        boxSize="20px"
+        boxSize="25px"
         color="gray.600"
         as={colorMode == "light" ? FiMoon : FiSun}
         onClick={toggleColorMode}
