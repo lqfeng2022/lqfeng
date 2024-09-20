@@ -1,5 +1,5 @@
 import { Box, Center, SimpleGrid, useColorMode } from "@chakra-ui/react";
-import Project from "../components/product/Project";
+import Project from "../components/shape/Project";
 import ProjectDetails from "../components/ProjectDetails";
 import projects from "../data/projects";
 import { useTranslation } from "react-i18next";
