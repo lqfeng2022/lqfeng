@@ -3,7 +3,7 @@ import next from "../assets/next.jpeg";
 
 export default [
   {
-    title_en: "A Video Game Display Web:",
+    title_en: "A Video Game Showcase Website:",
     title_jp: "一个游戏检索平台:",
     image: games,
     content: [
@@ -21,7 +21,7 @@ export default [
     path: "/product/gamehub",
   },
   {
-    title_en: "A Community Web:",
+    title_en: "A Community Website:",
     title_jp: "一个全栈Blog项目:",
     image: next,
     content: [

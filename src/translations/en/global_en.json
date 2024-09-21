@@ -2,15 +2,15 @@
   "hp": {
     "intro": {
       "head": "WHAT'S UP.",
-      "body": "I’m Simon, a man who still hold a curiosity for new and exciting things, like a new language, Artificial Intelligence (like ChatGPT) and Quantum Computing."
+      "body": "I’m Simon, a guy who’s always curious about new and exciting things—whether it’s learning a new language, diving into AI (like ChatGPT), or exploring Quantum Computing.”"
     },
     "ai": {
       "head": "Do we really need to understand AI?",
-      "body": "We can already use ChatGPT to do so many things online, but there are still countless opportunities and challenges to explore. I believe we can push the boundaries of AI even further. For example, we could just build a fast, highly accurate language translation model, or try something completely new, like translating the Miao language into natural human languages, or even understanding a dog, a penguin, who knows?",
-      "foot": "Life can be long and dull, so why not make it interesting by doing something creative? Shall we?"
+      "body": "We can already use ChatGPT for all kinds of things online, but there’s still so much more to explore. I really think we can push AI even further. Like, why not build a super fast, super accurate translation model? Or try something totally new, like translating the Miao language into other human languages—or even figuring out what a dog or a penguin is saying, who knows?",
+      "foot": "Life can be long and kinda boring, so why not make it fun by doing something creative? What do you think?"
     },
     "transmodel": {
-      "head": "ENGLISHI TO CHINESE TRANSLATION MODEL",
+      "head": "A LANGUAGE TRANSLATION MODEL",
       "body": "Here, we use PyTorch to build a nature language translation model.",
       "detail": "..."
     },
@@ -20,10 +20,10 @@
   },
   "product": {
     "app": {
-      "head": "Practice is the best way to learn something new.",
-      "body": "When you start learning artificial intelligence, you can read plenty of books, papers, take courses, or even attend a top university. That’s all good, and it’s necessary. But if you think that’s enough, you’re mistaken. It’s just the beginning. You have to practice, over and over again. You need to build model from scratch, deploy it, test it, and get real users to interact with it. It’s like learning a new language but never speaking it — that’s pointless!",
-      "foot": "Here are some web apps, models, and more for you to dive into.",
-      "toe": "SEE WHAT I BUILT:"
+      "head": "Practice is the best way to really learn something new.",
+      "body": "When you start diving into artificial intelligence, sure, you can read tons of books, papers, take some courses, or even go to a top university. That’s all great and definitely important. But if you think that’s all you need, you’re wrong. It’s just the beginning. You’ve got to practice, over and over. You need to build models from scratch, deploy them, test them, and let real people actually use them. It’s like learning a new language but never speaking it — totally pointless!",
+      "foot": "Check out some of the web apps, models, and cool stuff I’ve built.",
+      "toe": "TAKE A LOOK:"
     },
     "detail": {
       "games": "...",
@@ -33,24 +33,24 @@
   "simon": {
     "intro": {
       "head": "What's SHAPE?",
-      "body": "What I’m getting at is that shapes offer an efficient way to visualize our data, formulas and our natural languages. This helps us understand the formulas and model architecture much faster than working with raw data and equations alone. And when learning a foreign language, we can bypass our native language and directly connect these natural elements to the new language "
+      "body": "Basically, shapes are a super efficient way to visualize data, formulas, and even languages. They help us get the formulas and model structure way quicker than just looking at raw data or equations. Same goes for learning a new language—skip translating through your native one and connect directly to the natural elements."
     },
     "educ": {
-      "quest": "1. The shape in Data Science.",
-      "answ": "In a typical AI deep learning model, we can trace the shape of data as it flows through each step. The ‘shape’ refers to an attribute of a tensor, which is an efficient way to represent and manipulate data. As data flows through the entire model, various mathematical functions are applied to process it and learn patterns. Many of these functions take the form of curves, such as S-shapes, bell curves, or slopes."
+      "quest": "1. Shape in Data Science.",
+      "answ": "In a typical AI deep learning model, you can track the shape of data as it moves through each step. ‘Shape’ here is just an attribute of a tensor, which is a super efficient way to handle data. As the data flows through the model, different math functions are applied to process it and learn patterns. A lot of these functions show up as curves—like S-shapes, bell curves, or slopes."
     },
     "career": {
-      "quest": "2. The shape in Nature Language.",
-      "answ": "Humans have always been good at learning from nature. Our language is filled with descriptions of natural elements, assigning them certain qualities. For example, when we think of mountains, we associate them with strength and protection; when we think of the sun, the first things that come to mind are light and heat; and the moon evokes feelings of gentleness and completeness. When learning a foreign language, we can bypass our native language and directly connect these natural elements to the new language."
+      "quest": "2. Shape in Nature Language.",
+      "answ": "Humans are great at learning from nature. Our language is full of descriptions of natural things, each with its own vibe. Like, when we think of mountains, we picture strength and protection. The sun? It brings to mind light and heat. And the moon? It’s all about gentleness and wholeness. So, when we’re learning a new language, instead of relying on translations, we can directly connect these natural elements to the new words we’re picking up."
     },
-    "view": "Learn from nature: When I build deep learning models, I like to connect formulas with natural elements. For example, take the normal distribution. You can image it as a mountain. The mean determines the location, while the variance shapes its form. Think of a steep, narrow mountain (like those in Guilin, China) with a small variance, compared to something like Mount Fuji, which has a broader, smoother slope due to a larger variance."
+    "view": "Learn from nature: When I build deep learning models, I like to link formulas to things in nature. Take the normal distribution, for example. You can picture it like a mountain. The mean tells you where the mountain is, and the variance decides its shape. Think of a sharp, narrow peak (like the ones in Guilin, China) with low variance, compared to something like Mount Fuji, which has a wider, smoother slope because of a larger variance."
   },
   "footer": {
-    "contact": "Let's Talk About sth. or whatever..",
-    "channels": "We can stay in touch via Social Media and Github:",
-    "languages": "You can change to other language version:",
-    "intro": "This is my personal portfolio website, where I introduce myself, share my interests, and showcase my work and projects. I’m currently a developer exploring Artificial Intelligence, and I’m excited to share my journey with anyone interested in AI and looking to build amazing AI applications.",
-    "colormode": "Swith the theme between Light and Dark: ",
-    "copyright": "Deployed and Shared by LI QIUFENG with "
+    "contact": "Let's chat about sth. - or whatever..",
+    "channels": "We can keep in touch on social media and GitHub:",
+    "languages": "You can switch to another language version:",
+    "intro": "This is my personal site where I share fun projects and courses. I’m excited to dive into cool topics like languages, AI, and mysticism with you. And hey, if we end up creating an AI app that people love, that’d be awesome!",
+    "colormode": "Swith between Light and Dark themes: ",
+    "copyright": "Deployed and Shared by LI QIUFENG using "
   }
 }
