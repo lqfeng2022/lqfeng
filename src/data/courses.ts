@@ -11,7 +11,7 @@ export default [
     title: "PYTHON",
     subTitle_en: "If you’re looking to learn AI, Python is your first step — and it’s the easiest one.",
     subTitle_jp:
-      "如果你想学习人工智能，Python 是你的第一步 - 而且是最简单的一步。",
+      "如果你想学习人工智能，Python 是你的第一步 -- 而且是最简单的一步。",
     image: python,
     h1: "180px",
     h2: "",
@@ -32,7 +32,7 @@ export default [
     subTitle_en:
       "Learn the basics of Quantum Computing and its algorithms.",
     subTitle_jp:
-      "学习量子计算及其算法的基础知识。",
+      "学习量子计算的基础知识和几个有名的算法。",
     image: quantum,
     h1: "",
     h2: "60px",
@@ -61,7 +61,7 @@ export default [
     title: "Apprenons l’humour à la française ensemble",
     subTitle_en: "Apprends le français et développe ton sens de l’humour avec des shows comiques et des vidéos courtes.",
     subTitle_jp:
-      "通过有趣的法语视频，学习法语，提高幽默感。",
+      "通过有趣的法语视频，学习法语，提高幽默能力。",
     image: lgjournal,
     h1: "",
     h2: "40px",
@@ -70,7 +70,7 @@ export default [
   {
     title: "DJANGO",
     subTitle_en: "Learn to build fast and secure APIs with Django.",
-    subTitle_jp: "掌握使用 Django 快速建立 安全的 API。",
+    subTitle_jp: "掌握使用 Django 快速建立安全的 API。",
     image: django,
     h1: "",
     h2: "",
