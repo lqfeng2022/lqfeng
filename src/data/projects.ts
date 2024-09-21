@@ -5,7 +5,7 @@ import q2_room from "../assets/q2room.jpeg";
 export default [
   {
     title_en: "A Video Game Display Web:",
-    title_jp: "ビデオゲーム情報を検索用のアプリ",
+    title_jp: "一个游戏检索平台:",
     image: games,
     content: [
       "Language: TypeScript",
@@ -23,7 +23,7 @@ export default [
   },
   {
     title_en: "A Community Web:",
-    title_jp: "ブログのようなウェブ",
+    title_jp: "一个全栈Blog项目:",
     image: next,
     content: [
       "Language: TypeScript",

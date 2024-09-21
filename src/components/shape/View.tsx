@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { TFunction } from "i18next";
 import { FaQuoteLeft } from "react-icons/fa";
-import quotation from "../../assets/quotation.jpeg";
+import quotation from "../../assets/quotation.jpg";
 
 const View = ({ t, jp }: { t: TFunction; jp: boolean }) => {
   return (

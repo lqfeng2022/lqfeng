@@ -33,20 +33,20 @@
   "simon": {
     "intro": {
       "head": "What's SHAPE?",
-      "body": "What I’m getting at is that shapes offer an efficient way to visualize our data and formulas. This helps us understand the formulas and model architecture much faster than working with raw data and equations alone."
+      "body": "What I’m getting at is that shapes offer an efficient way to visualize our data, formulas and our natural languages. This helps us understand the formulas and model architecture much faster than working with raw data and equations alone. And when learning a foreign language, we can bypass our native language and directly connect these natural elements to the new language "
     },
     "educ": {
-      "quest": "1. The shape of data.",
-      "answ": "In a typical AI deep learning model, we can trace the shape of data as it flows through each step. The ‘shape’ refers to an attribute of a tensor, which is an efficient way to represent and manipulate data."
+      "quest": "1. The shape in Data Science.",
+      "answ": "In a typical AI deep learning model, we can trace the shape of data as it flows through each step. The ‘shape’ refers to an attribute of a tensor, which is an efficient way to represent and manipulate data. As data flows through the entire model, various mathematical functions are applied to process it and learn patterns. Many of these functions take the form of curves, such as S-shapes, bell curves, or slopes."
     },
     "career": {
-      "quest": "2. The shape of formula.",
-      "answ": "As data flows through the entire model, various mathematical functions are applied to process it and learn patterns. Many of these functions take the form of curves, such as S-shapes, bell curves, or slopes."
+      "quest": "2. The shape in Nature Language.",
+      "answ": "Humans have always been good at learning from nature. Our language is filled with descriptions of natural elements, assigning them certain qualities. For example, when we think of mountains, we associate them with strength and protection; when we think of the sun, the first things that come to mind are light and heat; and the moon evokes feelings of gentleness and completeness. When learning a foreign language, we can bypass our native language and directly connect these natural elements to the new language."
     },
     "view": "Learn from nature: When I build deep learning models, I like to connect formulas with natural elements. For example, take the normal distribution. You can image it as a mountain. The mean determines the location, while the variance shapes its form. Think of a steep, narrow mountain (like those in Guilin, China) with a small variance, compared to something like Mount Fuji, which has a broader, smoother slope due to a larger variance."
   },
   "footer": {
-    "contact": "Let's Talk About Transformer ...",
+    "contact": "Let's Talk About sth. or whatever ...",
     "channels": "We can stay in touch via Social Media and Github:",
     "languages": "You can change to other language version:",
     "intro": "This is my personal portfolio website, where I introduce myself, share my interests, and showcase my work and projects. I’m currently a developer exploring Artificial Intelligence, and I’m excited to share my journey with anyone interested in AI and looking to build amazing AI applications.",

@@ -20,7 +20,7 @@ const Shape = () => {
       <Center p="15px">
         <Back t={t} jp={jp} uline={uline} oneSpace={oneSpace} />
       </Center>
-      <Center p="15px">
+      <Center px="15px" pt="80px">
         <View t={t} jp={jp} />
       </Center>
     </>

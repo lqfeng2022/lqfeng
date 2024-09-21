@@ -1,7 +1,7 @@
 import { Heading, Image, Text } from "@chakra-ui/react";
 import { TFunction } from "i18next";
 import { Link } from "react-router-dom";
-import dlearning from "../../assets/dlearning.jpeg";
+import mha from "../../assets/mha.jpeg";
 
 interface Props {
   jp: boolean;
@@ -13,7 +13,7 @@ const Dlearning = ({ jp, t, uline }: Props) => {
   return (
     <>
       <Link to="/work/transmodel">
-        <Image src={dlearning} />
+        <Image src={mha} />
       </Link>
       <Heading fontSize="sm" my="10px">
         <Link

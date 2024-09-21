@@ -31,7 +31,7 @@ const Languages = ({ t, jp, handleLanguage }: Props) => {
         </Text>
         <Button variant="link" onClick={() => handleLanguage("jp")}>
           <Text as="i" pr={1} fontSize="sm" pl={1}>
-            日本語
+            中文
           </Text>
         </Button>
       </Center>
