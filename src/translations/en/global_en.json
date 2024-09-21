@@ -46,7 +46,7 @@
     "view": "Learn from nature: When I build deep learning models, I like to connect formulas with natural elements. For example, take the normal distribution. You can image it as a mountain. The mean determines the location, while the variance shapes its form. Think of a steep, narrow mountain (like those in Guilin, China) with a small variance, compared to something like Mount Fuji, which has a broader, smoother slope due to a larger variance."
   },
   "footer": {
-    "contact": "Let's Talk About sth. or whatever ...",
+    "contact": "Let's Talk About sth. or whatever..",
     "channels": "We can stay in touch via Social Media and Github:",
     "languages": "You can change to other language version:",
     "intro": "This is my personal portfolio website, where I introduce myself, share my interests, and showcase my work and projects. I’m currently a developer exploring Artificial Intelligence, and I’m excited to share my journey with anyone interested in AI and looking to build amazing AI applications.",
