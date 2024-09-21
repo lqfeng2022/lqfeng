@@ -1,6 +1,7 @@
 import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { TFunction } from "i18next";
-import dlearning2 from "../../assets/dlearning2.jpeg";
+import pytorch_cover from "../../assets/pytorch_cover.jpeg";
+import { Link } from "react-router-dom";
 
 interface Props {
   jp: boolean;
@@ -12,7 +13,9 @@ const Course = ({ jp, t, oneSpace }: Props) => {
   return (
     <SimpleGrid columns={{ sm: 1, md: 2 }} maxW="1200px" spacing="20px">
       <Box maxW="708px">
-        <Image src={dlearning2} />
+        <Link to={"https://pytorch-dom.vercel.app/"}>
+          <Image src={pytorch_cover} />
+        </Link>
       </Box>
       <Box maxW="700px" pr="40px">
         <Text fontSize={jp ? "xl" : "3xl"}>{t("hp.ai.head")}</Text>

@@ -1,46 +1,30 @@
-import { Box, Center, SimpleGrid, useColorMode } from "@chakra-ui/react";
-import Project from "../components/shape/Project";
-import ProjectDetails from "../components/ProjectDetails";
-import projects from "../data/projects";
+import { Center, useColorMode } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
+import Back from "../components/shape/Back";
+import Introduce from "../components/shape/Introduce";
+import View from "../components/shape/View";
 
-const Product = () => {
-  const { colorMode } = useColorMode();
+const Shape = () => {
   const [t, i18n] = useTranslation("global");
   const jp = i18n.language === "jp";
+  const { colorMode } = useColorMode();
+  const uline =
+    colorMode === "light" ? "border-bottom border-dark" : "border-bottom";
   const oneSpace = { letterSpacing: "1px" };
-
-  const gamehub = projects[0];
-  const community = projects[1];
-  const q2room = projects[2];
 
   return (
     <>
-      <Center p="15px" pt="35px">
-        <Project t={t} jp={jp} oneSpace={oneSpace} />
+      <Center px="15px" py="35px">
+        <Introduce t={t} jp={jp} oneSpace={oneSpace} />
       </Center>
-      <Box>
-        <Center p="15px">
-          <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
-            <Box>
-              <Box hideBelow="md" h="150px" />
-              <ProjectDetails
-                jp={jp}
-                colorMode={colorMode}
-                details={community}
-              />
-            </Box>
-            <ProjectDetails jp={jp} colorMode={colorMode} details={gamehub} />
-          </SimpleGrid>
-        </Center>
-        <Center p="15px">
-          <SimpleGrid columns={[1, null, 2]} maxW="1200px" spacing="20px">
-            <ProjectDetails jp={jp} colorMode={colorMode} details={q2room} />
-          </SimpleGrid>
-        </Center>
-      </Box>
+      <Center p="15px">
+        <Back t={t} jp={jp} uline={uline} oneSpace={oneSpace} />
+      </Center>
+      <Center p="15px">
+        <View t={t} jp={jp} />
+      </Center>
     </>
   );
 };
 
-export default Product;
+export default Shape;

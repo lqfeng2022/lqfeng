@@ -14,8 +14,8 @@ const NavBar = () => {
   const l = useLocation().pathname;
   const links = [
     { name: "WORK", url: "/" },
+    { name: "PRODUCT", url: "/product" },
     { name: "SHAPE", url: "/shape" },
-    { name: "ME", url: "/about-me" },
   ];
 
   const [t, i18n] = useTranslation("global");

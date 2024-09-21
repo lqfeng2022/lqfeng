@@ -1,121 +1,89 @@
-import pytorch from "../assets/pytorch.jpeg";
-import tensorflow from "../assets/tensorflow.jpeg";
-import django from "../assets/django.jpg";
-import mysql from "../assets/mysql.jpg";
-import data_structure from "../assets/data_structure.png";
 import algorithm from "../assets/algorithm.jpg";
+import data_structure from "../assets/data_structure.png";
+import django from "../assets/django.jpg";
 import english from "../assets/english.jpg";
 import japanese from "../assets/japanese.png";
 import lgjournal from "../assets/lgjournal.jpeg";
-import quantum from "../assets/quantum.jpg";
 import python from "../assets/python_log.jpeg";
+import quantum from "../assets/quantum.jpg";
 
 export default [
   {
     title: "PYTHON",
-    subTitle_en: "Everything you need to program in Python is here.",
+    subTitle_en: "If you’re looking to learn AI, Python is your first step — and it’s the easiest one.",
     subTitle_jp:
-      "動画でプログラミング言語のPython、その全てが詳しくてシェアいたします。",
+      "如果你想学习人工智能，Python 是你的第一步 - 而且是最简单的一步。",
     image: python,
-    h1: "",
-    h2: "60px",
+    h1: "180px",
+    h2: "",
     url: "/work/python",
   },
   {
-    title: "PYTORCH",
-    subTitle_en:
-      "Learn building & deploying deep learning models with PyTorch.",
-    subTitle_jp: "PyTorchでディープラーニングモデルを構築とデプロイする。",
-    image: pytorch,
-    h1: "60px",
-    h2: "",
-    url: "/work/pytorch",
-  },
-  {
-    title: "TENSORFLOW",
-    subTitle_en:
-      "Learn building & deploying deep learning models with TensorFlow.",
-    subTitle_jp: "TensorFlowでディープラーニングモデルを構築とデプロイする。",
-    image: tensorflow,
-    h1: "60px",
-    h2: "",
-    url: "/work/tensorflow",
-  },
-  {
-    title: "DJANGO",
-    subTitle_en: "Learn to build fast and secure APIs with Django.",
-    subTitle_jp: "Djangoでセキュリティー、しっかりと反応早くのAPIsを構築する。",
-    image: django,
+    title: "MASTER 69 ENGLISH WORD ROOTs",
+    subTitle_en: "Learn english words quickly with 69 essential word roots.",
+    subTitle_jp:
+      "通过69个基础词根快速学习英语单词。",
+    image: english,
     h1: "",
-    h2: "60px",
-    url: "/work/django",
+    h2: "",
+    url: "/work/english",
   },
   {
-    title: "MYSQL",
-    subTitle_en: "Learn everything about DATABASE with MySQL.",
-    subTitle_jp: "MySQLでデータベースの全てが身につけてる。",
-    image: mysql,
+    title: "QUANTUM COMPUTING",
+    subTitle_en:
+      "Learn the basics of Quantum Computing and its algorithms.",
+    subTitle_jp:
+      "学习量子计算及其算法的基础知识。",
+    image: quantum,
     h1: "",
-    h2: "60px",
-    url: "/work/mysql",
+    h2: "",
+    url: "/work/qubit",
   },
   {
     title: "DATA STRUCTURE",
-    subTitle_en: "With a visual approach to learn data structure.",
-    subTitle_jp: "視覚的なアプローチでデータ構造の基本的な知識を身につけてる。",
+    subTitle_en: "Explore essential data structures that organize and manage data efficiently in programming.",
+    subTitle_jp: "探索在编程中高效组织和管理数据的基础数据结构。",
     image: data_structure,
     h1: "60px",
     h2: "",
     url: "/work/datastructure",
   },
   {
-    title: "ALGORITHM",
-    subTitle_en: "Ace your coding job interview in a clean way.",
-    subTitle_jp: "IT面接によく問われているアルゴリズムを理解しやすい教え方で",
+    title: "TRADITIONAL ALGORITHM",
+    subTitle_en: "Here, you can learn about classic traditional algorithms, which are fundamental to Computer Science.",
+    subTitle_jp: "在这里，你可以学习经典的传统算法，它们是计算机科学的基础。",
     image: algorithm,
     h1: "60px",
     h2: "",
     url: "/work/algorithm",
   },
   {
-    title: "ENGLISH",
-    subTitle_en: "Learn english conversation with small talk and story.",
+    title: "漢字",
+    subTitle_en: "Learn Chinese characters from nature.",
     subTitle_jp:
-      "英語日常会話のシリーズを作っていますが、興味があったら、ご覧ください。",
-    image: english,
-    h1: "",
-    h2: "50px",
-    url: "/work/english",
-  },
-  {
-    title: "日本語",
-    subTitle_en: "Learn japanese conversation with small talk.",
-    subTitle_jp:
-      "日本語日常会話のシリーズを作っていますが、興味があれば、ごらんください。",
+      "从大自然中学习汉字。",
     image: japanese,
     h1: "",
-    h2: "180px",
+    h2: "120px",
     url: "/work/english",
   },
   {
-    title: "le français",
-    subTitle_en: "Learn french conversation with Le Grand Journal.",
+    title: "Maîtrisez les 69 racines de mots essentielles",
+    subTitle_en: "Apprenez rapidement le français avec 69 racines de mots essentielles.",
     subTitle_jp:
-      "超面白いテレビ番組「Le Grand Journal」と一緒にフランス語会話を勉強します。",
+      "通过69个基础词根快速学习法语。",
     image: lgjournal,
-    h1: "100px",
-    h2: "",
+    h1: "",
+    h2: "100px",
     url: "/work/french",
   },
   {
-    title: "QUANTUM COMPUTER",
-    subTitle_en:
-      "Learn everything basics about Quantum Computing and algorithms",
-    subTitle_jp:
-      "量子コンピューターの基本知識と量子アルゴリズムを身につけます。",
-    image: quantum,
-    h1: "",
+    title: "DJANGO",
+    subTitle_en: "Learn to build fast and secure APIs with Django.",
+    subTitle_jp: "掌握使用 Django 快速建立 安全的 API。",
+    image: django,
+    h1: "60px",
     h2: "",
-    url: "/work/qubit",
+    url: "/work/django",
   },
 ];

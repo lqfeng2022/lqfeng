@@ -12,25 +12,25 @@ interface Props {
 const Dlearning = ({ jp, t, uline }: Props) => {
   return (
     <>
-      <Link to="/work/dlearning">
+      <Link to="/work/transmodel">
         <Image src={dlearning} />
       </Link>
       <Heading fontSize="sm" my="10px">
         <Link
-          to="/work/dlearing"
+          to="/work/transmodel"
           className={uline}
           style={{ letterSpacing: "1px" }}
         >
-          {t("hp.dlearn.head")}
+          {t("hp.transmodel.head")}
         </Link>
       </Heading>
       {jp ? (
         <Text fontSize="sm" className="fst-italic">
-          {t("hp.dlearn.body")}
+          {t("hp.transmodel.body")}
         </Text>
       ) : (
         <Heading fontSize="sm" className="fw-lighter fst-italic">
-          {t("hp.dlearn.body")}
+          {t("hp.transmodel.body")}
         </Heading>
       )}
     </>

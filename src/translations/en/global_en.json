@@ -1,55 +1,55 @@
 {
   "hp": {
     "intro": {
-      "head": "HI, WELCOM TO MY HP.",
-      "body": "I'm Simon, a web developer. I'm passionate about talking what is AI and how it works in a visualization approach. And I'm building a serial courses and apps to explain programming and AI's working process. Let's hit the road!"
+      "head": "WHAT'S UP.",
+      "body": "I’m Simon, someone who still hold a curiosity for new and exciting things, like ChatGPT, Artificial Intelligence and Quantum Computing."
     },
     "ai": {
-      "head": "Do we need to learn coding in 2024 the Age of AI?",
-      "body": "AI is becomming so powerful espacially as ChatGPT launched. It's so smart and can do lots of tech stuff by itself, like coding. I think most of us should learn programming. Cus it can help you understand how computers and AI work, it is super important because they're everywhere now and future.",
-      "foot": "Plus, when you know how to code, you can tell the AI exactly what you want it to do to make your own cool projects. And even help make AI smarter and safer for everyone."
+      "head": "Do we really need to understand AI?",
+      "body": "We can already use ChatGPT to do so many things online, but there are still countless opportunities and challenges to explore. I believe we can push the boundaries of AI even further. For example, we could just build a fast, highly accurate language translation model, or try something completely new, like translating the Miao language into natural human languages, or even understanding a dog, a penguin, who knows?",
+      "foot": "Life can be long and dull, so why not make it interesting by doing something creative? Shall we?"
     },
-    "dlearn": {
-      "head": "DEEP LEARNING",
-      "body": "Everything you need to know about Deep Learning is here.",
-      "detail": "Waitting for edit..."
+    "transmodel": {
+      "head": "ENGLISHI TO JAPANESE TRANSLATION MODEL",
+      "body": "Here, we use PyTorch to build a nature language translation model.",
+      "detail": "..."
     },
     "course": {
-      "python": "Waitting for edit..."
+      "python": "..."
     }
   },
   "product": {
     "app": {
-      "head": "What about build your personal app?",
-      "body": "You can design and build a full-stack app as your first product. A popular product can leave peope a great first impression which make people stick around you, even it's just an APP not a Photo or Paiting. It's the key to attracting audience, to making yourself known to the outside world.",
-      "foot": "Here I'm gonna build a web app from scratch.",
-      "toe": "SEE WHAT I BUILD:"
+      "head": "Practice is the best way to learn something new.",
+      "body": "When you start learning artificial intelligence, you can read plenty of books, papers, take courses, or even attend a top university. That’s all good, and it’s necessary. But if you think that’s enough, you’re mistaken. It’s just the beginning. You have to practice, over and over again. You need to build model from scratch, deploy it, test it, and get real users to interact with it. It’s like learning a new language but never speaking it — that’s pointless!",
+      "foot": "Here are some web apps, models, and more for you to dive into.",
+      "toe": "SEE WHAT I BUILT:"
     },
     "detail": {
-      "games": "Waitting for edit...",
-      "community": "Waitting for edit..."
+      "games": "...",
+      "community": "..."
     }
   },
   "simon": {
     "intro": {
-      "head": "HI, I'M SIMON.",
-      "body": "A developer for helping you build your own application. I'm passionate about AI and nature languages, like le français and japanese. What if I trained an personality AI assistant who can help people learning languages and building apps, that's gonna be fun!"
+      "head": "What's SHAPE?",
+      "body": "What I’m getting at is that shapes offer an efficient way to visualize our data and formulas. This helps us understand the formulas and model architecture much faster than working with raw data and equations alone."
     },
     "educ": {
-      "quest": "1. What's my eduction background?",
-      "answ": "A graduate of Hubei University of Technology in Wuhan. I love philosophy, read some books about Laozi, Buddha, and Descartes. And I am a big fun of GIBLI, so I started to know more about Japanese culture and history in college."
+      "quest": "1. The shape of data.",
+      "answ": "In a typical AI deep learning model, we can trace the shape of data as it flows through each step. The ‘shape’ refers to an attribute of a tensor, which is an efficient way to represent and manipulate data."
     },
     "career": {
-      "quest": "2. What's my career?",
-      "answ": "I used to be an engineer in a Japanese company for some years. And before that I worked as a sales in an export traiding company."
+      "quest": "2. The shape of formula.",
+      "answ": "As data flows through the entire model, various mathematical functions are applied to process it and learn patterns. Many of these functions take the form of curves, such as S-shapes, bell curves, or slopes."
     },
-    "view": "Lee is a reliable business parter and friend. He have a talent to get something new quickly, he took 1 year becomming a full-stack developer from zero."
+    "view": "Learn from nature: When I build deep learning models, I like to connect formulas with natural elements. For example, take the normal distribution. You can image it as a mountain. The mean determines the location, while the variance shapes its form. Think of a steep, narrow mountain (like those in Guilin, China) with a small variance, compared to something like Mount Fuji, which has a broader, smoother slope due to a larger variance."
   },
   "footer": {
-    "contact": "Let's Talk About AI and Whatever..",
+    "contact": "Let's Talk About Transformer ...",
     "channels": "We can stay in touch via Social Media and Github:",
     "languages": "You can change to other language version:",
-    "intro": "This is my personal portfolio web, it's just for introduce who I am, what's my interesting, what's my job etc. What I am doing now is creating a serial application and programming courses wich including AI fundamental knowledge.",
+    "intro": "This is my personal portfolio website, where I introduce myself, share my interests, and showcase my work and projects. I’m currently a developer exploring Artificial Intelligence, and I’m excited to share my journey with anyone interested in AI and looking to build amazing AI applications.",
     "colormode": "Swith the theme between Light and Dark: ",
     "copyright": "Deployed and Shared by LI QIUFENG with "
   }

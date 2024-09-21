@@ -1,5 +1,5 @@
 import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
-import simon from "../../assets/lqfeng.jpeg";
+import simon from "../../assets/shape.jpeg";
 import { TFunction } from "i18next";
 
 interface Props {
@@ -12,10 +12,10 @@ const Introduce = ({ t, jp, oneSpace }: Props) => {
     <SimpleGrid columns={{ sm: 1, md: 2 }} maxW="1000px" spacing="40px">
       <Box>
         <Image src={simon} />
-        <Box hideBelow="md" h="100px" />
+        <Box hideBelow="md" h="50px" />
       </Box>
       <Box>
-        <Box hideBelow="md" h="180px" />
+        <Box hideBelow="md" h="100px" />
         {jp ? (
           <Text fontSize="md">{t("simon.intro.head")}</Text>
         ) : (

@@ -26,12 +26,6 @@ const View = ({ t, jp }: { t: TFunction; jp: boolean }) => {
             <Icon boxSize="25px" as={FaQuoteLeft} pr={2} pb={3} />
             {t("simon.view")}
           </Text>
-          <Flex>
-            <Heading fontSize="sm">SIMON </Heading>
-            <Heading fontSize="sm" className="fw-lighter">
-              - CE0 @ 5Visual1Feel
-            </Heading>
-          </Flex>
         </Box>
       </Center>
       <Box maxW="450px">

@@ -37,20 +37,4 @@ export default [
     },
     path: "/product/community",
   },
-  {
-    title_en: "A Background Remover Web:",
-    title_jp: "写真のバックを削除するウェブ",
-    image: q2_room,
-    content: [
-      "Language: JavaScript",
-      "Framework/Library: React.js",
-      "UI: Radix UI + Bootstrap CSS",
-    ],
-    links: {
-      name: "Web:",
-      web: "Q2 ROOM",
-      url: "https://q2-room.vercel.app/",
-    },
-    path: "/product/q2room",
-  },
 ];
