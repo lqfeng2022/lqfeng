@@ -1,6 +1,6 @@
 import { Center, useColorMode } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import Back from "../components/shape/Back";
+import Back from "../components/shape/Nature";
 import Introduce from "../components/shape/Introduce";
 import View from "../components/shape/View";
 

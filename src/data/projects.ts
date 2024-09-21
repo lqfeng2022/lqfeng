@@ -1,6 +1,5 @@
 import games from "../assets/games.jpeg";
 import next from "../assets/next.jpeg";
-import q2_room from "../assets/q2room.jpeg";
 
 export default [
   {

@@ -1,12 +1,10 @@
 import {
   Box,
   Center,
-  Flex,
-  Heading,
   Icon,
   Image,
   SimpleGrid,
-  Text,
+  Text
 } from "@chakra-ui/react";
 import { TFunction } from "i18next";
 import { FaQuoteLeft } from "react-icons/fa";

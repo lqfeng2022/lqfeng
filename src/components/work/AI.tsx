@@ -8,12 +8,11 @@ interface Props {
   t: TFunction;
   oneSpace: Object;
 }
-
 const Course = ({ jp, t, oneSpace }: Props) => {
   return (
     <SimpleGrid columns={{ sm: 1, md: 2 }} maxW="1200px" spacing="20px">
       <Box maxW="708px">
-        <Link to={"https://pytorch-dom.vercel.app/"}>
+        <Link to={"https://pytorch-dom.vercel.app/"} target='_blank'>
           <Image src={pytorch_cover} />
         </Link>
       </Box>

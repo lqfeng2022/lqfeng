@@ -2,7 +2,8 @@ import { Box, Center, Heading, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 interface Course {
-  title: string;
+  title_en: string;
+  title_jp: string;
   subTitle_en: string;
   subTitle_jp: string;
   image: string;
@@ -16,7 +17,6 @@ interface Props {
   jp: boolean;
   uline: string;
 }
-
 const CourseCard = ({ course, jp, uline }: Props) => {
   return (
     <Center>
@@ -30,7 +30,7 @@ const CourseCard = ({ course, jp, uline }: Props) => {
           </Box>
           <Heading fontSize="sm" my="10px">
             <Link to="#" className={uline} style={{ letterSpacing: "1px" }}>
-              {course.title}
+              {jp? course.title_jp : course.title_en }
             </Link>
           </Heading>
           {jp ? (

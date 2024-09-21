@@ -8,7 +8,6 @@ interface Props {
   t: TFunction;
   uline: string;
 }
-
 const Dlearning = ({ jp, t, uline }: Props) => {
   return (
     <>

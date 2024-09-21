@@ -2,7 +2,7 @@
   "hp": {
     "intro": {
       "head": "WHAT'S UP.",
-      "body": "I’m Simon, someone who still hold a curiosity for new and exciting things, like ChatGPT, Artificial Intelligence and Quantum Computing."
+      "body": "I’m Simon, a man who still hold a curiosity for new and exciting things, like a new language, Artificial Intelligence (like ChatGPT) and Quantum Computing."
     },
     "ai": {
       "head": "Do we really need to understand AI?",
@@ -10,7 +10,7 @@
       "foot": "Life can be long and dull, so why not make it interesting by doing something creative? Shall we?"
     },
     "transmodel": {
-      "head": "ENGLISHI TO JAPANESE TRANSLATION MODEL",
+      "head": "ENGLISHI TO CHINESE TRANSLATION MODEL",
       "body": "Here, we use PyTorch to build a nature language translation model.",
       "detail": "..."
     },
