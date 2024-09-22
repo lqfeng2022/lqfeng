@@ -2,11 +2,11 @@
   "hp": {
     "intro": {
       "head": "WHAT'S UP.",
-      "body": "I’m Simon, a guy who’s always curious about new and exciting things—whether it’s learning a new language, diving into AI (like ChatGPT), or exploring Quantum Computing.”"
+      "body": "I’m Simon, a guy who’s always curious about new and exciting things — whether it’s learning a new language, diving into AI (like ChatGPT), or exploring Quantum Computing."
     },
     "ai": {
       "head": "Do we really need to understand AI?",
-      "body": "We can already use ChatGPT for all kinds of things online, but there’s still so much more to explore. I really think we can push AI even further. Like, why not build a super fast, super accurate translation model? Or try something totally new, like translating the Miao language into other human languages—or even figuring out what a dog or a penguin is saying, who knows?",
+      "body": "We can already use ChatGPT for all kinds of things online, but there’s still so much more to explore. I really think we can push AI even further. Like, why not build a super fast, super accurate translation model? Or try something totally new, like translating the Miao language into other human languages — or even figuring out what a dog or a penguin is saying, who knows?",
       "foot": "Life can be long and kinda boring, so why not make it fun by doing something creative? What do you think?"
     },
     "transmodel": {
@@ -33,11 +33,11 @@
   "simon": {
     "intro": {
       "head": "What's SHAPE?",
-      "body": "Basically, shapes are a super efficient way to visualize data, formulas, and even languages. They help us get the formulas and model structure way quicker than just looking at raw data or equations. Same goes for learning a new language—skip translating through your native one and connect directly to the natural elements."
+      "body": "Basically, shapes are a super efficient way to visualize data, formulas, and even languages. They help us get the formulas and model structure way quicker than just looking at raw data or equations. Same goes for learning a new language — skip translating through your native one and connect directly to the natural elements."
     },
     "educ": {
       "quest": "1. Shape in Data Science.",
-      "answ": "In a typical AI deep learning model, you can track the shape of data as it moves through each step. ‘Shape’ here is just an attribute of a tensor, which is a super efficient way to handle data. As the data flows through the model, different math functions are applied to process it and learn patterns. A lot of these functions show up as curves—like S-shapes, bell curves, or slopes."
+      "answ": "In a typical AI deep learning model, you can track the shape of data as it moves through each step. ‘Shape’ here is just an attribute of a tensor, which is a super efficient way to handle data. As the data flows through the model, different math functions are applied to process it and learn patterns. A lot of these functions show up as curves — like S-shapes, bell curves, or slopes."
     },
     "career": {
       "quest": "2. Shape in Nature Language.",
