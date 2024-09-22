@@ -1,6 +1,6 @@
 import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { TFunction } from "i18next";
-import book from "../../assets/book.jpg";
+import shape from "../../assets/shape.jpeg";
 
 interface Props {
   t: TFunction;
@@ -12,7 +12,7 @@ const Back = ({ t, jp, uline, oneSpace }: Props) => {
   return (
     <SimpleGrid columns={[1, null, 2]} maxW="1000px" spacing="40px">
       <Box>
-        <Image src={book} />
+        <Image src={shape} />
       </Box>
       <Box>
         <Text fontSize="xl" className="fst-italic">

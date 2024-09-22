@@ -1,5 +1,5 @@
 import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
-import shape from "../../assets/shape.jpeg";
+import mountain from "../../assets/mountain.jpg";
 import { TFunction } from "i18next";
 
 interface Props {
@@ -11,7 +11,7 @@ const Introduce = ({ t, jp, oneSpace }: Props) => {
   return (
     <SimpleGrid columns={{ sm: 1, md: 2 }} maxW="1000px" spacing="40px">
       <Box>
-        <Image src={shape} />
+        <Image src={mountain} />
         <Box hideBelow="md" h="50px" />
       </Box>
       <Box>

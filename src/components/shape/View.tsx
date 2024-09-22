@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { TFunction } from "i18next";
 import { FaQuoteLeft } from "react-icons/fa";
-import quotation from "../../assets/quotation.jpg";
+import book from "../../assets/book.jpg";
 
 const View = ({ t, jp }: { t: TFunction; jp: boolean }) => {
   return (
@@ -27,7 +27,7 @@ const View = ({ t, jp }: { t: TFunction; jp: boolean }) => {
         </Box>
       </Center>
       <Box maxW="450px">
-        <Image src={quotation} />
+        <Image src={book} />
       </Box>
     </SimpleGrid>
   );
