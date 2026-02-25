@@ -1,6 +1,6 @@
 import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { TFunction } from "i18next";
-import pytorch_cover from "../../assets/pytorch_cover.jpeg";
+import clipwords_hp from "../../assets/clipwords-hp.jpeg";
 import { Link } from "react-router-dom";
 
 interface Props {
@@ -13,12 +13,10 @@ const Course = ({ jp, t, oneSpace }: Props) => {
     <SimpleGrid columns={{ sm: 1, md: 2 }} maxW="1200px" spacing="20px">
       <Box maxW="708px">
         <Link 
-          to={ jp 
-            ? "https://pytorch-ch.netlify.app/"
-            : "https://pytorch-dom.vercel.app/" } 
+          to={"https://app.clipwords.me/"} 
           target='_blank'
         >
-          <Image src={pytorch_cover} />
+          <Image src={clipwords_hp} />
         </Link>
       </Box>
       <Box maxW="700px" pr="40px">

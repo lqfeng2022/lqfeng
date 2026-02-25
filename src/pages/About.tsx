@@ -4,12 +4,11 @@ import Back from "../components/shape/Nature";
 import Introduce from "../components/shape/Introduce";
 import View from "../components/shape/View";
 
-const Shape = () => {
+const About = () => {
   const [t, i18n] = useTranslation("global");
   const jp = i18n.language === "jp";
   const { colorMode } = useColorMode();
-  const uline =
-    colorMode === "light" ? "border-bottom border-dark" : "border-bottom";
+  const uline = (colorMode === "light") ? "border-bottom border-dark" : "border-bottom";
   const oneSpace = { letterSpacing: "1px" };
 
   return (
@@ -27,4 +26,4 @@ const Shape = () => {
   );
 };
 
-export default Shape;
+export default About;

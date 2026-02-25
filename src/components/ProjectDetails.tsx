@@ -1,13 +1,4 @@
-import {
-  Box,
-  ColorMode,
-  Heading,
-  Image,
-  ListItem,
-  Stack,
-  Text,
-  UnorderedList,
-} from "@chakra-ui/react";
+import { Box, ColorMode, Heading, Image, ListItem, Stack, Text, UnorderedList } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 interface Detail {
@@ -29,7 +20,11 @@ const ProjectDetails = ({ jp, colorMode, details }: Props) => {
     <Stack>
       <Box maxW="700px">
         <Link to={details.path}>
-          <Image src={details.image} />
+          <Image 
+            src={details.image} 
+            border='1px solid' 
+            borderColor='gray.200'
+          />
         </Link>
       </Box>
       <Box>
@@ -38,6 +33,7 @@ const ProjectDetails = ({ jp, colorMode, details }: Props) => {
         </Text>
         <Box bg={colorMode === "light" ? "gray.100" : "gray.700"}>
           <UnorderedList m="10px" px="15px" py={2}>
+            {/* a list of details */}
             {details.content.map((c) => (
               <ListItem key={c}>
                 <Heading fontSize="sm" m="0" className="fw-lighter lh-lg">
@@ -45,11 +41,17 @@ const ProjectDetails = ({ jp, colorMode, details }: Props) => {
                 </Heading>
               </ListItem>
             ))}
+            {/* web link */}
             <ListItem>
               <Heading fontSize="sm" m="0" className="fw-lighter lh-lg">
                 {details.links.name}{" "}
                 <Link target="_blank" to={details.links.url} color="gray.600">
-                  <Text as="b" color="blue.500" className="fst-italic">
+                  <Text 
+                    as="b" 
+                    color="blue.500" 
+                    className="fst-italic"
+                    _hover={{fontWeight: "bold"}}
+                  >
                     {details.links.web}
                   </Text>
                 </Link>

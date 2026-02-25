@@ -1,7 +1,7 @@
 import { Heading, Image, Text } from "@chakra-ui/react";
 import { TFunction } from "i18next";
 import { Link } from "react-router-dom";
-import attention from "../../assets/attention.jpeg";
+import ielts from "../../assets/IELTS.webp";
 
 interface Props {
   jp: boolean;
@@ -11,12 +11,12 @@ interface Props {
 const Dlearning = ({ jp, t, uline }: Props) => {
   return (
     <>
-      <Link to="/work/transmodel">
-        <Image src={attention} />
+      <Link to="/work/david">
+        <Image src={ielts} />
       </Link>
       <Heading fontSize="sm" my="10px">
         <Link
-          to="/work/transmodel"
+          to="/work/david"
           className={uline}
           style={{ letterSpacing: "1px" }}
         >

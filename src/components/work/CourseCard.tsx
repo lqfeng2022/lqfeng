@@ -29,7 +29,7 @@ const CourseCard = ({ course, jp, uline }: Props) => {
             </Link>
           </Box>
           <Heading fontSize="sm" my="10px">
-            <Link to="#" className={uline} style={{ letterSpacing: "1px" }}>
+            <Link to={course.url} className={uline} style={{ letterSpacing: "1px" }}>
               {jp? course.title_jp : course.title_en }
             </Link>
           </Heading>

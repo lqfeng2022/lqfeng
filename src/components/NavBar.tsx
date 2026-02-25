@@ -1,11 +1,4 @@
-import {
-  Button,
-  HStack,
-  Heading,
-  Icon,
-  useColorMode,
-  Text,
-} from "@chakra-ui/react";
+import { Button, HStack, Heading, Icon, useColorMode,  Text } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import { HiLanguage } from "react-icons/hi2";
 import { Link, useLocation } from "react-router-dom";
@@ -15,7 +8,7 @@ const NavBar = () => {
   const links = [
     { name: "WORK", url: "/" },
     { name: "PRODUCT", url: "/product" },
-    { name: "SHAPE", url: "/shape" },
+    { name: "ABOUT", url: "/about" },
   ];
 
   const [t, i18n] = useTranslation("global");

@@ -9,10 +9,11 @@ import courses from "./data/courses";
 function HomePage() {
   const [t, i18n] = useTranslation("global");
   const jp = i18n.language === "jp";
-  const { colorMode } = useColorMode();
-  const uline =
-    colorMode === "light" ? "border-bottom border-dark" : "border-bottom";
+
   const oneSpace = { letterSpacing: "1px" };
+  
+  const { colorMode } = useColorMode();
+  const uline = (colorMode === "light") ? "border-bottom border-dark" : "border-bottom";
 
   return (
     <>

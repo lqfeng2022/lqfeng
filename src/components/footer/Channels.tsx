@@ -1,12 +1,4 @@
-import {
-  Center,
-  Heading,
-  HStack,
-  Icon,
-  Link,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Center, Heading, HStack, Icon, Link, Stack, Text } from "@chakra-ui/react";
 import { TFunction } from "i18next";
 import { FaGithub, FaTiktok, FaYoutube } from "react-icons/fa";
 

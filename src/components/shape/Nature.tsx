@@ -1,6 +1,6 @@
 import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { TFunction } from "i18next";
-import shape from "../../assets/shape.jpeg";
+import shape from "../../assets/scientific-mind.jpg";
 
 interface Props {
   t: TFunction;
