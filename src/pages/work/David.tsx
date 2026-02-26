@@ -6,13 +6,13 @@ import { basePrompt, basePrompt_explain, personaPrompt, personaPrompt_explain } 
 const David = () => {
   return (
     <>
-      <Heading fontSize="md" pb={2}>
+      <Heading fontSize="md" pl="18px" pb={5} color="gray.700">
         David Prompting Settings:
       </Heading>
 
       {/* base prompt */}
       <Box px="18px">
-        <Heading fontSize="sm" pb={2}>
+        <Heading fontSize="sm" pb={2} color="gray.600">
           1. Base Prompt:
         </Heading>
         <SimpleGrid columns={{ base: 1, lg: 2 }}  spacing="20px" pb="50px" alignItems="start">
@@ -30,7 +30,7 @@ const David = () => {
           </Box>
           {/* Explanation Blocks */}
           <VStack my={2} spacing={0} align="stretch" bg="gray.50">
-            <Heading pl={2} pt={2} fontSize="md">
+            <Heading pl={2} pt={2} fontSize="md" color="gray.600">
               # Base Prompt Explain:
             </Heading>
             {basePrompt_explain.explanation.map((item, index) => (
@@ -49,25 +49,13 @@ const David = () => {
 
       {/* persona prompt */}
       <Box px="18px">
-        <Heading fontSize="sm" pb={2}>
+        <Heading fontSize="sm" pb={2} color="gray.600">
           2. Persona Prompt:
         </Heading>
         <SimpleGrid columns={{ base: 1, lg: 2 }}  spacing="20px" pb="50px" alignItems="start">
-          {/* Prompt Content */}
-          <Box>
-            <SyntaxHighlighter
-              language="javascript"
-              style={oneLight}
-              showLineNumbers
-              wrapLongLines
-              customStyle={{ fontSize: "12px", lineHeight: "1.4em" }}
-            >
-              {personaPrompt}
-            </SyntaxHighlighter>
-          </Box>
           {/* Explanation Blocks */}
           <VStack my={2} spacing={0} align="stretch" bg="gray.50">
-            <Heading pl={2} pt={2} fontSize="md">
+            <Heading pl={2} pt={2} fontSize="md" color="gray.600">
               # Persona Prompt Explain:
             </Heading>
             {personaPrompt_explain.explanation.map((item, index) => (
@@ -81,6 +69,18 @@ const David = () => {
               </Box>
             ))}
           </VStack>
+          {/* Prompt Content */}
+          <Box>
+            <SyntaxHighlighter
+              language="javascript"
+              style={oneLight}
+              showLineNumbers
+              wrapLongLines
+              customStyle={{ fontSize: "12px", lineHeight: "1.4em" }}
+            >
+              {personaPrompt}
+            </SyntaxHighlighter>
+          </Box>
         </SimpleGrid>
       </Box>
     </>
