@@ -8,7 +8,7 @@ const Product = () => {
   const { colorMode } = useColorMode();
 
   const [t, i18n] = useTranslation("global");
-  const jp = i18n.language === "jp";
+  const jp = i18n.language.startsWith("jp");
 
   return (
     <>

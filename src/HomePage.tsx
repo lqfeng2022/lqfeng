@@ -1,14 +1,14 @@
 import { Box, Center, SimpleGrid, useColorMode } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import AI from "./components/work/AI";
+import Course from "./components/work/Course";
 import CourseCard from "./components/work/CourseCard";
-import Dlearning from "./components/work/Dlearning";
+import David from "./components/work/David";
 import HpIntroduce from "./components/work/HpIntroduce";
 import courses from "./data/courses";
 
 function HomePage() {
   const [t, i18n] = useTranslation("global");
-  const jp = i18n.language === "jp";
+  const jp = i18n.language.startsWith("jp");
 
   const oneSpace = { letterSpacing: "1px" };
   
@@ -21,11 +21,11 @@ function HomePage() {
         <HpIntroduce jp={jp} t={t} oneSpace={oneSpace} />
       </Box>
       <Box p="15px" pb="35px">
-        <AI jp={jp} t={t} oneSpace={oneSpace} />
+        <Course jp={jp} t={t} oneSpace={oneSpace} />
       </Box>
       <Center>
         <Box p="15px" pb={10} maxW="1200px">
-          <Dlearning jp={jp} t={t} uline={uline} />
+          <David jp={jp} t={t} uline={uline} />
         </Box>
       </Center>
       <Center>

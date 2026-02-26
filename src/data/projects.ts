@@ -55,7 +55,7 @@ export default [
     path: "/product/blog-hub",
   },
   {
-    title_en: "An AI Tutor Project - Backend:",
+    title_en: "An AI Tutor Project - Django:",
     title_jp: "一个AI老师项目之后端:",
     image: clipwords_dj,
     content: [
@@ -71,7 +71,7 @@ export default [
     path: "/product/clipwords-django",
   },
   {
-    title_en: "An AI Tutor Project - Frontend:",
+    title_en: "An AI Tutor Project - React:",
     title_jp: "一个AI老师项目之前端:",
     image: clipwords_hp,
     content: [
@@ -86,7 +86,7 @@ export default [
       web: "clipwords.me",
       url: "https://app.clipwords.me",
     },
-    path: "/product/clipwords-backend",
+    path: "/product/clipwords-react",
   },
   {
     title_en: "An AI Tutor Project - Micro-server:",
@@ -102,6 +102,6 @@ export default [
       web: "",
       url: "#",
     },
-    path: "/product/clipwords-micro-server",
+    path: "/product/clipwords-node",
   },
 ];

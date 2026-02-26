@@ -1,21 +1,41 @@
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
-import "bootstrap/dist/css/bootstrap.css";
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import theme from "./theme";
 import "@fontsource/open-sans";
 import "@fontsource/source-serif-pro/300.css";
+import "bootstrap/dist/css/bootstrap.css";
+import i18next from "i18next";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { I18nextProvider } from "react-i18next";
 import { RouterProvider } from "react-router-dom";
+import "./index.css";
 import router from "./routes";
+import theme from "./theme";
 import global_en from "./translations/en/global_en.json";
 import global_jp from "./translations/jp/global_jp.json";
-import i18next from "i18next";
-import { I18nextProvider } from "react-i18next";
+
+// `localStorage` is a built-in browser storage system
+const getDefaultLanguage = () => {
+  // If user manually selected before → use it
+  const savedLang = localStorage.getItem("lang");
+  if (savedLang) return savedLang;
+
+  // Detect browser language
+  const browserLang = navigator.language.toLowerCase();
+
+  // If Chinese → use jp
+  if (browserLang.startsWith("zh")) {
+    return "jp";
+  }
+
+  // Default → English
+  return "en";
+};
+
 
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: "en",
+  lng: getDefaultLanguage(),
+  fallbackLng: "en",
   resources: {
     en: {
       global: global_en,

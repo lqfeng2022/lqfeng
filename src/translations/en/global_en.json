@@ -2,7 +2,7 @@
   "hp": {
     "intro": {
       "head": "WHAT'S UP.",
-      "body": "Hi, I’m Simon — a full-stack developer and AI-powered app creator with a background in engineering. I design and build practical software solutions that integrate AI to enhance learning experiences. Explore my projects below to see what I’ve built."
+      "body": "Hi, I’m Simon — a full-stack developer and AI-powered app creator with a background in engineering. "
     },
     "ai": {
       "head": "Introduction",
@@ -33,7 +33,7 @@
   "simon": {
     "intro": {
       "head": "Hello, I'm Simon",
-      "body": "I’m a developer who builds practical systems and explores new ways people interact with technology."
+      "body": "I’m a developer who builds practical systems and explores new ways people interact with AI."
     },
     "educ": {
       "quest": "1. My Education Back & Skills.",

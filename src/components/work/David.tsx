@@ -8,7 +8,7 @@ interface Props {
   t: TFunction;
   uline: string;
 }
-const Dlearning = ({ jp, t, uline }: Props) => {
+const David = ({ jp, t, uline }: Props) => {
   return (
     <>
       <Link to="/work/david">
@@ -36,4 +36,4 @@ const Dlearning = ({ jp, t, uline }: Props) => {
   );
 };
 
-export default Dlearning;
+export default David;

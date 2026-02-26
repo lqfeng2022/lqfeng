@@ -9,9 +9,10 @@ import WebIntroduce from "./footer/WebIntroduce";
 
 const Footer = () => {
   const [t, i18n] = useTranslation("global");
-  const jp = i18n.language === "jp";
+  const jp = i18n.language.startsWith("jp");
   const handleLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
+    localStorage.setItem("lang", lang);
   };
 
   return (

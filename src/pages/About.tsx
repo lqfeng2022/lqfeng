@@ -1,12 +1,12 @@
 import { Center, useColorMode } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import Back from "../components/shape/Nature";
-import Introduce from "../components/shape/Introduce";
-import View from "../components/shape/View";
+import Back from "../components/about/Back";
+import Introduce from "../components/about/Introduce";
+import View from "../components/about/View";
 
 const About = () => {
   const [t, i18n] = useTranslation("global");
-  const jp = i18n.language === "jp";
+  const jp = i18n.language.startsWith("jp");
   const { colorMode } = useColorMode();
   const uline = (colorMode === "light") ? "border-bottom border-dark" : "border-bottom";
   const oneSpace = { letterSpacing: "1px" };
