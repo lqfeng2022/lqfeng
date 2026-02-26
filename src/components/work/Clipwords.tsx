@@ -8,7 +8,7 @@ interface Props {
   t: TFunction;
   oneSpace: Object;
 }
-const Course = ({ jp, t, oneSpace }: Props) => {
+const Clipwords = ({ jp, t, oneSpace }: Props) => {
   return (
     <SimpleGrid columns={{ sm: 1, md: 2 }} maxW="1200px" spacing="20px">
       <Box maxW="708px">
@@ -16,7 +16,11 @@ const Course = ({ jp, t, oneSpace }: Props) => {
           to={"https://app.clipwords.me/"} 
           target='_blank'
         >
-          <Image src={clipwords_hp} />
+          <Image 
+            src={clipwords_hp} 
+            border="0.5px solid"
+            borderColor="gray.600"
+          />
         </Link>
       </Box>
       <Box maxW="700px" pr="40px">
@@ -45,4 +49,4 @@ const Course = ({ jp, t, oneSpace }: Props) => {
   );
 };
 
-export default Course;
+export default Clipwords;

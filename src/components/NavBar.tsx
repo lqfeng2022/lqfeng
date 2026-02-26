@@ -23,7 +23,7 @@ const NavBar = () => {
           LI_QIUFENG
         </Heading>
       </Link>
-      <HStack spacing="30px">
+      <HStack spacing="30px" mr={1}>
         {links.map((link) => (
           <Link
             key={link.name}

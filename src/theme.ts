@@ -1,7 +1,8 @@
 import { ThemeConfig, extendTheme } from "@chakra-ui/react";
 
 const config: ThemeConfig = {
-  initialColorMode: "light",
+  initialColorMode: "system",
+  useSystemColorMode: true,
 };
 
 const breakpoints = {

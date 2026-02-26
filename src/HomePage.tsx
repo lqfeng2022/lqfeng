@@ -1,6 +1,6 @@
 import { Box, Center, SimpleGrid, useColorMode } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import Course from "./components/work/Course";
+import Clipwords from "./components/work/Clipwords";
 import CourseCard from "./components/work/CourseCard";
 import David from "./components/work/David";
 import HpIntroduce from "./components/work/HpIntroduce";
@@ -21,7 +21,7 @@ function HomePage() {
         <HpIntroduce jp={jp} t={t} oneSpace={oneSpace} />
       </Box>
       <Box p="15px" pb="35px">
-        <Course jp={jp} t={t} oneSpace={oneSpace} />
+        <Clipwords jp={jp} t={t} oneSpace={oneSpace} />
       </Box>
       <Center>
         <Box p="15px" pb={10} maxW="1200px">

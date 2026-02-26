@@ -18,19 +18,17 @@ const getDefaultLanguage = () => {
   // If user manually selected before → use it
   const savedLang = localStorage.getItem("lang");
   if (savedLang) return savedLang;
-
+  
   // Detect browser language
-  const browserLang = navigator.language.toLowerCase();
+  const languages = navigator.languages || [navigator.language];
+  
+  const hasChinese = languages.some((lang) =>
+    lang.toLowerCase().startsWith("zh")
+  );
 
   // If Chinese → use jp
-  if (browserLang.startsWith("zh")) {
-    return "jp";
-  }
-
-  // Default → English
-  return "en";
+  return hasChinese ? "jp" : "en";
 };
-
 
 i18next.init({
   interpolation: { escapeValue: false },

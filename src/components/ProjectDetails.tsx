@@ -22,8 +22,8 @@ const ProjectDetails = ({ jp, colorMode, details }: Props) => {
         <Link to={details.path}>
           <Image 
             src={details.image} 
-            border='1px solid' 
-            borderColor='gray.200'
+            border='0.5px solid' 
+            borderColor='gray.600'
           />
         </Link>
       </Box>
