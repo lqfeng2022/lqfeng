@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 const NavBar = () => {
   const pathname = useLocation().pathname;
   const links = [
-    { name: "WORK", url: "/" },
+    { name: "WORK", url: "/work" },
     { name: "PRODUCT", url: "/product" },
     { name: "ABOUT", url: "/about" },
   ];
@@ -24,22 +24,25 @@ const NavBar = () => {
         </Heading>
       </Link>
       <HStack spacing="30px" mr={1}>
-        {links.map((link) => (
-          <Link
-            key={link.name}
-            to={link.url}
-            className={pathname === `${link.url}` ? lightDarkSwitch : ""}
-          >
-            <Heading
-              fontSize="xs"
-              my="3px"
-              className="fw-lighter"
-              style={{ letterSpacing: "1px" }}
+        {links.map((link) => {
+          const isActive = pathname.startsWith(link.url);
+          return (
+            <Link
+              key={link.name}
+              to={link.url}
+              className={isActive ? lightDarkSwitch : ""}
             >
-              {link.name}
-            </Heading>
-          </Link>
-        ))}
+              <Heading
+                fontSize="xs"
+                my="3px"
+                className="fw-lighter"
+                style={{ letterSpacing: "1px" }}
+              >
+                {link.name}
+              </Heading>
+            </Link>
+          )
+        })}
       </HStack>
     </HStack>
   );

@@ -8,7 +8,7 @@ interface Props {
   t: TFunction;
   uline: string;
 }
-const David = ({ jp, t, uline }: Props) => {
+const DavidCard = ({ jp, t, uline }: Props) => {
   return (
     <>
       <Link to="/work/david">
@@ -36,4 +36,4 @@ const David = ({ jp, t, uline }: Props) => {
   );
 };
 
-export default David;
+export default DavidCard;

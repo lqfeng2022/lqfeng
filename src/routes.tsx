@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import HomePage from "./HomePage";
 import ErrorPage from "./pages/ErrorPage";
-import Layout from "./pages/Layout";
+import Layout from "./Layout";
 import About from "./pages/About";
 import Project from "./pages/Project";
 import David from "./pages/work/David";
@@ -26,14 +26,20 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <HomePage /> },
-      { path: "work/david", element: <David/> }, 
-      { path: "work/xiao", element: <Xiao/> },
-      { path: "work/xiaozhu", element: <Xiaozhu/> },
-      { path: "work/lee", element: <Lee/> },
-      { path: "work/tony", element: <Tony/> },
-      { path: "work/luna", element: <Luna/> },
-      { path: "work/megan", element: <Megan/> },
-      { path: "work/sae", element: <Sae/> },
+      { 
+        path: "work/", 
+        children: [
+          { index: true, element: <HomePage/> },
+          { path: "david", element: <David/> }, 
+          { path: "xiao", element: <Xiao/> },
+          { path: "xiaozhu", element: <Xiaozhu/> },
+          { path: "lee", element: <Lee/> },
+          { path: "tony", element: <Tony/> },
+          { path: "luna", element: <Luna/> },
+          { path: "megan", element: <Megan/> },
+          { path: "sae", element: <Sae/> },
+        ]
+       }, 
       { 
         path: "product/", 
         children: [

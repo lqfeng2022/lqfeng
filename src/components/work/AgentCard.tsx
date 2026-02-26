@@ -17,7 +17,7 @@ interface Props {
   jp: boolean;
   uline: string;
 }
-const CourseCard = ({ course, jp, uline }: Props) => {
+const AgentCard = ({ course, jp, uline }: Props) => {
   return (
     <Center>
       <Box maxW="708px">
@@ -49,4 +49,4 @@ const CourseCard = ({ course, jp, uline }: Props) => {
   );
 };
 
-export default CourseCard;
+export default AgentCard;

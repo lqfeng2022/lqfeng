@@ -6,7 +6,7 @@ interface Props {
   t: TFunction;
   oneSpace: Object;
 }
-const HpIntroduce = ({ jp, t, oneSpace }: Props) => {
+const AgentIntroduce = ({ jp, t, oneSpace }: Props) => {
   return (
     <>
       <Heading fontSize="sm" pb={5} style={oneSpace}>
@@ -20,4 +20,4 @@ const HpIntroduce = ({ jp, t, oneSpace }: Props) => {
   );
 };
 
-export default HpIntroduce;
+export default AgentIntroduce;

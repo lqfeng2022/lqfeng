@@ -1,10 +1,10 @@
 import { Box, Center, SimpleGrid, useColorMode } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import Clipwords from "./components/work/Clipwords";
-import CourseCard from "./components/work/CourseCard";
-import David from "./components/work/David";
-import HpIntroduce from "./components/work/HpIntroduce";
-import courses from "./data/courses";
+import AgentCard from "./components/work/AgentCard";
+import DavidCard from "./components/work/DavidCard";
+import AgentIntroduce from "./components/work/AgentIntroduce";
+import agents from "./data/agents";
 
 function HomePage() {
   const [t, i18n] = useTranslation("global");
@@ -18,14 +18,14 @@ function HomePage() {
   return (
     <>
       <Box px="5px" py="35px" maxW="500px">
-        <HpIntroduce jp={jp} t={t} oneSpace={oneSpace} />
+        <AgentIntroduce jp={jp} t={t} oneSpace={oneSpace} />
       </Box>
       <Box p="15px" pb="35px">
         <Clipwords jp={jp} t={t} oneSpace={oneSpace} />
       </Box>
       <Center>
         <Box p="15px" pb={10} maxW="1200px">
-          <David jp={jp} t={t} uline={uline} />
+          <DavidCard jp={jp} t={t} uline={uline} />
         </Box>
       </Center>
       <Center>
@@ -35,8 +35,13 @@ function HomePage() {
           spacing="20px"
           maxW="1200px"
         >
-          {courses.map((c) => (
-            <CourseCard key={c.title_en} course={c} jp={jp} uline={uline} />
+          {agents.map((agent) => (
+            <AgentCard 
+              key={agent.title_en} 
+              course={agent} 
+              jp={jp} 
+              uline={uline} 
+            />
           ))}
         </SimpleGrid>
       </Center>
