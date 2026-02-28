@@ -8,8 +8,8 @@ import math from "../assets/math.webp";
 
 export default [
   {
-    title_en: "紗枝先生 - Japanese Language AI Teachers",
-    title_jp: "紗枝先生",
+    title_en: "さえ先生 - Japanese Language AI Teachers",
+    title_jp: "紗枝老师",
     subTitle_en: "Friendly Japanese teachers you can learn with anytime, anywhere. Practice daily conversation, improve listening skills, and explore Japanese language and culture at your own pace.",
     subTitle_jp: "随时随地的友好日语老师，陪你练习日常对话、提升听力水平，并按照自己的节奏探索日本语言与文化。",
     image: mountain,
@@ -38,7 +38,7 @@ export default [
     url: "/work/xiao",
   },
   {
-    title_en: "TONY - Software Engineering AI Mentor",
+    title_en: "Tony - Software Engineering AI Mentor",
     title_jp: "托尼老师",
     subTitle_en: "Learn programming and real-world project development with Tony. He specializes in Python and JavaScript, guiding learners from fundamentals to practical applications.",
     subTitle_jp: "跟随Tony学习编程与真实项目开发。他专精于Python和JavaScript，引导学习者从基础入门到实践应用。",

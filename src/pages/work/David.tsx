@@ -15,9 +15,18 @@ const David = () => {
         <Heading fontSize="md" pb={2}>
           1. Base Prompt:
         </Heading>
-        <SimpleGrid columns={{ base: 1, lg: 2 }}  spacing="20px" pb="50px" alignItems="start">
+        <SimpleGrid 
+          templateColumns={{ base: "1fr", lg: "2fr 1fr" }}
+          spacing="20px" 
+          pb="50px" 
+          alignItems="start"
+        >
           {/* Prompt Content */}
-          <Box>
+          {/* in CSS: 
+                min-width: auto  (default)
+                min-width: 0     (allows shrinking) 
+          */}
+          <Box minW={0}>
             <SyntaxHighlighter
               language="javascript"
               style={oneLight}
@@ -52,9 +61,18 @@ const David = () => {
         <Heading fontSize="md" pb={2}>
           2. Persona Prompt:
         </Heading>
-        <SimpleGrid columns={{ base: 1, lg: 2 }}  spacing="20px" pb="50px" alignItems="start">
+        <SimpleGrid 
+          templateColumns={{ base: "1fr", lg: "1fr 2fr" }}
+          spacing="20px" pb="50px" 
+          alignItems="start"
+        >
           {/* Explanation Blocks */}
-          <VStack my={2} spacing={0} align="stretch">
+          <VStack 
+            my={2} 
+            spacing={0} 
+            align="stretch" 
+            order={{ base: 2, lg: 2 }}
+          >
             <Heading pl={2} pt={2} fontSize="md">
               # Persona Prompt Explain:
             </Heading>
@@ -70,7 +88,7 @@ const David = () => {
             ))}
           </VStack>
           {/* Prompt Content */}
-          <Box>
+          <Box minW={0} order={{ base: 1, lg: 2 }}>
             <SyntaxHighlighter
               language="javascript"
               style={oneLight}

@@ -92,7 +92,7 @@
       "foot": ""
     },
     "api-detail": {
-      "head": "4. RESTful API for products/ url",
+      "head": "4. products/ url",
       "body": "This section demonstrates how the Search page works in practice. The page is composed of three main custom components. The SearchInput component sends user queries to the API and retrieves results. It also integrates a sub-component for fetching and displaying search history, allowing users to quickly search again. SearchTabs filters results by content type, while AllPosts handles data fetching and rendering of the filtered results.",
       "foot": ""
     },
