@@ -1,10 +1,10 @@
 import { Box, Center, SimpleGrid, useColorMode } from "@chakra-ui/react";
-import Project from "../components/project/Project";
+import ProjectCard from "../components/project/ProjectCard";
 import ProjectDetails from "../components/ProjectDetails";
 import projects from "../data/projects";
 import { useTranslation } from "react-i18next";
 
-const Product = () => {
+const ProductPage = () => {
   const { colorMode } = useColorMode();
 
   const [t, i18n] = useTranslation("global");
@@ -13,7 +13,7 @@ const Product = () => {
   return (
     <>
       <Center p="15px" pt="35px">
-        <Project t={t} jp={jp} oneSpace={{ letterSpacing: "1px" }} />
+        <ProjectCard t={t} jp={jp} oneSpace={{ letterSpacing: "1px" }} />
       </Center>
       <Box>
         <Center p="15px">
@@ -64,4 +64,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default ProductPage;

@@ -28,7 +28,7 @@ const ProjectDetails = ({ jp, colorMode, details }: Props) => {
         </Link>
       </Box>
       <Box>
-        <Text my="8px" fontSize="2xl" className="fst-italic">
+        <Text my="8px" fontSize="xl" className="fw-light">
           {jp ? details.title_jp : details.title_en}
         </Text>
         <Box bg={colorMode === "light" ? "gray.100" : "gray.700"}>

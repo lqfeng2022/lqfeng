@@ -1,5 +1,5 @@
 {
-  "hp": {
+  "work": {
     "intro": {
       "head": "WHAT'S UP.",
       "body": "Hi, I’m Simon — a full-stack developer and AI-powered app creator with a background in engineering. "
@@ -53,6 +53,75 @@
       }
     }
   },
+  "react": {
+    "intro": {
+      "head": "Introduction",
+      "body": "This client-side application is built with Vite, TypeScript, and React. It serves as the user interface, so maintaining a clean design and strong UI/UX is essential to ensure an enjoyable user experience. We use Chakra UI to build consistent and accessible components, Axios for data fetching, and TanStack Query to manage and cache server state efficiently. Zustand helps manage global parameters such as filters, search terms, and language preferences. We also transform and cache certain local data (for example, genres) to reduce unnecessary API requests. In addition, all form data is validated locally (Zod + React Hook Form) before being sent to the API to ensure reliability and better user feedback.",
+      "foot": "More details will be discussed later."
+    },
+    "stack": {
+      "head": "1. App Architecture",
+      "body": "The application is built with React as the core framework. Chakra UI is used for styling and component structure, with a customized theme for consistent design. TanStack Query manages server state and simplifies data fetching and caching. We also implemented a custom authentication layer to handle user login, session management, and cookie control. Since this is a multi-page web application, centralized authentication handling is essential across all pages.",
+      "foot": ""
+    },
+    "case": {
+      "head": "2. A Real Example",
+      "body": "This section demonstrates how the Search page works in practice. The page is composed of three main custom components. The SearchInput component sends user queries to the API and retrieves results. It also integrates a sub-component for fetching and displaying search history, allowing users to quickly search again. SearchTabs filters results by content type, while AllPosts handles data fetching and rendering of the filtered results.",
+      "foot": ""
+    }
+  },
+  "django": {
+    "intro": {
+      "head": "Introduction",
+      "body": "This client-side application is built with Vite, TypeScript, and React. It serves as the user interface, so maintaining a clean design and strong UI/UX is essential to ensure an enjoyable user experience. We use Chakra UI to build consistent and accessible components, Axios for data fetching, and TanStack Query to manage and cache server state efficiently. Zustand helps manage global parameters such as filters, search terms, and language preferences. We also transform and cache certain local data (for example, genres) to reduce unnecessary API requests. In addition, all form data is validated locally (Zod + React Hook Form) before being sent to the API to ensure reliability and better user feedback.",
+      "foot": "More details will be discussed later."
+    },
+    "host": {
+      "head": "1. Host on Linux Server",
+      "body": "This client-side application is built with Vite, TypeScript, and React. It serves as the user interface, so maintaining a clean design and strong UI/UX is essential to ensure an enjoyable user experience. We use Chakra UI to build consistent and accessible components, Axios for data fetching, and TanStack Query to manage and cache server state efficiently. Zustand helps manage global parameters such as filters, search terms, and language preferences. We also transform and cache certain local data (for example, genres) to reduce unnecessary API requests. In addition, all form data is validated locally (Zod + React Hook Form) before being sent to the API to ensure reliability and better user feedback.",
+      "foot": ""
+    },
+    "schema": {
+      "head": "2. DATA Schema",
+      "body": "The application is built with React as the core framework. Chakra UI is used for styling and component structure, with a customized theme for consistent design. TanStack Query manages server state and simplifies data fetching and caching. We also implemented a custom authentication layer to handle user login, session management, and cookie control. Since this is a multi-page web application, centralized authentication handling is essential across all pages.",
+      "foot": "More details will be discussed here."
+    },
+    "api": {
+      "head": "3. RESTful API",
+      "body": "This section demonstrates how the Search page works in practice. The page is composed of three main custom components. The SearchInput component sends user queries to the API and retrieves results. It also integrates a sub-component for fetching and displaying search history, allowing users to quickly search again. SearchTabs filters results by content type, while AllPosts handles data fetching and rendering of the filtered results.",
+      "foot": ""
+    },
+    "api-detail": {
+      "head": "4. RESTful API for products/ url",
+      "body": "This section demonstrates how the Search page works in practice. The page is composed of three main custom components. The SearchInput component sends user queries to the API and retrieves results. It also integrates a sub-component for fetching and displaying search history, allowing users to quickly search again. SearchTabs filters results by content type, while AllPosts handles data fetching and rendering of the filtered results.",
+      "foot": ""
+    },
+    "orm": {
+      "head": "5. Django ORM",
+      "body": "This section demonstrates how the Search page works in practice. The page is composed of three main custom components. The SearchInput component sends user queries to the API and retrieves results. It also integrates a sub-component for fetching and displaying search history, allowing users to quickly search again. SearchTabs filters results by content type, while AllPosts handles data fetching and rendering of the filtered results.",
+      "foot": ""
+    },
+    "cookies": {
+      "head": "6. Cookies",
+      "body": "This section demonstrates how the Search page works in practice. The page is composed of three main custom components. The SearchInput component sends user queries to the API and retrieves results. It also integrates a sub-component for fetching and displaying search history, allowing users to quickly search again. SearchTabs filters results by content type, while AllPosts handles data fetching and rendering of the filtered results.",
+      "foot": ""
+    },
+    "admin": {
+      "head": "7. Django Admin Page",
+      "body": "This section demonstrates how the Search page works in practice. The page is composed of three main custom components. The SearchInput component sends user queries to the API and retrieves results. It also integrates a sub-component for fetching and displaying search history, allowing users to quickly search again. SearchTabs filters results by content type, while AllPosts handles data fetching and rendering of the filtered results.",
+      "foot": ""
+    },
+    "ws": {
+      "head": "8. WebSocket",
+      "body": "This section demonstrates how the Search page works in practice. The page is composed of three main custom components. The SearchInput component sends user queries to the API and retrieves results. It also integrates a sub-component for fetching and displaying search history, allowing users to quickly search again. SearchTabs filters results by content type, while AllPosts handles data fetching and rendering of the filtered results.",
+      "foot": ""
+    },
+    "agent": {
+      "head": "9. Voice Agent",
+      "body": "This section demonstrates how the Search page works in practice. The page is composed of three main custom components. The SearchInput component sends user queries to the API and retrieves results. It also integrates a sub-component for fetching and displaying search history, allowing users to quickly search again. SearchTabs filters results by content type, while AllPosts handles data fetching and rendering of the filtered results.",
+      "foot": ""
+    }
+  },
   "footer": {
     "contact": "Let's chat about sth. or whatever..",
     "channels": "We can keep in touch on social media and GitHub:",
@@ -60,22 +129,5 @@
     "intro": "This is my personal site where I share fun projects and courses. I’m excited to dive into cool topics like languages, AI, and mysticism with you. And hey, if we end up creating an AI app that people love, that’d be awesome!",
     "colormode": "Swith between Light and Dark themes: ",
     "copyright": "Deployed and Shared by LI QIUFENG using "
-  },
-  "react": {
-    "intro": {
-      "head": "Introduction",
-      "body": "This client-side application is built with Vite, TypeScript, and React. It serves as the user interface, so maintaining a clean design and strong UI/UX is essential to ensure an enjoyable user experience. We use Chakra UI to build consistent and accessible components, Axios for data fetching, and TanStack Query to manage and cache server state efficiently. Zustand helps manage global parameters such as filters, search terms, and language preferences. We also transform and cache certain local data (for example, genres) to reduce unnecessary API requests. In addition, all form data is validated locally (Zod + React Hook Form) before being sent to the API to ensure reliability and better user feedback.",
-      "foot": "More details will be discussed later."
-    },
-  "stack": {
-    "head": "1. App Architecture",
-    "body": "The application is built with React as the core framework. Chakra UI is used for styling and component structure, with a customized theme for consistent design. TanStack Query manages server state and simplifies data fetching and caching. We also implemented a custom authentication layer to handle user login, session management, and cookie control. Since this is a multi-page web application, centralized authentication handling is essential across all pages.",
-    "foot": ""
-  },
-  "case": {
-    "head": "2. A Real Example",
-    "body": "This section demonstrates how the Search page works in practice. The page is composed of three main custom components. The SearchInput component sends user queries to the API and retrieves results. It also integrates a sub-component for fetching and displaying search history, allowing users to quickly search again. SearchTabs filters results by content type, while AllPosts handles data fetching and rendering of the filtered results.",
-    "foot": ""
-  }
   }
 }

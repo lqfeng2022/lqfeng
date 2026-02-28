@@ -1,10 +1,10 @@
 import { Box, Center, SimpleGrid, useColorMode } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import Clipwords from "./components/work/Clipwords";
-import AgentCard from "./components/work/AgentCard";
-import DavidCard from "./components/work/DavidCard";
-import AgentIntroduce from "./components/work/AgentIntroduce";
-import agents from "./data/agents";
+import ClipwordsIntro from "../components/work/ClipwordsIntro";
+import AgentCard from "../components/work/AgentCard";
+import DavidCard from "../components/work/DavidCard";
+import Greeting from "../components/work/Greeting";
+import agents from "../data/agents";
 
 function HomePage() {
   const [t, i18n] = useTranslation("global");
@@ -18,10 +18,10 @@ function HomePage() {
   return (
     <>
       <Box px="5px" py="35px" maxW="500px">
-        <AgentIntroduce jp={jp} t={t} oneSpace={oneSpace} />
+        <Greeting jp={jp} t={t} oneSpace={oneSpace} />
       </Box>
       <Box p="15px" pb="35px">
-        <Clipwords jp={jp} t={t} oneSpace={oneSpace} />
+        <ClipwordsIntro jp={jp} t={t} oneSpace={oneSpace} />
       </Box>
       <Center>
         <Box p="15px" pb={10} maxW="1200px">

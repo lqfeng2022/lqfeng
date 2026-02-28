@@ -1,6 +1,6 @@
 import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { TFunction } from "i18next";
-import clipwords_hp from "../../assets/clipwords-hp.jpeg";
+import clipwords_hp from "@/assets/clipwords-hp.jpeg";
 import { Link } from "react-router-dom";
 
 interface Props {
@@ -8,7 +8,7 @@ interface Props {
   t: TFunction;
   oneSpace: Object;
 }
-const Clipwords = ({ jp, t, oneSpace }: Props) => {
+const ClipwordsIntro = ({ jp, t, oneSpace }: Props) => {
   return (
     <SimpleGrid columns={{ sm: 1, md: 2 }} maxW="1200px" spacing="20px">
       <Box maxW="708px">
@@ -24,23 +24,25 @@ const Clipwords = ({ jp, t, oneSpace }: Props) => {
         </Link>
       </Box>
       <Box maxW="700px" pr="40px">
-        <Text fontSize={jp ? "xl" : "3xl"}>{t("hp.ai.head")}</Text>
+        <Text fontSize={jp ? "xl" : "3xl"}>
+          {t("work.ai.head")}
+        </Text>
         {jp ? (
           <>
-            <Text fontSize="md" style={oneSpace}>
-              {t("hp.ai.body")}
+            <Text fontSize="md" style={oneSpace} className="fw-light">
+              {t("work.ai.body")}
             </Text>
-            <Text py={3} fontSize="md" style={oneSpace}>
-              {t("hp.ai.foot")}
+            <Text py={3} fontSize="md" style={oneSpace} className="fw-light">
+              {t("work.ai.foot")}
             </Text>
           </>
         ) : (
           <>
-            <Heading fontSize="md" className="fw-lighter lh-lg">
-              {t("hp.ai.body")}
+            <Heading fontSize="md" className="fw-lighter lh-base">
+              {t("work.ai.body")}
             </Heading>
-            <Heading py={3} fontSize="md" className="fw-lighter lh-lg">
-              {t("hp.ai.foot")}
+            <Heading py={3} fontSize="md" className="fw-lighter lh-base">
+              {t("work.ai.foot")}
             </Heading>
           </>
         )}
@@ -49,4 +51,4 @@ const Clipwords = ({ jp, t, oneSpace }: Props) => {
   );
 };
 
-export default Clipwords;
+export default ClipwordsIntro;

@@ -11,7 +11,7 @@ import "./index.css";
 import router from "./routes";
 import theme from "./theme";
 import global_en from "./translations/en/global_en.json";
-import global_jp from "./translations/jp/global_jp.json";
+import global_jp from "./translations/zh/global_zh.json";
 
 // `localStorage` is a built-in browser storage system
 const getDefaultLanguage = () => {
@@ -23,7 +23,7 @@ const getDefaultLanguage = () => {
   const languages = navigator.languages || [navigator.language];
   
   const hasChinese = languages.some((lang) =>
-    lang.toLowerCase().startsWith("zh")
+    lang.toLowerCase().startsWith("jp")
   );
 
   // If Chinese → use jp

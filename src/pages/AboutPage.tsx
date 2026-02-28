@@ -1,10 +1,10 @@
 import { Center, useColorMode } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import Back from "../components/about/Back";
+import BackStory from "../components/about/BackStory";
 import Introduce from "../components/about/Introduce";
 import View from "../components/about/View";
 
-const About = () => {
+const AboutPage = () => {
   const [t, i18n] = useTranslation("global");
   const jp = i18n.language.startsWith("jp");
   const { colorMode } = useColorMode();
@@ -17,13 +17,13 @@ const About = () => {
         <Introduce t={t} jp={jp} oneSpace={oneSpace} />
       </Center>
       <Center p="15px">
-        <Back t={t} jp={jp} uline={uline} oneSpace={oneSpace} />
+        <BackStory t={t} jp={jp} uline={uline} oneSpace={oneSpace} />
       </Center>
       <Center px="15px" pt="80px">
-        <View t={t} jp={jp} />
+        <View t={t} />
       </Center>
     </>
   );
 };
 
-export default About;
+export default AboutPage;

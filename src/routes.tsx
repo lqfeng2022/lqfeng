@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
-import HomePage from "./HomePage";
+import HomePage from "./pages/HomePage";
 import ErrorPage from "./pages/ErrorPage";
 import Layout from "./Layout";
-import About from "./pages/About";
-import Project from "./pages/Project";
+import AboutPage from "./pages/AboutPage";
+import ProductPage from "./pages/ProductPage";
 import David from "./pages/work/David";
 import Xiao from "./pages/work/Xiao";
 import Xiaozhu from "./pages/work/Xiaozhu";
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
       { 
         path: "product/", 
         children: [
-          { index: true, element: <Project/> },
+          { index: true, element: <ProductPage/> },
           { path: "clipwords-django", element: <ClipwordsDjango/> },
           { path: "clipwords-react", element: <ClipwordsReact/> },
           { path: "clipwords-node", element: <ClipwordsNode/> },
@@ -52,7 +52,7 @@ const router = createBrowserRouter([
           { path: "simonfy", element: <Simonfy/> },
         ]
        },
-      { path: "about", element: <About /> },
+      { path: "about", element: <AboutPage /> },
     ],
   },
 ]);

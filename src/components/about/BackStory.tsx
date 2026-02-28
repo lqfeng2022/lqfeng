@@ -1,6 +1,6 @@
 import { Box, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { TFunction } from "i18next";
-import shape from "../../assets/scientific-mind.jpg";
+import shape from "@/assets/scientific-mind.jpg";
 
 interface Props {
   t: TFunction;
@@ -8,7 +8,7 @@ interface Props {
   uline: string;
   oneSpace: Object;
 }
-const Back = ({ t, jp, uline, oneSpace }: Props) => {
+const BackStory = ({ t, jp, uline, oneSpace }: Props) => {
   return (
     <SimpleGrid columns={[1, null, 2]} maxW="1000px" spacing="40px">
       <Box>
@@ -19,11 +19,11 @@ const Back = ({ t, jp, uline, oneSpace }: Props) => {
           {t("simon.educ.quest")}
         </Text>
         {jp ? (
-          <Text fontSize="md" style={oneSpace}>
+          <Text fontSize="md" style={oneSpace} className="fw-light">
             {t("simon.educ.answ")}
           </Text>
         ) : (
-          <Heading fontSize="md" className="fw-lighter lh-lg">
+          <Heading fontSize="md" className="fw-lighter lh-base">
             {t("simon.educ.answ")}
           </Heading>
         )}
@@ -32,11 +32,11 @@ const Back = ({ t, jp, uline, oneSpace }: Props) => {
           {t("simon.career.quest")}
         </Text>
         {jp ? (
-          <Text fontSize="md" style={oneSpace}>
+          <Text fontSize="md" style={oneSpace} className="fw-light">
             {t("simon.career.answ")}
           </Text>
         ) : (
-          <Heading fontSize="md" className="fw-lighter lh-lg">
+          <Heading fontSize="md" className="fw-lighter lh-base">
             {t("simon.career.answ")}
           </Heading>
         )}
@@ -45,4 +45,4 @@ const Back = ({ t, jp, uline, oneSpace }: Props) => {
   );
 };
 
-export default Back;
+export default BackStory;

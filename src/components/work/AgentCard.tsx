@@ -29,12 +29,12 @@ const AgentCard = ({ course, jp, uline }: Props) => {
             </Link>
           </Box>
           <Heading fontSize="sm" my="10px">
-            <Link to={course.url} className={uline} style={{ letterSpacing: "1px" }}>
+            <Link to={course.url} className={uline} style={{ letterSpacing: "0.5px" }}>
               {jp? course.title_jp : course.title_en }
             </Link>
           </Heading>
           {jp ? (
-            <Text fontSize="sm" mb="5.62px" className="fst-italic">
+            <Text fontSize="sm" mb="5.62px" className="fw-light fst-italic">
               {course.subTitle_jp}
             </Text>
           ) : (

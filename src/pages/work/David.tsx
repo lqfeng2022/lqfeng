@@ -1,7 +1,7 @@
 import { Box, Heading, SimpleGrid, VStack } from '@chakra-ui/react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import { basePrompt, basePrompt_explain, personaPrompt, personaPrompt_explain } from '../../data/david_prompts';
+import { basePrompt, basePrompt_explain, personaPrompt, personaPrompt_explain } from '@/data/david_prompts';
 
 const David = () => {
   return (

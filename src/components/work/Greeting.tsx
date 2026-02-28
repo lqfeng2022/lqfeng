@@ -6,18 +6,18 @@ interface Props {
   t: TFunction;
   oneSpace: Object;
 }
-const AgentIntroduce = ({ jp, t, oneSpace }: Props) => {
+const Greeting = ({ jp, t, oneSpace }: Props) => {
   return (
     <>
       <Heading fontSize="sm" pb={5} style={oneSpace}>
-        {t("hp.intro.head")}
+        {t("work.intro.head")}
       </Heading>
       <Text fontSize={jp ? "lg" : "2xl"} style={oneSpace}>
-        {t("hp.intro.body")}
+        {t("work.intro.body")}
       </Text>
       <Box hideFrom="md" h="30px" />
     </>
   );
 };
 
-export default AgentIntroduce;
+export default Greeting;
