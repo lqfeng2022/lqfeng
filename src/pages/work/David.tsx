@@ -32,7 +32,7 @@ const David = () => {
               style={oneLight}
               showLineNumbers
               wrapLongLines
-              customStyle={{ fontSize: "12px", lineHeight: "1.4em" }}
+              customStyle={{ fontSize: "10px", lineHeight: "1em" }}
             >
               {basePrompt}
             </SyntaxHighlighter>
@@ -94,7 +94,7 @@ const David = () => {
               style={oneLight}
               showLineNumbers
               wrapLongLines
-              customStyle={{ fontSize: "12px", lineHeight: "1.4em" }}
+              customStyle={{ fontSize: "10px", lineHeight: "1em" }}
             >
               {personaPrompt}
             </SyntaxHighlighter>
